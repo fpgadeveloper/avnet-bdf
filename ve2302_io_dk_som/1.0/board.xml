@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright (C) 2025, Tria Technologies Inc - All rights reserved
+ Licensed under the Apache License, Version 2.0 (the "License"). You may
+ not use this file except in compliance with the License. A copy of the
+ License is located at
+	 http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ License for the specific language governing permissions and limitations
+ under the License. -->
+
+<board schema_version="2.2" vendor="Avnet-tria" name="ve2302_io_dk_som" display_name="Avnet-Tria VE2302 Development Kit - SOM and Carrier Card" url="avnet.me/ve2302-dk" preset_file="preset.xml">
+
+	<images>
+		<image name="ve2302_development_kit.png" display_name="VE2302 Development Kit - SOM and Carrier Card" sub_type="board">
+			<description>VE2302 Development Kit - SOM and Carrier Card Image</description>
+		</image>
+	</images>
+
+	<compatible_board_revisions>
+		<revision id="0">Rev 1</revision>
+	</compatible_board_revisions>
+
+	<file_version>1.0</file_version>
+
+	<description>VE2302 Development Kit - SOM and Carrier Card</description>
+
+	<parameters>
+		<parameter name="heat_sink_type" value="medium" value_type="string"/>
+		<parameter name="heat_sink_temperature" value_type="range" value_min="20.0" value_max="30.0"/>
+	</parameters>
+
+	<jumpers>
+	</jumpers>
+
+	<components>
+
+		<component name="jx1_connector" type="connector" sub_type="som" display_name="Connector 1 on VE2302 SOM (jx1)">
+			<pins>
+				<!-- <pin index="1" name="jx1_a1"/> --> <!-- GND -->
+				<!-- <pin index="2" name="jx1_a2"/> --> <!-- GND -->
+				<!-- <pin index="3" name="jx1_a3"/> --> <!-- GND -->
+				<!-- <pin index="4" name="jx1_a4"/> --> <!-- GND -->
+				<!-- <pin index="5" name="jx1_a5"/> --> <!-- GND -->
+				<!-- <pin index="6" name="jx1_a6"/> --> <!-- GND -->
+				<pin index="7" name="jx1_a7"/> <!-- HDIO_302_L10_P -->
+				<pin index="8" name="jx1_a8"/> <!-- HDIO_302_L10_N -->
+				<!-- <pin index="9" name="jx1_a9"/> --> <!-- GND -->
+				<pin index="10" name="jx1_a10"/> <!-- HDIO_302_L1_P -->
+				<pin index="11" name="jx1_a11"/> <!-- HDIO_302_L1_N -->
+				<!-- <pin index="12" name="jx1_a12"/> --> <!-- GND -->
+				<pin index="13" name="jx1_a13"/> <!-- HDIO_302_L3_P -->
+				<pin index="14" name="jx1_a14"/> <!-- HDIO_302_L3_N -->
+				<!-- <pin index="15" name="jx1_a15"/> --> <!-- GND -->
+				<pin index="16" name="jx1_a16"/> <!-- LPD_MIO23 -->
+				<pin index="17" name="jx1_a17"/> <!-- LPD_MIO22 -->
+				<!-- <pin index="18" name="jx1_a18"/> --> <!-- GND -->
+				<pin index="19" name="jx1_a19"/> <!-- PMC_MIO0 -->
+				<pin index="20" name="jx1_a20"/> <!-- PMC_MIO1 -->
+				<!-- <pin index="21" name="jx1_a21"/> --> <!-- GND -->
+				<pin index="22" name="jx1_a22"/> <!-- PMC_MIO2 -->
+				<pin index="23" name="jx1_a23"/> <!-- PMC_MIO3 -->
+				<!-- <pin index="24" name="jx1_a24"/> --> <!-- GND -->
+				<!-- <pin index="25" name="jx1_a25"/> --> <!-- GND -->
+				<!-- <pin index="26" name="jx1_a26"/> --> <!-- GND -->
+				<!-- <pin index="27" name="jx1_a27"/> --> <!-- GND -->
+				<!-- <pin index="28" name="jx1_a28"/> --> <!-- GND -->
+				<!-- <pin index="29" name="jx1_a29"/> --> <!-- GND -->
+				<!-- <pin index="30" name="jx1_a30"/> --> <!-- GND -->
+				<!-- <pin index="31" name="jx1_a31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="32" name="jx1_a32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="33" name="jx1_a33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="34" name="jx1_a34"/> --> <!-- +VCCINT -->
+				<pin index="35" name="jx1_a35"/> <!-- PMC_MIO_WAKE_UP -->
+				<!-- <pin index="36" name="jx1_a36"/> --> <!-- GND -->
+				<pin index="37" name="jx1_a37"/> <!-- JTAG_TCK -->
+				<!-- <pin index="38" name="jx1_a38"/> --> <!-- +1V8 -->
+				<!-- <pin index="39" name="jx1_a39"/> --> <!-- GND -->
+				<!-- <pin index="40" name="jx1_a40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="41" name="jx1_b1"/> --> <!-- +1V2 -->
+				<!-- <pin index="42" name="jx1_b2"/> --> <!-- GND -->
+				<!-- <pin index="43" name="jx1_b3"/> --> <!-- +VCCINT_IO -->
+				<!-- <pin index="44" name="jx1_b4"/> --> <!-- GND -->
+				<!-- <pin index="45" name="jx1_b5"/> --> <!-- +VCCINT -->
+				<!-- <pin index="46" name="jx1_b6"/> --> <!-- GND -->
+				<pin index="47" name="jx1_b7"/> <!-- HDIO_302_L9_P -->
+				<pin index="48" name="jx1_b8"/> <!-- HDIO_302_L9_N -->
+				<!-- <pin index="49" name="jx1_b9"/> --> <!-- GND -->
+				<pin index="50" name="jx1_b10"/> <!-- HDIO_302_L2_P -->
+				<pin index="51" name="jx1_b11"/> <!-- HDIO_302_L2_N -->
+				<!-- <pin index="52" name="jx1_b12"/> --> <!-- GND -->
+				<pin index="53" name="jx1_b13"/> <!-- HDIO_302_L4_P -->
+				<pin index="54" name="jx1_b14"/> <!-- HDIO_302_L4_N -->
+				<!-- <pin index="55" name="jx1_b15"/> --> <!-- GND -->
+				<pin index="56" name="jx1_b16"/> <!-- LPD_MIO27 -->
+				<pin index="57" name="jx1_b17"/> <!-- LPD_MIO26 -->
+				<!-- <pin index="58" name="jx1_b18"/> --> <!-- GND -->
+				<pin index="59" name="jx1_b19"/> <!-- PMC_MIO4 -->
+				<pin index="60" name="jx1_b20"/> <!-- PMC_MIO5 -->
+				<!-- <pin index="61" name="jx1_b21"/> --> <!-- GND -->
+				<pin index="62" name="jx1_b22"/> <!-- PMC_MIO6 -->
+				<pin index="63" name="jx1_b23"/> <!-- PMC_MIO7 -->
+				<!-- <pin index="64" name="jx1_b24"/> --> <!-- GND -->
+				<!-- <pin index="65" name="jx1_b25"/> --> <!-- GND -->
+				<!-- <pin index="66" name="jx1_b26"/> --> <!-- GND -->
+				<!-- <pin index="67" name="jx1_b27"/> --> <!-- GND -->
+				<!-- <pin index="68" name="jx1_b28"/> --> <!-- GND -->
+				<!-- <pin index="69" name="jx1_b29"/> --> <!-- GND -->
+				<!-- <pin index="70" name="jx1_b30"/> --> <!-- GND -->
+				<!-- <pin index="71" name="jx1_b31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="72" name="jx1_b32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="73" name="jx1_b33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="74" name="jx1_b34"/> --> <!-- +VCCINT -->
+				<pin index="75" name="jx1_b35"/> <!-- PMC_MIO_TAMPER_TRIGGER -->
+				<!-- <pin index="76" name="jx1_b36"/> --> <!-- GND -->
+				<pin index="77" name="jx1_b37"/> <!-- JTAG_TMS -->
+				<!-- <pin index="78" name="jx1_b38"/> --> <!-- +1V8 -->
+				<!-- <pin index="79" name="jx1_b39"/> --> <!-- GND -->
+				<!-- <pin index="80" name="jx1_b40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="81" name="jx1_c1"/> --> <!-- +1V2 -->
+				<!-- <pin index="82" name="jx1_c2"/> --> <!-- GND -->
+				<!-- <pin index="83" name="jx1_c3"/> --> <!-- +VCCINT_IO -->
+				<!-- <pin index="84" name="jx1_c4"/> --> <!-- GND -->
+				<!-- <pin index="85" name="jx1_c5"/> --> <!-- +VCCINT -->
+				<!-- <pin index="86" name="jx1_c6"/> --> <!-- GND -->
+				<pin index="87" name="jx1_c7"/> <!-- HDIO_302_L8_P -->
+				<pin index="88" name="jx1_c8"/> <!-- HDIO_302_L8_N -->
+				<!-- <pin index="89" name="jx1_c9"/> --> <!-- GND -->
+				<pin index="90" name="jx1_c10"/> <!-- HDIO_302_L5_P -->
+				<pin index="91" name="jx1_c11"/> <!-- HDIO_302_L5_N -->
+				<!-- <pin index="92" name="jx1_c12"/> --> <!-- GND -->
+				<pin index="93" name="jx1_c13"/> <!-- HDIO_302_L0_P -->
+				<pin index="94" name="jx1_c14"/> <!-- HDIO_302_L0_N -->
+				<!-- <pin index="95" name="jx1_c15"/> --> <!-- GND -->
+				<pin index="96" name="jx1_c16"/> <!-- LPD_MIO31 -->
+				<!-- <pin index="97" name="jx1_c17"/> --> <!-- GND -->
+				<pin index="98" name="jx1_c18"/> <!-- LPD_MIO25 -->
+				<pin index="99" name="jx1_c19"/> <!-- LPD_MIO24 -->
+				<!-- <pin index="100" name="jx1_c20"/> --> <!-- GND -->
+				<pin index="101" name="jx1_c21"/> <!-- XPIO_706_L12_P -->
+				<pin index="102" name="jx1_c22"/> <!-- XPIO_706_L12_N -->
+				<!-- <pin index="103" name="jx1_c23"/> --> <!-- GND -->
+				<!-- <pin index="104" name="jx1_c24"/> --> <!-- GND -->
+				<!-- <pin index="105" name="jx1_c25"/> --> <!-- GND -->
+				<pin index="106" name="jx1_c26"/> <!-- PMC_MIO8 -->
+				<pin index="107" name="jx1_c27"/> <!-- PMC_MIO9 -->
+				<!-- <pin index="108" name="jx1_c28"/> --> <!-- GND -->
+				<pin index="109" name="jx1_c29"/> <!-- PMC_MIO_PS_REF_CLK_P -->
+				<pin index="110" name="jx1_c30"/> <!-- PMC_MIO_PS_REF_CLK_N -->
+				<!-- <pin index="111" name="jx1_c31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="112" name="jx1_c32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="113" name="jx1_c33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="114" name="jx1_c34"/> --> <!-- +VCCINT -->
+				<!-- <pin index="115" name="jx1_c35"/> --> <!-- GND -->
+				<!-- <pin index="116" name="jx1_c36"/> --> <!-- GND -->
+				<pin index="117" name="jx1_c37"/> <!-- JTAG_TDI -->
+				<!-- <pin index="118" name="jx1_c38"/> --> <!-- +1V8 -->
+				<!-- <pin index="119" name="jx1_c39"/> --> <!-- GND -->
+				<!-- <pin index="120" name="jx1_c40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="121" name="jx1_d1"/> --> <!-- +1V2 -->
+				<!-- <pin index="122" name="jx1_d2"/> --> <!-- GND -->
+				<!-- <pin index="123" name="jx1_d3"/> --> <!-- +VCCINT_IO -->
+				<!-- <pin index="124" name="jx1_d4"/> --> <!-- GND -->
+				<!-- <pin index="125" name="jx1_d5"/> --> <!-- +VCCINT -->
+				<!-- <pin index="126" name="jx1_d6"/> --> <!-- GND -->
+				<pin index="127" name="jx1_d7"/> <!-- HDIO_302_L7_P -->
+				<pin index="128" name="jx1_d8"/> <!-- HDIO_302_L7_N -->
+				<!-- <pin index="129" name="jx1_d9"/> --> <!-- GND -->
+				<pin index="130" name="jx1_d10"/> <!-- HDIO_302_L6_P -->
+				<pin index="131" name="jx1_d11"/> <!-- HDIO_302_L6_N -->
+				<!-- <pin index="132" name="jx1_d12"/> --> <!-- GND -->
+				<pin index="133" name="jx1_d13"/> <!-- ERROR_OUT_N -->
+				<pin index="134" name="jx1_d14"/> <!-- SYSCLK_P -->
+				<pin index="135" name="jx1_d15"/> <!-- SYSCLK_N -->
+				<!-- <pin index="136" name="jx1_d16"/> --> <!-- GND -->
+				<pin index="137" name="jx1_d17"/> <!-- XPIO_706_L13_P -->
+				<pin index="138" name="jx1_d18"/> <!-- XPIO_706_L13_N -->
+				<!-- <pin index="139" name="jx1_d19"/> --> <!-- GND -->
+				<pin index="140" name="jx1_d20"/> <!-- XPIO_706_L14_P -->
+				<pin index="141" name="jx1_d21"/> <!-- XPIO_706_L14_N -->
+				<!-- <pin index="142" name="jx1_d22"/> --> <!-- GND -->
+				<pin index="143" name="jx1_d23"/> <!-- PMC_MIO10 -->
+				<pin index="144" name="jx1_d24"/> <!-- PMC_MIO11 -->
+				<!-- <pin index="145" name="jx1_d25"/> --> <!-- GND -->
+				<pin index="146" name="jx1_d26"/> <!-- PMC_MIO12 -->
+				<!-- <pin index="147" name="jx1_d27"/> --> <!-- GND -->
+				<pin index="148" name="jx1_d28"/> <!-- DONE_OUT -->
+				<!-- <pin index="149" name="jx1_d29"/> --> <!-- GND -->
+				<!-- <pin index="150" name="jx1_d30"/> --> <!-- GND -->
+				<!-- <pin index="151" name="jx1_d31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="152" name="jx1_d32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="153" name="jx1_d33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="154" name="jx1_d34"/> --> <!-- +VCCINT -->
+				<pin index="155" name="jx1_d35"/> <!-- SYSMON_DXP -->
+				<!-- <pin index="156" name="jx1_d36"/> --> <!-- GND -->
+				<pin index="157" name="jx1_d37"/> <!-- JTAG_TDO -->
+				<!-- <pin index="158" name="jx1_d38"/> --> <!-- +1V8 -->
+				<!-- <pin index="159" name="jx1_d39"/> --> <!-- GND -->
+				<!-- <pin index="160" name="jx1_d40"/> --> <!-- +1V8 -->
+			</pins>
+		</component>
+
+		<component name="jx2_connector" type="connector" sub_type="som" display_name="Connector 2 on VE2302 SOM (jx2)">
+			<pins>
+				<!-- <pin index="1" name="jx2_a1"/> --> <!-- GND -->
+				<!-- <pin index="2" name="jx2_a2"/> --> <!-- GND -->
+				<pin index="3" name="jx2_a3"/> <!-- HDIO_503_L10_P -->
+				<pin index="4" name="jx2_a4"/> <!-- HDIO_503_L10_N -->
+				<!-- <pin index="5" name="jx2_a5"/> --> <!-- GND -->
+				<pin index="6" name="jx2_a6"/> <!-- HDIO_503_L1_P -->
+				<pin index="7" name="jx2_a7"/> <!-- HDIO_503_L1_N -->
+				<!-- <pin index="8" name="jx2_a8"/> --> <!-- GND -->
+				<pin index="9" name="jx2_a9"/> <!-- HDIO_503_L3_P -->
+				<pin index="10" name="jx2_a10"/> <!-- HDIO_503_L3_N -->
+				<!-- <pin index="11" name="jx2_a11"/> --> <!-- GND -->
+				<pin index="12" name="jx2_a12"/> <!-- HDIO_503_L12_P -->
+				<pin index="13" name="jx2_a13"/> <!-- HDIO_503_L12_N -->
+				<!-- <pin index="14" name="jx2_a14"/> --> <!-- GND -->
+				<pin index="15" name="jx2_a15"/> <!-- HDIO_503_L0_P -->
+				<pin index="16" name="jx2_a16"/> <!-- HDIO_503_L0_N -->
+				<!-- <pin index="17" name="jx2_a17"/> --> <!-- GND -->
+				<!-- <pin index="18" name="jx2_a18"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="19" name="jx2_a19"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="20" name="jx2_a20"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="21" name="jx2_a21"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="22" name="jx2_a22"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="23" name="jx2_a23"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="24" name="jx2_a24"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="25" name="jx2_a25"/> --> <!-- VCCO_302 -->
+				<!-- <pin index="26" name="jx2_a26"/> --> <!-- GND -->
+				<!-- <pin index="27" name="jx2_a27"/> --> <!-- GND -->
+				<!-- <pin index="28" name="jx2_a28"/> --> <!-- GND -->
+				<!-- <pin index="29" name="jx2_a29"/> --> <!-- GND -->
+				<!-- <pin index="30" name="jx2_a30"/> --> <!-- GND -->
+				<!-- <pin index="31" name="jx2_a31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="32" name="jx2_a32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="33" name="jx2_a33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="34" name="jx2_a34"/> --> <!-- +VCCINT -->
+				<!-- <pin index="35" name="jx2_a35"/> --> <!-- +VCCINT -->
+				<!-- <pin index="36" name="jx2_a36"/> --> <!-- GND -->
+				<!-- <pin index="37" name="jx2_a37"/> --> <!-- GND -->
+				<!-- <pin index="38" name="jx2_a38"/> --> <!-- +1V8 -->
+				<!-- <pin index="39" name="jx2_a39"/> --> <!-- GND -->
+				<!-- <pin index="40" name="jx2_a40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="41" name="jx2_b1"/> --> <!-- +1V2 -->
+				<!-- <pin index="42" name="jx2_b2"/> --> <!-- GND -->
+				<pin index="43" name="jx2_b3"/> <!-- HDIO_503_L9_P -->
+				<pin index="44" name="jx2_b4"/> <!-- HDIO_503_L9_N -->
+				<!-- <pin index="45" name="jx2_b5"/> --> <!-- GND -->
+				<pin index="46" name="jx2_b6"/> <!-- HDIO_503_L2_P -->
+				<pin index="47" name="jx2_b7"/> <!-- HDIO_503_L2_N -->
+				<!-- <pin index="48" name="jx2_b8"/> --> <!-- GND -->
+				<pin index="49" name="jx2_b9"/> <!-- HDIO_503_L4_P -->
+				<pin index="50" name="jx2_b10"/> <!-- HDIO_503_L4_N -->
+				<!-- <pin index="51" name="jx2_b11"/> --> <!-- GND -->
+				<pin index="52" name="jx2_b12"/> <!-- HDIO_503_L13_P -->
+				<pin index="53" name="jx2_b13"/> <!-- HDIO_503_L13_N -->
+				<!-- <pin index="54" name="jx2_b14"/> --> <!-- GND -->
+				<pin index="55" name="jx2_b15"/> <!-- HDIO_503_L6_P -->
+				<pin index="56" name="jx2_b16"/> <!-- HDIO_503_L6_N -->
+				<!-- <pin index="57" name="jx2_b17"/> --> <!-- GND -->
+				<!-- <pin index="58" name="jx2_b18"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="59" name="jx2_b19"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="60" name="jx2_b20"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="61" name="jx2_b21"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="62" name="jx2_b22"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="63" name="jx2_b23"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="64" name="jx2_b24"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="65" name="jx2_b25"/> --> <!-- VCCO_503 -->
+				<!-- <pin index="66" name="jx2_b26"/> --> <!-- GND -->
+				<!-- <pin index="67" name="jx2_b27"/> --> <!-- GND -->
+				<!-- <pin index="68" name="jx2_b28"/> --> <!-- GND -->
+				<!-- <pin index="69" name="jx2_b29"/> --> <!-- GND -->
+				<!-- <pin index="70" name="jx2_b30"/> --> <!-- GND -->
+				<!-- <pin index="71" name="jx2_b31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="72" name="jx2_b32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="73" name="jx2_b33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="74" name="jx2_b34"/> --> <!-- +VCCINT -->
+				<!-- <pin index="75" name="jx2_b35"/> --> <!-- +VCCINT -->
+				<!-- <pin index="76" name="jx2_b36"/> --> <!-- GND -->
+				<!-- <pin index="77" name="jx2_b37"/> --> <!-- GND -->
+				<!-- <pin index="78" name="jx2_b38"/> --> <!-- +1V8 -->
+				<!-- <pin index="79" name="jx2_b39"/> --> <!-- GND -->
+				<!-- <pin index="80" name="jx2_b40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="81" name="jx2_c1"/> --> <!-- +1V2 -->
+				<!-- <pin index="82" name="jx2_c2"/> --> <!-- GND -->
+				<pin index="83" name="jx2_c3"/> <!-- HDIO_503_L8_P -->
+				<pin index="84" name="jx2_c4"/> <!-- HDIO_503_L8_N -->
+				<!-- <pin index="85" name="jx2_c5"/> --> <!-- GND -->
+				<pin index="86" name="jx2_c6"/> <!-- HDIO_503_L5_P -->
+				<pin index="87" name="jx2_c7"/> <!-- HDIO_503_L5_N -->
+				<!-- <pin index="88" name="jx2_c8"/> --> <!-- GND -->
+				<pin index="89" name="jx2_c9"/> <!-- HDIO_504_L10_P -->
+				<pin index="90" name="jx2_c10"/> <!-- HDIO_504_L10_N -->
+				<!-- <pin index="91" name="jx2_c11"/> --> <!-- GND -->
+				<pin index="92" name="jx2_c12"/> <!-- HDIO_503_L14_P -->
+				<pin index="93" name="jx2_c13"/> <!-- HDIO_503_L14_N -->
+				<!-- <pin index="94" name="jx2_c14"/> --> <!-- GND -->
+				<pin index="95" name="jx2_c15"/> <!-- HDIO_504_L0_P -->
+				<pin index="96" name="jx2_c16"/> <!-- HDIO_504_L0_N -->
+				<!-- <pin index="97" name="jx2_c17"/> --> <!-- GND -->
+				<!-- <pin index="98" name="jx2_c18"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="99" name="jx2_c19"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="100" name="jx2_c20"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="101" name="jx2_c21"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="102" name="jx2_c22"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="103" name="jx2_c23"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="104" name="jx2_c24"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="105" name="jx2_c25"/> --> <!-- VCCO_504 -->
+				<!-- <pin index="106" name="jx2_c26"/> --> <!-- GND -->
+				<!-- <pin index="107" name="jx2_c27"/> --> <!-- GND -->
+				<!-- <pin index="108" name="jx2_c28"/> --> <!-- GND -->
+				<!-- <pin index="109" name="jx2_c29"/> --> <!-- GND -->
+				<!-- <pin index="110" name="jx2_c30"/> --> <!-- GND -->
+				<!-- <pin index="111" name="jx2_c31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="112" name="jx2_c32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="113" name="jx2_c33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="114" name="jx2_c34"/> --> <!-- +VCCINT -->
+				<!-- <pin index="115" name="jx2_c35"/> --> <!-- +VCCINT -->
+				<!-- <pin index="116" name="jx2_c36"/> --> <!-- GND -->
+				<!-- <pin index="117" name="jx2_c37"/> --> <!-- GND -->
+				<!-- <pin index="118" name="jx2_c38"/> --> <!-- +1V8 -->
+				<!-- <pin index="119" name="jx2_c39"/> --> <!-- GND -->
+				<!-- <pin index="120" name="jx2_c40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="121" name="jx2_d1"/> --> <!-- +1V2 -->
+				<!-- <pin index="122" name="jx2_d2"/> --> <!-- GND -->
+				<pin index="123" name="jx2_d3"/> <!-- HDIO_503_L7_P -->
+				<pin index="124" name="jx2_d4"/> <!-- HDIO_503_L7_N -->
+				<!-- <pin index="125" name="jx2_d5"/> --> <!-- GND -->
+				<pin index="126" name="jx2_d6"/> <!-- HDIO_503_L15_P -->
+				<pin index="127" name="jx2_d7"/> <!-- HDIO_503_L15_N -->
+				<!-- <pin index="128" name="jx2_d8"/> --> <!-- GND -->
+				<pin index="129" name="jx2_d9"/> <!-- HDIO_504_L12_P -->
+				<pin index="130" name="jx2_d10"/> <!-- HDIO_504_L12_N -->
+				<!-- <pin index="131" name="jx2_d11"/> --> <!-- GND -->
+				<pin index="132" name="jx2_d12"/> <!-- HDIO_504_L1_P -->
+				<pin index="133" name="jx2_d13"/> <!-- HDIO_504_L1_N -->
+				<!-- <pin index="134" name="jx2_d14"/> --> <!-- GND -->
+				<!-- <pin index="135" name="jx2_d15"/> --> <!-- GND -->
+				<!-- <pin index="136" name="jx2_d16"/> --> <!-- GND -->
+				<!-- <pin index="137" name="jx2_d17"/> --> <!-- GND -->
+				<!-- <pin index="138" name="jx2_d18"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="139" name="jx2_d19"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="140" name="jx2_d20"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="141" name="jx2_d21"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="142" name="jx2_d22"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="143" name="jx2_d23"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="144" name="jx2_d24"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="145" name="jx2_d25"/> --> <!-- VCCO_706 -->
+				<!-- <pin index="146" name="jx2_d26"/> --> <!-- GND -->
+				<!-- <pin index="147" name="jx2_d27"/> --> <!-- GND -->
+				<!-- <pin index="148" name="jx2_d28"/> --> <!-- GND -->
+				<!-- <pin index="149" name="jx2_d29"/> --> <!-- GND -->
+				<!-- <pin index="150" name="jx2_d30"/> --> <!-- GND -->
+				<!-- <pin index="151" name="jx2_d31"/> --> <!-- +VCCINT -->
+				<!-- <pin index="152" name="jx2_d32"/> --> <!-- +VCCINT -->
+				<!-- <pin index="153" name="jx2_d33"/> --> <!-- +VCCINT -->
+				<!-- <pin index="154" name="jx2_d34"/> --> <!-- +VCCINT -->
+				<!-- <pin index="155" name="jx2_d35"/> --> <!-- +VCCINT -->
+				<!-- <pin index="156" name="jx2_d36"/> --> <!-- GND -->
+				<!-- <pin index="157" name="jx2_d37"/> --> <!-- GND -->
+				<!-- <pin index="158" name="jx2_d38"/> --> <!-- +1V8 -->
+				<!-- <pin index="159" name="jx2_d39"/> --> <!-- GND -->
+				<!-- <pin index="160" name="jx2_d40"/> --> <!-- +1V8 -->
+			</pins>
+		</component>
+
+		<component name="jx3_connector" type="connector" sub_type="som" display_name="Connector 3 on VE2302 SOM (jx3)">
+			<pins>
+				<!-- <pin index="1" name="jx3_a1"/> --> <!-- GND -->
+				<!-- <pin index="2" name="jx3_a2"/> --> <!-- GND -->
+				<!-- <pin index="3" name="jx3_a3"/> --> <!-- GND -->
+				<!-- <pin index="4" name="jx3_a4"/> --> <!-- GND -->
+				<!-- <pin index="5" name="jx3_a5"/> --> <!-- GND -->
+				<!-- <pin index="6" name="jx3_a6"/> --> <!-- GND -->
+				<pin index="7" name="jx3_a7"/> <!-- GTYP_104_REFCLK0_P -->
+				<pin index="8" name="jx3_a8"/> <!-- GTYP_104_REFCLK0_N -->
+				<!-- <pin index="9" name="jx3_a9"/> --> <!-- GND -->
+				<!-- <pin index="10" name="jx3_a10"/> --> <!-- GND -->
+				<!-- <pin index="11" name="jx3_a11"/> --> <!-- GND -->
+				<!-- <pin index="12" name="jx3_a12"/> --> <!-- GND -->
+				<!-- <pin index="13" name="jx3_a13"/> --> <!-- GND -->
+				<pin index="14" name="jx3_a14"/> <!-- GTYP_104_TX1_P -->
+				<pin index="15" name="jx3_a15"/> <!-- GTYP_104_TX1_N -->
+				<!-- <pin index="16" name="jx3_a16"/> --> <!-- GND -->
+				<!-- <pin index="17" name="jx3_a17"/> --> <!-- GND -->
+				<!-- <pin index="18" name="jx3_a18"/> --> <!-- GND -->
+				<!-- <pin index="19" name="jx3_a19"/> --> <!-- GND -->
+				<pin index="20" name="jx3_a20"/> <!-- GTYP_104_TX3_P -->
+				<pin index="21" name="jx3_a21"/> <!-- GTYP_104_TX3_N -->
+				<!-- <pin index="22" name="jx3_a22"/> --> <!-- GND -->
+				<!-- <pin index="23" name="jx3_a23"/> --> <!-- GND -->
+				<!-- <pin index="24" name="jx3_a24"/> --> <!-- GND -->
+				<!-- <pin index="25" name="jx3_a25"/> --> <!-- GND -->
+				<pin index="26" name="jx3_a26"/> <!-- XPIO_700_L10_P -->
+				<pin index="27" name="jx3_a27"/> <!-- XPIO_700_L10_N -->
+				<!-- <pin index="28" name="jx3_a28"/> --> <!-- GND -->
+				<!-- <pin index="29" name="jx3_a29"/> --> <!-- GND -->
+				<!-- <pin index="30" name="jx3_a30"/> --> <!-- GND -->
+				<!-- <pin index="31" name="jx3_a31"/> --> <!-- GND -->
+				<pin index="32" name="jx3_a32"/> <!-- XPIO_700_L1_P -->
+				<pin index="33" name="jx3_a33"/> <!-- XPIO_700_L1_N -->
+				<!-- <pin index="34" name="jx3_a34"/> --> <!-- GND -->
+				<!-- <pin index="35" name="jx3_a35"/> --> <!-- GND -->
+				<!-- <pin index="36" name="jx3_a36"/> --> <!-- GND -->
+				<!-- <pin index="37" name="jx3_a37"/> --> <!-- GND -->
+				<!-- <pin index="38" name="jx3_a38"/> --> <!-- +1V8 -->
+				<!-- <pin index="39" name="jx3_a39"/> --> <!-- GND -->
+				<!-- <pin index="40" name="jx3_a40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="41" name="jx3_b1"/> --> <!-- +1V2 -->
+				<!-- <pin index="42" name="jx3_b2"/> --> <!-- GND -->
+				<!-- <pin index="43" name="jx3_b3"/> --> <!-- GND -->
+				<!-- <pin index="44" name="jx3_b4"/> --> <!-- GND -->
+				<!-- <pin index="45" name="jx3_b5"/> --> <!-- GND -->
+				<!-- <pin index="46" name="jx3_b6"/> --> <!-- GND -->
+				<pin index="47" name="jx3_b7"/> <!-- GTYP_104_REFCLK1_P -->
+				<pin index="48" name="jx3_b8"/> <!-- GTYP_104_REFCLK1_N -->
+				<!-- <pin index="49" name="jx3_b9"/> --> <!-- GND -->
+				<!-- <pin index="50" name="jx3_b10"/> --> <!-- GND -->
+				<!-- <pin index="51" name="jx3_b11"/> --> <!-- GND -->
+				<!-- <pin index="52" name="jx3_b12"/> --> <!-- GND -->
+				<!-- <pin index="53" name="jx3_b13"/> --> <!-- GND -->
+				<!-- <pin index="54" name="jx3_b14"/> --> <!-- GND -->
+				<!-- <pin index="55" name="jx3_b15"/> --> <!-- GND -->
+				<!-- <pin index="56" name="jx3_b16"/> --> <!-- GND -->
+				<pin index="57" name="jx3_b17"/> <!-- GTYP_104_RX0_P -->
+				<pin index="58" name="jx3_b18"/> <!-- GTYP_104_RX0_N -->
+				<!-- <pin index="59" name="jx3_b19"/> --> <!-- GND -->
+				<!-- <pin index="60" name="jx3_b20"/> --> <!-- GND -->
+				<!-- <pin index="61" name="jx3_b21"/> --> <!-- GND -->
+				<!-- <pin index="62" name="jx3_b22"/> --> <!-- GND -->
+				<pin index="63" name="jx3_b23"/> <!-- GTYP_104_RX2_P -->
+				<pin index="64" name="jx3_b24"/> <!-- GTYP_104_RX2_N -->
+				<!-- <pin index="65" name="jx3_b25"/> --> <!-- GND -->
+				<!-- <pin index="66" name="jx3_b26"/> --> <!-- GND -->
+				<!-- <pin index="67" name="jx3_b27"/> --> <!-- GND -->
+				<!-- <pin index="68" name="jx3_b28"/> --> <!-- GND -->
+				<pin index="69" name="jx3_b29"/> <!-- XPIO_700_L11_P -->
+				<pin index="70" name="jx3_b30"/> <!-- XPIO_700_L11_N -->
+				<!-- <pin index="71" name="jx3_b31"/> --> <!-- GND -->
+				<!-- <pin index="72" name="jx3_b32"/> --> <!-- GND -->
+				<!-- <pin index="73" name="jx3_b33"/> --> <!-- GND -->
+				<!-- <pin index="74" name="jx3_b34"/> --> <!-- GND -->
+				<pin index="75" name="jx3_b35"/> <!-- XPIO_700_L2_P -->
+				<pin index="76" name="jx3_b36"/> <!-- XPIO_700_L2_N -->
+				<!-- <pin index="77" name="jx3_b37"/> --> <!-- GND -->
+				<!-- <pin index="78" name="jx3_b38"/> --> <!-- +1V8 -->
+				<!-- <pin index="79" name="jx3_b39"/> --> <!-- GND -->
+				<!-- <pin index="80" name="jx3_b40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="81" name="jx3_c1"/> --> <!-- +1V2 -->
+				<!-- <pin index="82" name="jx3_c2"/> --> <!-- GND -->
+				<!-- <pin index="83" name="jx3_c3"/> --> <!-- GND -->
+				<!-- <pin index="84" name="jx3_c4"/> --> <!-- GND -->
+				<!-- <pin index="85" name="jx3_c5"/> --> <!-- GND -->
+				<!-- <pin index="86" name="jx3_c6"/> --> <!-- GND -->
+				<pin index="87" name="jx3_c7"/> <!-- GTYP_104_TX0_P -->
+				<pin index="88" name="jx3_c8"/> <!-- GTYP_104_TX0_N -->
+				<!-- <pin index="89" name="jx3_c9"/> --> <!-- GND -->
+				<!-- <pin index="90" name="jx3_c10"/> --> <!-- GND -->
+				<!-- <pin index="91" name="jx3_c11"/> --> <!-- GND -->
+				<!-- <pin index="92" name="jx3_c12"/> --> <!-- GND -->
+				<!-- <pin index="93" name="jx3_c13"/> --> <!-- GND -->
+				<pin index="94" name="jx3_c14"/> <!-- GTYP_104_TX2_P -->
+				<pin index="95" name="jx3_c15"/> <!-- GTYP_104_TX2_N -->
+				<!-- <pin index="96" name="jx3_c16"/> --> <!-- GND -->
+				<!-- <pin index="97" name="jx3_c17"/> --> <!-- GND -->
+				<!-- <pin index="98" name="jx3_c18"/> --> <!-- GND -->
+				<!-- <pin index="99" name="jx3_c19"/> --> <!-- GND -->
+				<pin index="100" name="jx3_c20"/> <!-- GTYP_104_RX3_P -->
+				<pin index="101" name="jx3_c21"/> <!-- GTYP_104_RX3_N -->
+				<!-- <pin index="102" name="jx3_c22"/> --> <!-- GND -->
+				<!-- <pin index="103" name="jx3_c23"/> --> <!-- GND -->
+				<!-- <pin index="104" name="jx3_c24"/> --> <!-- GND -->
+				<!-- <pin index="105" name="jx3_c25"/> --> <!-- GND -->
+				<pin index="106" name="jx3_c26"/> <!-- XPIO_700_L12_P -->
+				<pin index="107" name="jx3_c27"/> <!-- XPIO_700_L12_N -->
+				<!-- <pin index="108" name="jx3_c28"/> --> <!-- GND -->
+				<!-- <pin index="109" name="jx3_c29"/> --> <!-- GND -->
+				<!-- <pin index="110" name="jx3_c30"/> --> <!-- GND -->
+				<!-- <pin index="111" name="jx3_c31"/> --> <!-- GND -->
+				<pin index="112" name="jx3_c32"/> <!-- XPIO_700_L3_P -->
+				<pin index="113" name="jx3_c33"/> <!-- XPIO_700_L3_N -->
+				<!-- <pin index="114" name="jx3_c34"/> --> <!-- GND -->
+				<!-- <pin index="115" name="jx3_c35"/> --> <!-- GND -->
+				<!-- <pin index="116" name="jx3_c36"/> --> <!-- GND -->
+				<!-- <pin index="117" name="jx3_c37"/> --> <!-- GND -->
+				<!-- <pin index="118" name="jx3_c38"/> --> <!-- +1V8 -->
+				<!-- <pin index="119" name="jx3_c39"/> --> <!-- GND -->
+				<!-- <pin index="120" name="jx3_c40"/> --> <!-- +1V8 -->
+				
+				<!-- <pin index="121" name="jx3_d1"/> --> <!-- +1V2 -->
+				<!-- <pin index="122" name="jx3_d2"/> --> <!-- GND -->
+				<!-- <pin index="123" name="jx3_d3"/> --> <!-- GND -->
+				<!-- <pin index="124" name="jx3_d4"/> --> <!-- GND -->
+				<!-- <pin index="125" name="jx3_d5"/> --> <!-- GND -->
+				<!-- <pin index="126" name="jx3_d6"/> --> <!-- GND -->
+				<!-- <pin index="127" name="jx3_d7"/> --> <!-- GND -->
+				<!-- <pin index="128" name="jx3_d8"/> --> <!-- GND -->
+				<!-- <pin index="129" name="jx3_d9"/> --> <!-- GND -->
+				<!-- <pin index="130" name="jx3_d10"/> --> <!-- GND -->
+				<!-- <pin index="131" name="jx3_d11"/> --> <!-- GND -->
+				<!-- <pin index="132" name="jx3_d12"/> --> <!-- GND -->
+				<!-- <pin index="133" name="jx3_d13"/> --> <!-- GND -->
+				<!-- <pin index="134" name="jx3_d14"/> --> <!-- GND -->
+				<!-- <pin index="135" name="jx3_d15"/> --> <!-- GND -->
+				<!-- <pin index="136" name="jx3_d16"/> --> <!-- GND -->
+				<pin index="137" name="jx3_d17"/> <!-- GTYP_104_RX1_P -->
+				<pin index="138" name="jx3_d18"/> <!-- GTYP_104_RX1_N -->
+				<!-- <pin index="139" name="jx3_d19"/> --> <!-- GND -->
+				<!-- <pin index="140" name="jx3_d20"/> --> <!-- GND -->
+				<!-- <pin index="141" name="jx3_d21"/> --> <!-- GND -->
+				<!-- <pin index="142" name="jx3_d22"/> --> <!-- GND -->
+				<pin index="143" name="jx3_d23"/> <!-- XPIO_700_L13_P -->
+				<pin index="144" name="jx3_d24"/> <!-- XPIO_700_L13_N -->
+				<!-- <pin index="145" name="jx3_d25"/> --> <!-- GND -->
+				<!-- <pin index="146" name="jx3_d26"/> --> <!-- GND -->
+				<!-- <pin index="147" name="jx3_d27"/> --> <!-- GND -->
+				<!-- <pin index="148" name="jx3_d28"/> --> <!-- GND -->
+				<pin index="149" name="jx3_d29"/> <!-- XPIO_700_L4_P -->
+				<pin index="150" name="jx3_d30"/> <!-- XPIO_700_L4_N -->
+				<!-- <pin index="151" name="jx3_d31"/> --> <!-- GND -->
+				<!-- <pin index="152" name="jx3_d32"/> --> <!-- GND -->
+				<!-- <pin index="153" name="jx3_d33"/> --> <!-- GND -->
+				<!-- <pin index="154" name="jx3_d34"/> --> <!-- GND -->
+				<pin index="155" name="jx3_d35"/> <!-- XPIO_700_L5_P -->
+				<pin index="156" name="jx3_d36"/> <!-- XPIO_700_L5_N -->
+				<!-- <pin index="157" name="jx3_d37"/> --> <!-- GND -->
+				<!-- <pin index="158" name="jx3_d38"/> --> <!-- +1V8 -->
+				<!-- <pin index="159" name="jx3_d39"/> --> <!-- GND -->
+				<!-- <pin index="160" name="jx3_d40"/> --> <!-- +1V8 -->
+			</pins>
+		</component>
+		<component name="part0" display_name="xcve2302 FPGA" type="fpga" part_name="xcve2302-sfva784-1LP-e-S" pin_map_file="part0_pins.xml" vendor="avnet" spec_url="http://avnet.me/ve2302_iocc">
+			<description>XCVE2302 FPGA</description>
+			<interfaces>
+				<interface mode="master" name="ps_pmc_fixed_io" type="xilinx.com:interface:fixed_io_rtl:1.0" of_component="ps_pmc_fixed_io" preset_proc="ps_pmc_fixed_io_preset">
+					<parameters>
+						<parameter name="presets_special_handling"/>
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="versal_cips" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="dummy" physical_port="dummy" dir="out"/>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="ch0_lpddr4_trip1" type="xilinx.com:interface:lpddr4_rtl:1.0" of_component="LPDDR4_Controller0" preset_proc="LPDDR4_Controller0_preset">
+					<description>LPDDR4 board interface, it can use AXI_NoC IP for connection.</description>
+					<parameters>
+						<parameter name="TYPE" value="CH0_LPDDR4" />
+						<parameter name="presets_special_handling" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_noc" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DQ_A" physical_port="lpddr4_dq_a" dir="inout" left="15" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dq0" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dq1" />
+								<pin_map port_index="2" component_pin="lpddr4_0_dq2" />
+								<pin_map port_index="3" component_pin="lpddr4_0_dq3" />
+								<pin_map port_index="4" component_pin="lpddr4_0_dq4" />
+								<pin_map port_index="5" component_pin="lpddr4_0_dq5" />
+								<pin_map port_index="6" component_pin="lpddr4_0_dq6" />
+								<pin_map port_index="7" component_pin="lpddr4_0_dq7" />
+								<pin_map port_index="8" component_pin="lpddr4_0_dq8" />
+								<pin_map port_index="9" component_pin="lpddr4_0_dq9" />
+								<pin_map port_index="10" component_pin="lpddr4_0_dq10" />
+								<pin_map port_index="11" component_pin="lpddr4_0_dq11" />
+								<pin_map port_index="12" component_pin="lpddr4_0_dq12" />
+								<pin_map port_index="13" component_pin="lpddr4_0_dq13" />
+								<pin_map port_index="14" component_pin="lpddr4_0_dq14" />
+								<pin_map port_index="15" component_pin="lpddr4_0_dq15" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQ_B" physical_port="lpddr4_dq_b" dir="inout" left="15" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dq16" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dq17" />
+								<pin_map port_index="2" component_pin="lpddr4_0_dq18" />
+								<pin_map port_index="3" component_pin="lpddr4_0_dq19" />
+								<pin_map port_index="4" component_pin="lpddr4_0_dq20" />
+								<pin_map port_index="5" component_pin="lpddr4_0_dq21" />
+								<pin_map port_index="6" component_pin="lpddr4_0_dq22" />
+								<pin_map port_index="7" component_pin="lpddr4_0_dq23" />
+								<pin_map port_index="8" component_pin="lpddr4_0_dq24" />
+								<pin_map port_index="9" component_pin="lpddr4_0_dq25" />
+								<pin_map port_index="10" component_pin="lpddr4_0_dq26" />
+								<pin_map port_index="11" component_pin="lpddr4_0_dq27" />
+								<pin_map port_index="12" component_pin="lpddr4_0_dq28" />
+								<pin_map port_index="13" component_pin="lpddr4_0_dq29" />
+								<pin_map port_index="14" component_pin="lpddr4_0_dq30" />
+								<pin_map port_index="15" component_pin="lpddr4_0_dq31" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_T_A" physical_port="lpddr4_dqs_t_a" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dqs0_t" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dqs1_t" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_T_B" physical_port="lpddr4_dqs_t_b" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dqs2_t" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dqs3_t" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_C_A" physical_port="lpddr4_dqs_c_a" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dqs0_c" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dqs1_c" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_C_B" physical_port="lpddr4_dqs_c_b" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dqs2_c" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dqs3_c" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CA_A" physical_port="lpddr4_ca_a" dir="out" left="5" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_ca_a0" />
+								<pin_map port_index="1" component_pin="lpddr4_0_ca_a1" />
+								<pin_map port_index="2" component_pin="lpddr4_0_ca_a2" />
+								<pin_map port_index="3" component_pin="lpddr4_0_ca_a3" />
+								<pin_map port_index="4" component_pin="lpddr4_0_ca_a4" />
+								<pin_map port_index="5" component_pin="lpddr4_0_ca_a5" />
+							</pin_maps>
+						</port_map>
+
+						<port_map logical_port="CS_A" physical_port="lpddr4_cs_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_cs_a0" />
+								<!-- <pin_map port_index="1" component_pin="lpddr4_0_cs_a1"/> -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CK_T_A" physical_port="lpddr4_ck_t_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_cka_t" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CK_C_A" physical_port="lpddr4_ck_c_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_cka_c" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CKE_A" physical_port="lpddr4_cke_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_cke_a" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DMI_A" physical_port="lpddr4_dmi_a" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dmi0" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dmi1" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DMI_B" physical_port="lpddr4_dmi_b" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_dmi2" />
+								<pin_map port_index="1" component_pin="lpddr4_0_dmi3" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="RESET_N" physical_port="lpddr4_reset_n" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_0_reset_n" />
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="ch1_lpddr4_trip1" type="xilinx.com:interface:lpddr4_rtl:1.0" of_component="LPDDR4_Controller0" preset_proc="LPDDR4_Controller0_preset">
+					<description>LPDDR4 board interface, it can use AXI_NoC IP for connection.</description>
+					<parameters>
+						<parameter name="TYPE" value="CH1_LPDDR4" />
+						<parameter name="presets_special_handling" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_noc" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DQ_A" physical_port="lpddr4_ch1_dq_a" dir="inout" left="15" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dq0" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dq1" />
+								<pin_map port_index="2" component_pin="lpddr4_1_dq2" />
+								<pin_map port_index="3" component_pin="lpddr4_1_dq3" />
+								<pin_map port_index="4" component_pin="lpddr4_1_dq4" />
+								<pin_map port_index="5" component_pin="lpddr4_1_dq5" />
+								<pin_map port_index="6" component_pin="lpddr4_1_dq6" />
+								<pin_map port_index="7" component_pin="lpddr4_1_dq7" />
+								<pin_map port_index="8" component_pin="lpddr4_1_dq8" />
+								<pin_map port_index="9" component_pin="lpddr4_1_dq9" />
+								<pin_map port_index="10" component_pin="lpddr4_1_dq10" />
+								<pin_map port_index="11" component_pin="lpddr4_1_dq11" />
+								<pin_map port_index="12" component_pin="lpddr4_1_dq12" />
+								<pin_map port_index="13" component_pin="lpddr4_1_dq13" />
+								<pin_map port_index="14" component_pin="lpddr4_1_dq14" />
+								<pin_map port_index="15" component_pin="lpddr4_1_dq15" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQ_B" physical_port="lpddr4_ch1_dq_b" dir="inout" left="15" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dq16" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dq17" />
+								<pin_map port_index="2" component_pin="lpddr4_1_dq18" />
+								<pin_map port_index="3" component_pin="lpddr4_1_dq19" />
+								<pin_map port_index="4" component_pin="lpddr4_1_dq20" />
+								<pin_map port_index="5" component_pin="lpddr4_1_dq21" />
+								<pin_map port_index="6" component_pin="lpddr4_1_dq22" />
+								<pin_map port_index="7" component_pin="lpddr4_1_dq23" />
+								<pin_map port_index="8" component_pin="lpddr4_1_dq24" />
+								<pin_map port_index="9" component_pin="lpddr4_1_dq25" />
+								<pin_map port_index="10" component_pin="lpddr4_1_dq26" />
+								<pin_map port_index="11" component_pin="lpddr4_1_dq27" />
+								<pin_map port_index="12" component_pin="lpddr4_1_dq28" />
+								<pin_map port_index="13" component_pin="lpddr4_1_dq29" />
+								<pin_map port_index="14" component_pin="lpddr4_1_dq30" />
+								<pin_map port_index="15" component_pin="lpddr4_1_dq31" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_T_A" physical_port="lpddr4_ch1_dqs_t_a" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dqs0_t" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dqs1_t" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_T_B" physical_port="lpddr4_ch1_dqs_t_b" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dqs2_t" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dqs3_t" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_C_A" physical_port="lpddr4_ch1_dqs_c_a" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dqs0_c" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dqs1_c" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DQS_C_B" physical_port="lpddr4_ch1_dqs_c_b" dir="inout" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dqs2_c" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dqs3_c" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CA_A" physical_port="lpddr4_ch1_ca_a" dir="out" left="5" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_ca_a0" />
+								<pin_map port_index="1" component_pin="lpddr4_1_ca_a1" />
+								<pin_map port_index="2" component_pin="lpddr4_1_ca_a2" />
+								<pin_map port_index="3" component_pin="lpddr4_1_ca_a3" />
+								<pin_map port_index="4" component_pin="lpddr4_1_ca_a4" />
+								<pin_map port_index="5" component_pin="lpddr4_1_ca_a5" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CS_A" physical_port="lpddr4_ch1_cs_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_cs_a0" />
+								<!-- <pin_map port_index="1" component_pin="lpddr4_1_cs_a1"/> -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CK_T_A" physical_port="lpddr4_ch1_ck_t_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_cka_t" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CK_C_A" physical_port="lpddr4_ch1_ck_c_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_cka_c" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CKE_A" physical_port="lpddr4_ch1_cke_a" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_cke_a" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DMI_A" physical_port="lpddr4_ch1_dmi_a" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dmi0" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dmi1" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DMI_B" physical_port="lpddr4_ch1_dmi_b" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_dmi2" />
+								<pin_map port_index="1" component_pin="lpddr4_1_dmi3" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="RESET_N" physical_port="lpddr4_ch1_reset_n" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_1_reset_n" />
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+
+				<interface mode="slave" name="lpddr4_clk1" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="LPDDR4_Controller0" preset_proc="sysclk0_preset">
+					<parameters>
+						<parameter name="frequency" value="200000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_noc" order="0" />
+						<preferred_ip vendor="xilinx.com" library="ip" name="clk_wizard" order="1" />
+						<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="2" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_P" physical_port="lpddr4_clk1_p" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_clk1_p" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_N" physical_port="lpddr4_clk1_n" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="lpddr4_clk1_n" />
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+			</interfaces>
+		</component>
+		
+		<!-- <component name="ps_pmc_fixed_io" display_name="PS8 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>	 -->
+		<component name="ps_pmc_fixed_io" display_name="PS-PMC Fixed IO" type="chip" sub_type="fixed_io" major_group="MIO interface" part_name="Versal CIPS" vendor="Xilinx">
+			<description>Versal CIPS component</description>
+			<component_modes>
+				<component_mode name="ps_pmc_fixed_io" display_name="ps_pmc_fixed_io">
+					<interfaces>
+						<interface name="ps_pmc_fixed_io" />
+					</interfaces>
+				</component_mode>
+			</component_modes>
+		</component>
+		
+		<component name="LPDDR4_Controller0" display_name="LPDDR4_Controller0" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT53E512M32D1ZW-046" vendor="Micron" spec_url="https://www.micron.com/">
+			<description>16GBIT LPDDR4 memory</description>
+			<parameters>
+				<parameter name="ddr_type" value="LPDDR4" />
+				<parameter name="size" value="16GB" />
+			</parameters>
+			<component_modes>
+				<component_mode name="LPDDR4_Controller0" display_name="LPDDR4_Controller0">
+					<interfaces>
+						<interface name="ch0_lpddr4" />
+						<interface name="ch1_lpddr4" optional="true" />
+						<interface name="lpddr4_clk1" optional="true" />
+					</interfaces>
+				</component_mode>
+			</component_modes>
+		</component>
+		
+	</components>
+	
+	<jtag_chains>
+		<jtag_chain name="chain1">
+			<position name="0" component="part0" />
+		</jtag_chain>
+	</jtag_chains>
+
+	<connections>
+		<connection name="part0_jx1_connector" component1="part0" component2="jx1_connector">
+			<!-- <connection_map name="part0_jx1_a1" typical_delay="5" c1_st_index="1" c1_end_index="1" c2_st_index="1" c2_end_index="1"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a2" typical_delay="5" c1_st_index="2" c1_end_index="2" c2_st_index="2" c2_end_index="2"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a3" typical_delay="5" c1_st_index="3" c1_end_index="3" c2_st_index="3" c2_end_index="3"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a4" typical_delay="5" c1_st_index="4" c1_end_index="4" c2_st_index="4" c2_end_index="4"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a5" typical_delay="5" c1_st_index="5" c1_end_index="5" c2_st_index="5" c2_end_index="5"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a6" typical_delay="5" c1_st_index="6" c1_end_index="6" c2_st_index="6" c2_end_index="6"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a7" typical_delay="5" c1_st_index="7" c1_end_index="7" c2_st_index="7" c2_end_index="7"/> <!-- HDIO_302_L10_P -->
+			<connection_map name="part0_jx1_a8" typical_delay="5" c1_st_index="8" c1_end_index="8" c2_st_index="8" c2_end_index="8"/> <!-- HDIO_302_L10_N -->
+			<!-- <connection_map name="part0_jx1_a9" typical_delay="5" c1_st_index="9" c1_end_index="9" c2_st_index="9" c2_end_index="9"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a10" typical_delay="5" c1_st_index="10" c1_end_index="10" c2_st_index="10" c2_end_index="10"/> <!-- HDIO_302_L1_P -->
+			<connection_map name="part0_jx1_a11" typical_delay="5" c1_st_index="11" c1_end_index="11" c2_st_index="11" c2_end_index="11"/> <!-- HDIO_302_L1_N -->
+			<!-- <connection_map name="part0_jx1_a12" typical_delay="5" c1_st_index="12" c1_end_index="12" c2_st_index="12" c2_end_index="12"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a13" typical_delay="5" c1_st_index="13" c1_end_index="13" c2_st_index="13" c2_end_index="13"/> <!-- HDIO_302_L3_P -->
+			<connection_map name="part0_jx1_a14" typical_delay="5" c1_st_index="14" c1_end_index="14" c2_st_index="14" c2_end_index="14"/> <!-- HDIO_302_L3_N -->
+			<!-- <connection_map name="part0_jx1_a15" typical_delay="5" c1_st_index="15" c1_end_index="15" c2_st_index="15" c2_end_index="15"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a16" typical_delay="5" c1_st_index="16" c1_end_index="16" c2_st_index="16" c2_end_index="16"/> <!-- LPD_MIO23 -->
+			<connection_map name="part0_jx1_a17" typical_delay="5" c1_st_index="17" c1_end_index="17" c2_st_index="17" c2_end_index="17"/> <!-- LPD_MIO22 -->
+			<!-- <connection_map name="part0_jx1_a18" typical_delay="5" c1_st_index="18" c1_end_index="18" c2_st_index="18" c2_end_index="18"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a19" typical_delay="5" c1_st_index="19" c1_end_index="19" c2_st_index="19" c2_end_index="19"/> <!-- PMC_MIO0 -->
+			<connection_map name="part0_jx1_a20" typical_delay="5" c1_st_index="20" c1_end_index="20" c2_st_index="20" c2_end_index="20"/> <!-- PMC_MIO1 -->
+			<!-- <connection_map name="part0_jx1_a21" typical_delay="5" c1_st_index="21" c1_end_index="21" c2_st_index="21" c2_end_index="21"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a22" typical_delay="5" c1_st_index="22" c1_end_index="22" c2_st_index="22" c2_end_index="22"/> <!-- PMC_MIO2 -->
+			<connection_map name="part0_jx1_a23" typical_delay="5" c1_st_index="23" c1_end_index="23" c2_st_index="23" c2_end_index="23"/> <!-- PMC_MIO3 -->
+			<!-- <connection_map name="part0_jx1_a24" typical_delay="5" c1_st_index="24" c1_end_index="24" c2_st_index="24" c2_end_index="24"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a25" typical_delay="5" c1_st_index="25" c1_end_index="25" c2_st_index="25" c2_end_index="25"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a26" typical_delay="5" c1_st_index="26" c1_end_index="26" c2_st_index="26" c2_end_index="26"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a27" typical_delay="5" c1_st_index="27" c1_end_index="27" c2_st_index="27" c2_end_index="27"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a28" typical_delay="5" c1_st_index="28" c1_end_index="28" c2_st_index="28" c2_end_index="28"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a29" typical_delay="5" c1_st_index="29" c1_end_index="29" c2_st_index="29" c2_end_index="29"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a30" typical_delay="5" c1_st_index="30" c1_end_index="30" c2_st_index="30" c2_end_index="30"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a31" typical_delay="5" c1_st_index="31" c1_end_index="31" c2_st_index="31" c2_end_index="31"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_a32" typical_delay="5" c1_st_index="32" c1_end_index="32" c2_st_index="32" c2_end_index="32"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_a33" typical_delay="5" c1_st_index="33" c1_end_index="33" c2_st_index="33" c2_end_index="33"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_a34" typical_delay="5" c1_st_index="34" c1_end_index="34" c2_st_index="34" c2_end_index="34"/> --> <!-- +VCCINT -->
+			<connection_map name="part0_jx1_a35" typical_delay="5" c1_st_index="35" c1_end_index="35" c2_st_index="35" c2_end_index="35"/> <!-- PMC_MIO_WAKE_UP -->
+			<!-- <connection_map name="part0_jx1_a36" typical_delay="5" c1_st_index="36" c1_end_index="36" c2_st_index="36" c2_end_index="36"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_a37" typical_delay="5" c1_st_index="37" c1_end_index="37" c2_st_index="37" c2_end_index="37"/> <!-- JTAG_TCK -->
+			<!-- <connection_map name="part0_jx1_a38" typical_delay="5" c1_st_index="38" c1_end_index="38" c2_st_index="38" c2_end_index="38"/> --> <!-- +1V8 -->
+			<!-- <connection_map name="part0_jx1_a39" typical_delay="5" c1_st_index="39" c1_end_index="39" c2_st_index="39" c2_end_index="39"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_a40" typical_delay="5" c1_st_index="40" c1_end_index="40" c2_st_index="40" c2_end_index="40"/> --> <!-- +1V8 -->
+			
+			<!-- <connection_map name="part0_jx1_b1" typical_delay="5" c1_st_index="41" c1_end_index="41" c2_st_index="41" c2_end_index="41"/> --> <!-- +1V2 -->
+			<!-- <connection_map name="part0_jx1_b2" typical_delay="5" c1_st_index="42" c1_end_index="42" c2_st_index="42" c2_end_index="42"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b3" typical_delay="5" c1_st_index="43" c1_end_index="43" c2_st_index="43" c2_end_index="43"/> --> <!-- +VCCINT_IO -->
+			<!-- <connection_map name="part0_jx1_b4" typical_delay="5" c1_st_index="44" c1_end_index="44" c2_st_index="44" c2_end_index="44"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b5" typical_delay="5" c1_st_index="45" c1_end_index="45" c2_st_index="45" c2_end_index="45"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_b6" typical_delay="5" c1_st_index="46" c1_end_index="46" c2_st_index="46" c2_end_index="46"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b7" typical_delay="5" c1_st_index="47" c1_end_index="47" c2_st_index="47" c2_end_index="47"/> <!-- HDIO_302_L9_P -->
+			<connection_map name="part0_jx1_b8" typical_delay="5" c1_st_index="48" c1_end_index="48" c2_st_index="48" c2_end_index="48"/> <!-- HDIO_302_L9_N -->
+			<!-- <connection_map name="part0_jx1_b9" typical_delay="5" c1_st_index="49" c1_end_index="49" c2_st_index="49" c2_end_index="49"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b10" typical_delay="5" c1_st_index="50" c1_end_index="50" c2_st_index="50" c2_end_index="50"/> <!-- HDIO_302_L2_P -->
+			<connection_map name="part0_jx1_b11" typical_delay="5" c1_st_index="51" c1_end_index="51" c2_st_index="51" c2_end_index="51"/> <!-- HDIO_302_L2_N -->
+			<!-- <connection_map name="part0_jx1_b12" typical_delay="5" c1_st_index="52" c1_end_index="52" c2_st_index="52" c2_end_index="52"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b13" typical_delay="5" c1_st_index="53" c1_end_index="53" c2_st_index="53" c2_end_index="53"/> <!-- HDIO_302_L4_P -->
+			<connection_map name="part0_jx1_b14" typical_delay="5" c1_st_index="54" c1_end_index="54" c2_st_index="54" c2_end_index="54"/> <!-- HDIO_302_L4_N -->
+			<!-- <connection_map name="part0_jx1_b15" typical_delay="5" c1_st_index="55" c1_end_index="55" c2_st_index="55" c2_end_index="55"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b16" typical_delay="5" c1_st_index="56" c1_end_index="56" c2_st_index="56" c2_end_index="56"/> <!-- LPD_MIO27 -->
+			<connection_map name="part0_jx1_b17" typical_delay="5" c1_st_index="57" c1_end_index="57" c2_st_index="57" c2_end_index="57"/> <!-- LPD_MIO26 -->
+			<!-- <connection_map name="part0_jx1_b18" typical_delay="5" c1_st_index="58" c1_end_index="58" c2_st_index="58" c2_end_index="58"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b19" typical_delay="5" c1_st_index="59" c1_end_index="59" c2_st_index="59" c2_end_index="59"/> <!-- PMC_MIO4 -->
+			<connection_map name="part0_jx1_b20" typical_delay="5" c1_st_index="60" c1_end_index="60" c2_st_index="60" c2_end_index="60"/> <!-- PMC_MIO5 -->
+			<!-- <connection_map name="part0_jx1_b21" typical_delay="5" c1_st_index="61" c1_end_index="61" c2_st_index="61" c2_end_index="61"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b22" typical_delay="5" c1_st_index="62" c1_end_index="62" c2_st_index="62" c2_end_index="62"/> <!-- PMC_MIO6 -->
+			<connection_map name="part0_jx1_b23" typical_delay="5" c1_st_index="63" c1_end_index="63" c2_st_index="63" c2_end_index="63"/> <!-- PMC_MIO7 -->
+			<!-- <connection_map name="part0_jx1_b24" typical_delay="5" c1_st_index="64" c1_end_index="64" c2_st_index="64" c2_end_index="64"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b25" typical_delay="5" c1_st_index="65" c1_end_index="65" c2_st_index="65" c2_end_index="65"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b26" typical_delay="5" c1_st_index="66" c1_end_index="66" c2_st_index="66" c2_end_index="66"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b27" typical_delay="5" c1_st_index="67" c1_end_index="67" c2_st_index="67" c2_end_index="67"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b28" typical_delay="5" c1_st_index="68" c1_end_index="68" c2_st_index="68" c2_end_index="68"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b29" typical_delay="5" c1_st_index="69" c1_end_index="69" c2_st_index="69" c2_end_index="69"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b30" typical_delay="5" c1_st_index="70" c1_end_index="70" c2_st_index="70" c2_end_index="70"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b31" typical_delay="5" c1_st_index="71" c1_end_index="71" c2_st_index="71" c2_end_index="71"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_b32" typical_delay="5" c1_st_index="72" c1_end_index="72" c2_st_index="72" c2_end_index="72"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_b33" typical_delay="5" c1_st_index="73" c1_end_index="73" c2_st_index="73" c2_end_index="73"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_b34" typical_delay="5" c1_st_index="74" c1_end_index="74" c2_st_index="74" c2_end_index="74"/> --> <!-- +VCCINT -->
+			<connection_map name="part0_jx1_b35" typical_delay="5" c1_st_index="75" c1_end_index="75" c2_st_index="75" c2_end_index="75"/> <!-- PMC_MIO_TAMPER_TRIGGER -->
+			<!-- <connection_map name="part0_jx1_b36" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="76" c2_end_index="76"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_b37" typical_delay="5" c1_st_index="77" c1_end_index="77" c2_st_index="77" c2_end_index="77"/> <!-- JTAG_TMS -->
+			<!-- <connection_map name="part0_jx1_b38" typical_delay="5" c1_st_index="78" c1_end_index="78" c2_st_index="78" c2_end_index="78"/> --> <!-- +1V8 -->
+			<!-- <connection_map name="part0_jx1_b39" typical_delay="5" c1_st_index="79" c1_end_index="79" c2_st_index="79" c2_end_index="79"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_b40" typical_delay="5" c1_st_index="80" c1_end_index="80" c2_st_index="80" c2_end_index="80"/> --> <!-- +1V8 -->
+			
+			<!-- <connection_map name="part0_jx1_c1" typical_delay="5" c1_st_index="81" c1_end_index="81" c2_st_index="81" c2_end_index="81"/> --> <!-- +1V2 -->
+			<!-- <connection_map name="part0_jx1_c2" typical_delay="5" c1_st_index="82" c1_end_index="82" c2_st_index="82" c2_end_index="82"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_c3" typical_delay="5" c1_st_index="83" c1_end_index="83" c2_st_index="83" c2_end_index="83"/> --> <!-- +VCCINT_IO -->
+			<!-- <connection_map name="part0_jx1_c4" typical_delay="5" c1_st_index="84" c1_end_index="84" c2_st_index="84" c2_end_index="84"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_c5" typical_delay="5" c1_st_index="85" c1_end_index="85" c2_st_index="85" c2_end_index="85"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_c6" typical_delay="5" c1_st_index="86" c1_end_index="86" c2_st_index="86" c2_end_index="86"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c7" typical_delay="5" c1_st_index="87" c1_end_index="87" c2_st_index="87" c2_end_index="87"/> <!-- HDIO_302_L8_P -->
+			<connection_map name="part0_jx1_c8" typical_delay="5" c1_st_index="88" c1_end_index="88" c2_st_index="88" c2_end_index="88"/> <!-- HDIO_302_L8_N -->
+			<!-- <connection_map name="part0_jx1_c9" typical_delay="5" c1_st_index="89" c1_end_index="89" c2_st_index="89" c2_end_index="89"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c10" typical_delay="5" c1_st_index="90" c1_end_index="90" c2_st_index="90" c2_end_index="90"/> <!-- HDIO_302_L5_P -->
+			<connection_map name="part0_jx1_c11" typical_delay="5" c1_st_index="91" c1_end_index="91" c2_st_index="91" c2_end_index="91"/> <!-- HDIO_302_L5_N -->
+			<!-- <connection_map name="part0_jx1_c12" typical_delay="5" c1_st_index="92" c1_end_index="92" c2_st_index="92" c2_end_index="92"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c13" typical_delay="5" c1_st_index="93" c1_end_index="93" c2_st_index="93" c2_end_index="93"/> <!-- HDIO_302_L0_P -->
+			<connection_map name="part0_jx1_c14" typical_delay="5" c1_st_index="94" c1_end_index="94" c2_st_index="94" c2_end_index="94"/> <!-- HDIO_302_L0_N -->
+			<!-- <connection_map name="part0_jx1_c15" typical_delay="5" c1_st_index="95" c1_end_index="95" c2_st_index="95" c2_end_index="95"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c16" typical_delay="5" c1_st_index="96" c1_end_index="96" c2_st_index="96" c2_end_index="96"/> <!-- LPD_MIO31 -->
+			<!-- <connection_map name="part0_jx1_c17" typical_delay="5" c1_st_index="97" c1_end_index="97" c2_st_index="97" c2_end_index="97"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c18" typical_delay="5" c1_st_index="98" c1_end_index="98" c2_st_index="98" c2_end_index="98"/> <!-- LPD_MIO25 -->
+			<connection_map name="part0_jx1_c19" typical_delay="5" c1_st_index="99" c1_end_index="99" c2_st_index="99" c2_end_index="99"/> <!-- LPD_MIO24 -->
+			<!-- <connection_map name="part0_jx1_c20" typical_delay="5" c1_st_index="100" c1_end_index="100" c2_st_index="100" c2_end_index="100"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c21" typical_delay="5" c1_st_index="101" c1_end_index="101" c2_st_index="101" c2_end_index="101"/> <!-- XPIO_706_L12_P -->
+			<connection_map name="part0_jx1_c22" typical_delay="5" c1_st_index="102" c1_end_index="102" c2_st_index="102" c2_end_index="102"/> <!-- XPIO_706_L12_N -->
+			<!-- <connection_map name="part0_jx1_c23" typical_delay="5" c1_st_index="103" c1_end_index="103" c2_st_index="103" c2_end_index="103"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_c24" typical_delay="5" c1_st_index="104" c1_end_index="104" c2_st_index="104" c2_end_index="104"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_c25" typical_delay="5" c1_st_index="105" c1_end_index="105" c2_st_index="105" c2_end_index="105"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c26" typical_delay="5" c1_st_index="106" c1_end_index="106" c2_st_index="106" c2_end_index="106"/> <!-- PMC_MIO8 -->
+			<connection_map name="part0_jx1_c27" typical_delay="5" c1_st_index="107" c1_end_index="107" c2_st_index="107" c2_end_index="107"/> <!-- PMC_MIO9 -->
+			<!-- <connection_map name="part0_jx1_c28" typical_delay="5" c1_st_index="108" c1_end_index="108" c2_st_index="108" c2_end_index="108"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c29" typical_delay="5" c1_st_index="109" c1_end_index="109" c2_st_index="109" c2_end_index="109"/> <!-- PMC_MIO_PS_REF_CLK_P -->
+			<connection_map name="part0_jx1_c30" typical_delay="5" c1_st_index="110" c1_end_index="110" c2_st_index="110" c2_end_index="110"/> <!-- PMC_MIO_PS_REF_CLK_N -->
+			<!-- <connection_map name="part0_jx1_c31" typical_delay="5" c1_st_index="111" c1_end_index="111" c2_st_index="111" c2_end_index="111"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_c32" typical_delay="5" c1_st_index="112" c1_end_index="112" c2_st_index="112" c2_end_index="112"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_c33" typical_delay="5" c1_st_index="113" c1_end_index="113" c2_st_index="113" c2_end_index="113"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_c34" typical_delay="5" c1_st_index="114" c1_end_index="114" c2_st_index="114" c2_end_index="114"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_c35" typical_delay="5" c1_st_index="115" c1_end_index="115" c2_st_index="115" c2_end_index="115"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_c36" typical_delay="5" c1_st_index="116" c1_end_index="116" c2_st_index="116" c2_end_index="116"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_c37" typical_delay="5" c1_st_index="117" c1_end_index="117" c2_st_index="117" c2_end_index="117"/> <!-- JTAG_TDI -->
+			<!-- <connection_map name="part0_jx1_c38" typical_delay="5" c1_st_index="118" c1_end_index="118" c2_st_index="118" c2_end_index="118"/> --> <!-- +1V8 -->
+			<!-- <connection_map name="part0_jx1_c39" typical_delay="5" c1_st_index="119" c1_end_index="119" c2_st_index="119" c2_end_index="119"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_c40" typical_delay="5" c1_st_index="120" c1_end_index="120" c2_st_index="120" c2_end_index="120"/> --> <!-- +1V8 -->
+			
+			<!-- <connection_map name="part0_jx1_d1" typical_delay="5" c1_st_index="121" c1_end_index="121" c2_st_index="121" c2_end_index="121"/> --> <!-- +1V2 -->
+			<!-- <connection_map name="part0_jx1_d2" typical_delay="5" c1_st_index="122" c1_end_index="122" c2_st_index="122" c2_end_index="122"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_d3" typical_delay="5" c1_st_index="123" c1_end_index="123" c2_st_index="123" c2_end_index="123"/> --> <!-- +VCCINT_IO -->
+			<!-- <connection_map name="part0_jx1_d4" typical_delay="5" c1_st_index="124" c1_end_index="124" c2_st_index="124" c2_end_index="124"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_d5" typical_delay="5" c1_st_index="125" c1_end_index="125" c2_st_index="125" c2_end_index="125"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_d6" typical_delay="5" c1_st_index="126" c1_end_index="126" c2_st_index="126" c2_end_index="126"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d7" typical_delay="5" c1_st_index="127" c1_end_index="127" c2_st_index="127" c2_end_index="127"/> <!-- HDIO_302_L7_P -->
+			<connection_map name="part0_jx1_d8" typical_delay="5" c1_st_index="128" c1_end_index="128" c2_st_index="128" c2_end_index="128"/> <!-- HDIO_302_L7_N -->
+			<!-- <connection_map name="part0_jx1_d9" typical_delay="5" c1_st_index="129" c1_end_index="129" c2_st_index="129" c2_end_index="129"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d10" typical_delay="5" c1_st_index="130" c1_end_index="130" c2_st_index="130" c2_end_index="130"/> <!-- HDIO_302_L6_P -->
+			<connection_map name="part0_jx1_d11" typical_delay="5" c1_st_index="131" c1_end_index="131" c2_st_index="131" c2_end_index="131"/> <!-- HDIO_302_L6_N -->
+			<!-- <connection_map name="part0_jx1_d12" typical_delay="5" c1_st_index="132" c1_end_index="132" c2_st_index="132" c2_end_index="132"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d13" typical_delay="5" c1_st_index="133" c1_end_index="133" c2_st_index="133" c2_end_index="133"/> <!-- ERROR_OUT_N -->
+			<connection_map name="part0_jx1_d14" typical_delay="5" c1_st_index="134" c1_end_index="134" c2_st_index="134" c2_end_index="134"/> <!-- SYSCLK_P -->
+			<connection_map name="part0_jx1_d15" typical_delay="5" c1_st_index="135" c1_end_index="135" c2_st_index="135" c2_end_index="135"/> <!-- SYSCLK_N -->
+			<!-- <connection_map name="part0_jx1_d16" typical_delay="5" c1_st_index="136" c1_end_index="136" c2_st_index="136" c2_end_index="136"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d17" typical_delay="5" c1_st_index="137" c1_end_index="137" c2_st_index="137" c2_end_index="137"/> <!-- XPIO_706_L13_P -->
+			<connection_map name="part0_jx1_d18" typical_delay="5" c1_st_index="138" c1_end_index="138" c2_st_index="138" c2_end_index="138"/> <!-- XPIO_706_L13_N -->
+			<!-- <connection_map name="part0_jx1_d19" typical_delay="5" c1_st_index="139" c1_end_index="139" c2_st_index="139" c2_end_index="139"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d20" typical_delay="5" c1_st_index="140" c1_end_index="140" c2_st_index="140" c2_end_index="140"/> <!-- XPIO_706_L14_P -->
+			<connection_map name="part0_jx1_d21" typical_delay="5" c1_st_index="141" c1_end_index="141" c2_st_index="141" c2_end_index="141"/> <!-- XPIO_706_L14_N -->
+			<!-- <connection_map name="part0_jx1_d22" typical_delay="5" c1_st_index="142" c1_end_index="142" c2_st_index="142" c2_end_index="142"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d23" typical_delay="5" c1_st_index="143" c1_end_index="143" c2_st_index="143" c2_end_index="143"/> <!-- PMC_MIO10 -->
+			<connection_map name="part0_jx1_d24" typical_delay="5" c1_st_index="144" c1_end_index="144" c2_st_index="144" c2_end_index="144"/> <!-- PMC_MIO11 -->
+			<!-- <connection_map name="part0_jx1_d25" typical_delay="5" c1_st_index="145" c1_end_index="145" c2_st_index="145" c2_end_index="145"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d26" typical_delay="5" c1_st_index="146" c1_end_index="146" c2_st_index="146" c2_end_index="146"/> <!-- PMC_MIO12 -->
+			<!-- <connection_map name="part0_jx1_d27" typical_delay="5" c1_st_index="147" c1_end_index="147" c2_st_index="147" c2_end_index="147"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d28" typical_delay="5" c1_st_index="148" c1_end_index="148" c2_st_index="148" c2_end_index="148"/> <!-- DONE_OUT -->
+			<!-- <connection_map name="part0_jx1_d29" typical_delay="5" c1_st_index="149" c1_end_index="149" c2_st_index="149" c2_end_index="149"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_d30" typical_delay="5" c1_st_index="150" c1_end_index="150" c2_st_index="150" c2_end_index="150"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_d31" typical_delay="5" c1_st_index="151" c1_end_index="151" c2_st_index="151" c2_end_index="151"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_d32" typical_delay="5" c1_st_index="152" c1_end_index="152" c2_st_index="152" c2_end_index="152"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_d33" typical_delay="5" c1_st_index="153" c1_end_index="153" c2_st_index="153" c2_end_index="153"/> --> <!-- +VCCINT -->
+			<!-- <connection_map name="part0_jx1_d34" typical_delay="5" c1_st_index="154" c1_end_index="154" c2_st_index="154" c2_end_index="154"/> --> <!-- +VCCINT -->
+			<connection_map name="part0_jx1_d35" typical_delay="5" c1_st_index="155" c1_end_index="155" c2_st_index="155" c2_end_index="155"/> <!-- SYSMON_DXP -->
+			<!-- <connection_map name="part0_jx1_d36" typical_delay="5" c1_st_index="156" c1_end_index="156" c2_st_index="156" c2_end_index="156"/> --> <!-- GND -->
+			<connection_map name="part0_jx1_d37" typical_delay="5" c1_st_index="157" c1_end_index="157" c2_st_index="157" c2_end_index="157"/> <!-- JTAG_TDO -->
+			<!-- <connection_map name="part0_jx1_d38" typical_delay="5" c1_st_index="158" c1_end_index="158" c2_st_index="158" c2_end_index="158"/> --> <!-- +1V8 -->
+			<!-- <connection_map name="part0_jx1_d39" typical_delay="5" c1_st_index="159" c1_end_index="159" c2_st_index="159" c2_end_index="159"/> --> <!-- GND -->
+			<!-- <connection_map name="part0_jx1_d40" typical_delay="5" c1_st_index="160" c1_end_index="160" c2_st_index="160" c2_end_index="160"/> --> <!-- +1V8 -->
+		</connection>
+		
+		<connection name="part0_jx2_connector" component1="part0" component2="jx2_connector">
+		    <!-- <connection_map name="part0_jx2_a1" typical_delay="5" c1_st_index="161" c1_end_index="161" c2_st_index="1" c2_end_index="1"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a2" typical_delay="5" c1_st_index="162" c1_end_index="162" c2_st_index="2" c2_end_index="2"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_a3" typical_delay="5" c1_st_index="163" c1_end_index="163" c2_st_index="3" c2_end_index="3"/> <!-- HDIO_503_L10_P -->
+		    <connection_map name="part0_jx2_a4" typical_delay="5" c1_st_index="164" c1_end_index="164" c2_st_index="4" c2_end_index="4"/> <!-- HDIO_503_L10_N -->
+		    <!-- <connection_map name="part0_jx2_a5" typical_delay="5" c1_st_index="165" c1_end_index="165" c2_st_index="5" c2_end_index="5"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_a6" typical_delay="5" c1_st_index="166" c1_end_index="166" c2_st_index="6" c2_end_index="6"/> <!-- HDIO_503_L1_P -->
+		    <connection_map name="part0_jx2_a7" typical_delay="5" c1_st_index="167" c1_end_index="167" c2_st_index="7" c2_end_index="7"/> <!-- HDIO_503_L1_N -->
+		    <!-- <connection_map name="part0_jx2_a8" typical_delay="5" c1_st_index="168" c1_end_index="168" c2_st_index="8" c2_end_index="8"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_a9" typical_delay="5" c1_st_index="169" c1_end_index="169" c2_st_index="9" c2_end_index="9"/> <!-- HDIO_503_L3_P -->
+		    <connection_map name="part0_jx2_a10" typical_delay="5" c1_st_index="170" c1_end_index="170" c2_st_index="10" c2_end_index="10"/> <!-- HDIO_503_L3_N -->
+		    <!-- <connection_map name="part0_jx2_a11" typical_delay="5" c1_st_index="171" c1_end_index="171" c2_st_index="11" c2_end_index="11"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_a12" typical_delay="5" c1_st_index="172" c1_end_index="172" c2_st_index="12" c2_end_index="12"/> <!-- HDIO_503_L12_P -->
+		    <connection_map name="part0_jx2_a13" typical_delay="5" c1_st_index="173" c1_end_index="173" c2_st_index="13" c2_end_index="13"/> <!-- HDIO_503_L12_N -->
+		    <!-- <connection_map name="part0_jx2_a14" typical_delay="5" c1_st_index="174" c1_end_index="174" c2_st_index="14" c2_end_index="14"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_a15" typical_delay="5" c1_st_index="175" c1_end_index="175" c2_st_index="15" c2_end_index="15"/> <!-- HDIO_503_L0_P -->
+		    <connection_map name="part0_jx2_a16" typical_delay="5" c1_st_index="176" c1_end_index="176" c2_st_index="16" c2_end_index="16"/> <!-- HDIO_503_L0_N -->
+		    <!-- <connection_map name="part0_jx2_a17" typical_delay="5" c1_st_index="177" c1_end_index="177" c2_st_index="17" c2_end_index="17"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a18" typical_delay="5" c1_st_index="178" c1_end_index="178" c2_st_index="18" c2_end_index="18"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a19" typical_delay="5" c1_st_index="179" c1_end_index="179" c2_st_index="19" c2_end_index="19"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a20" typical_delay="5" c1_st_index="180" c1_end_index="180" c2_st_index="20" c2_end_index="20"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a21" typical_delay="5" c1_st_index="181" c1_end_index="181" c2_st_index="21" c2_end_index="21"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a22" typical_delay="5" c1_st_index="182" c1_end_index="182" c2_st_index="22" c2_end_index="22"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a23" typical_delay="5" c1_st_index="183" c1_end_index="183" c2_st_index="23" c2_end_index="23"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a24" typical_delay="5" c1_st_index="184" c1_end_index="184" c2_st_index="24" c2_end_index="24"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a25" typical_delay="5" c1_st_index="185" c1_end_index="185" c2_st_index="25" c2_end_index="25"/> --> <!-- VCCO_302 -->
+		    <!-- <connection_map name="part0_jx2_a26" typical_delay="5" c1_st_index="186" c1_end_index="186" c2_st_index="26" c2_end_index="26"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a27" typical_delay="5" c1_st_index="187" c1_end_index="187" c2_st_index="27" c2_end_index="27"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a28" typical_delay="5" c1_st_index="188" c1_end_index="188" c2_st_index="28" c2_end_index="28"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a29" typical_delay="5" c1_st_index="189" c1_end_index="189" c2_st_index="29" c2_end_index="29"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a30" typical_delay="5" c1_st_index="190" c1_end_index="190" c2_st_index="30" c2_end_index="30"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a31" typical_delay="5" c1_st_index="191" c1_end_index="191" c2_st_index="31" c2_end_index="31"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_a32" typical_delay="5" c1_st_index="192" c1_end_index="192" c2_st_index="32" c2_end_index="32"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_a33" typical_delay="5" c1_st_index="193" c1_end_index="193" c2_st_index="33" c2_end_index="33"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_a34" typical_delay="5" c1_st_index="194" c1_end_index="194" c2_st_index="34" c2_end_index="34"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_a35" typical_delay="5" c1_st_index="195" c1_end_index="195" c2_st_index="35" c2_end_index="35"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_a36" typical_delay="5" c1_st_index="196" c1_end_index="196" c2_st_index="36" c2_end_index="36"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a37" typical_delay="5" c1_st_index="197" c1_end_index="197" c2_st_index="37" c2_end_index="37"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a38" typical_delay="5" c1_st_index="198" c1_end_index="198" c2_st_index="38" c2_end_index="38"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx2_a39" typical_delay="5" c1_st_index="199" c1_end_index="199" c2_st_index="39" c2_end_index="39"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_a40" typical_delay="5" c1_st_index="200" c1_end_index="200" c2_st_index="40" c2_end_index="40"/> --> <!-- +1V8 -->
+		    
+		    <!-- <connection_map name="part0_jx2_b1" typical_delay="5" c1_st_index="201" c1_end_index="201" c2_st_index="41" c2_end_index="41"/> --> <!-- +1V2 -->
+		    <!-- <connection_map name="part0_jx2_b2" typical_delay="5" c1_st_index="202" c1_end_index="202" c2_st_index="42" c2_end_index="42"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_b3" typical_delay="5" c1_st_index="203" c1_end_index="203" c2_st_index="43" c2_end_index="43"/> <!-- HDIO_503_L9_P -->
+		    <connection_map name="part0_jx2_b4" typical_delay="5" c1_st_index="204" c1_end_index="204" c2_st_index="44" c2_end_index="44"/> <!-- HDIO_503_L9_N -->
+		    <!-- <connection_map name="part0_jx2_b5" typical_delay="5" c1_st_index="205" c1_end_index="205" c2_st_index="45" c2_end_index="45"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_b6" typical_delay="5" c1_st_index="206" c1_end_index="206" c2_st_index="46" c2_end_index="46"/> <!-- HDIO_503_L2_P -->
+		    <connection_map name="part0_jx2_b7" typical_delay="5" c1_st_index="207" c1_end_index="207" c2_st_index="47" c2_end_index="47"/> <!-- HDIO_503_L2_N -->
+		    <!-- <connection_map name="part0_jx2_b8" typical_delay="5" c1_st_index="208" c1_end_index="208" c2_st_index="48" c2_end_index="48"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_b9" typical_delay="5" c1_st_index="209" c1_end_index="209" c2_st_index="49" c2_end_index="49"/> <!-- HDIO_503_L4_P -->
+		    <connection_map name="part0_jx2_b10" typical_delay="5" c1_st_index="210" c1_end_index="210" c2_st_index="50" c2_end_index="50"/> <!-- HDIO_503_L4_N -->
+		    <!-- <connection_map name="part0_jx2_b11" typical_delay="5" c1_st_index="211" c1_end_index="211" c2_st_index="51" c2_end_index="51"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_b12" typical_delay="5" c1_st_index="212" c1_end_index="212" c2_st_index="52" c2_end_index="52"/> <!-- HDIO_503_L13_P -->
+		    <connection_map name="part0_jx2_b13" typical_delay="5" c1_st_index="213" c1_end_index="213" c2_st_index="53" c2_end_index="53"/> <!-- HDIO_503_L13_N -->
+		    <!-- <connection_map name="part0_jx2_b14" typical_delay="5" c1_st_index="214" c1_end_index="214" c2_st_index="54" c2_end_index="54"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_b15" typical_delay="5" c1_st_index="215" c1_end_index="215" c2_st_index="55" c2_end_index="55"/> <!-- HDIO_503_L6_P -->
+		    <connection_map name="part0_jx2_b16" typical_delay="5" c1_st_index="216" c1_end_index="216" c2_st_index="56" c2_end_index="56"/> <!-- HDIO_503_L6_N -->
+		    <!-- <connection_map name="part0_jx2_b17" typical_delay="5" c1_st_index="217" c1_end_index="217" c2_st_index="57" c2_end_index="57"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b18" typical_delay="5" c1_st_index="218" c1_end_index="218" c2_st_index="58" c2_end_index="58"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b19" typical_delay="5" c1_st_index="219" c1_end_index="219" c2_st_index="59" c2_end_index="59"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b20" typical_delay="5" c1_st_index="220" c1_end_index="220" c2_st_index="60" c2_end_index="60"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b21" typical_delay="5" c1_st_index="221" c1_end_index="221" c2_st_index="61" c2_end_index="61"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b22" typical_delay="5" c1_st_index="222" c1_end_index="222" c2_st_index="62" c2_end_index="62"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b23" typical_delay="5" c1_st_index="223" c1_end_index="223" c2_st_index="63" c2_end_index="63"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b24" typical_delay="5" c1_st_index="224" c1_end_index="224" c2_st_index="64" c2_end_index="64"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b25" typical_delay="5" c1_st_index="225" c1_end_index="225" c2_st_index="65" c2_end_index="65"/> --> <!-- VCCO_503 -->
+		    <!-- <connection_map name="part0_jx2_b26" typical_delay="5" c1_st_index="226" c1_end_index="226" c2_st_index="66" c2_end_index="66"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b27" typical_delay="5" c1_st_index="227" c1_end_index="227" c2_st_index="67" c2_end_index="67"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b28" typical_delay="5" c1_st_index="228" c1_end_index="228" c2_st_index="68" c2_end_index="68"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b29" typical_delay="5" c1_st_index="229" c1_end_index="229" c2_st_index="69" c2_end_index="69"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b30" typical_delay="5" c1_st_index="230" c1_end_index="230" c2_st_index="70" c2_end_index="70"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b31" typical_delay="5" c1_st_index="231" c1_end_index="231" c2_st_index="71" c2_end_index="71"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_b32" typical_delay="5" c1_st_index="232" c1_end_index="232" c2_st_index="72" c2_end_index="72"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_b33" typical_delay="5" c1_st_index="233" c1_end_index="233" c2_st_index="73" c2_end_index="73"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_b34" typical_delay="5" c1_st_index="234" c1_end_index="234" c2_st_index="74" c2_end_index="74"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_b35" typical_delay="5" c1_st_index="235" c1_end_index="235" c2_st_index="75" c2_end_index="75"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_b36" typical_delay="5" c1_st_index="236" c1_end_index="236" c2_st_index="76" c2_end_index="76"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b37" typical_delay="5" c1_st_index="237" c1_end_index="237" c2_st_index="77" c2_end_index="77"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b38" typical_delay="5" c1_st_index="238" c1_end_index="238" c2_st_index="78" c2_end_index="78"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx2_b39" typical_delay="5" c1_st_index="239" c1_end_index="239" c2_st_index="79" c2_end_index="79"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_b40" typical_delay="5" c1_st_index="240" c1_end_index="240" c2_st_index="80" c2_end_index="80"/> --> <!-- +1V8 -->
+		    
+		    <!-- <connection_map name="part0_jx2_c1" typical_delay="5" c1_st_index="241" c1_end_index="241" c2_st_index="81" c2_end_index="81"/> --> <!-- +1V2 -->
+		    <!-- <connection_map name="part0_jx2_c2" typical_delay="5" c1_st_index="242" c1_end_index="242" c2_st_index="82" c2_end_index="82"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_c3" typical_delay="5" c1_st_index="243" c1_end_index="243" c2_st_index="83" c2_end_index="83"/> <!-- HDIO_503_L8_P -->
+		    <connection_map name="part0_jx2_c4" typical_delay="5" c1_st_index="244" c1_end_index="244" c2_st_index="84" c2_end_index="84"/> <!-- HDIO_503_L8_N -->
+		    <!-- <connection_map name="part0_jx2_c5" typical_delay="5" c1_st_index="245" c1_end_index="245" c2_st_index="85" c2_end_index="85"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_c6" typical_delay="5" c1_st_index="246" c1_end_index="246" c2_st_index="86" c2_end_index="86"/> <!-- HDIO_503_L5_P -->
+		    <connection_map name="part0_jx2_c7" typical_delay="5" c1_st_index="247" c1_end_index="247" c2_st_index="87" c2_end_index="87"/> <!-- HDIO_503_L5_N -->
+		    <!-- <connection_map name="part0_jx2_c8" typical_delay="5" c1_st_index="248" c1_end_index="248" c2_st_index="88" c2_end_index="88"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_c9" typical_delay="5" c1_st_index="249" c1_end_index="249" c2_st_index="89" c2_end_index="89"/> <!-- HDIO_504_L10_P -->
+		    <connection_map name="part0_jx2_c10" typical_delay="5" c1_st_index="250" c1_end_index="250" c2_st_index="90" c2_end_index="90"/> <!-- HDIO_504_L10_N -->
+		    <!-- <connection_map name="part0_jx2_c11" typical_delay="5" c1_st_index="251" c1_end_index="251" c2_st_index="91" c2_end_index="91"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_c12" typical_delay="5" c1_st_index="252" c1_end_index="252" c2_st_index="92" c2_end_index="92"/> <!-- HDIO_503_L14_P -->
+		    <connection_map name="part0_jx2_c13" typical_delay="5" c1_st_index="253" c1_end_index="253" c2_st_index="93" c2_end_index="93"/> <!-- HDIO_503_L14_N -->
+		    <!-- <connection_map name="part0_jx2_c14" typical_delay="5" c1_st_index="254" c1_end_index="254" c2_st_index="94" c2_end_index="94"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_c15" typical_delay="5" c1_st_index="255" c1_end_index="255" c2_st_index="95" c2_end_index="95"/> <!-- HDIO_504_L0_P -->
+		    <connection_map name="part0_jx2_c16" typical_delay="5" c1_st_index="256" c1_end_index="256" c2_st_index="96" c2_end_index="96"/> <!-- HDIO_504_L0_N -->
+		    <!-- <connection_map name="part0_jx2_c17" typical_delay="5" c1_st_index="257" c1_end_index="257" c2_st_index="97" c2_end_index="97"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c18" typical_delay="5" c1_st_index="258" c1_end_index="258" c2_st_index="98" c2_end_index="98"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c19" typical_delay="5" c1_st_index="259" c1_end_index="259" c2_st_index="99" c2_end_index="99"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c20" typical_delay="5" c1_st_index="260" c1_end_index="260" c2_st_index="100" c2_end_index="100"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c21" typical_delay="5" c1_st_index="261" c1_end_index="261" c2_st_index="101" c2_end_index="101"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c22" typical_delay="5" c1_st_index="262" c1_end_index="262" c2_st_index="102" c2_end_index="102"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c23" typical_delay="5" c1_st_index="263" c1_end_index="263" c2_st_index="103" c2_end_index="103"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c24" typical_delay="5" c1_st_index="264" c1_end_index="264" c2_st_index="104" c2_end_index="104"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c25" typical_delay="5" c1_st_index="265" c1_end_index="265" c2_st_index="105" c2_end_index="105"/> --> <!-- VCCO_504 -->
+		    <!-- <connection_map name="part0_jx2_c26" typical_delay="5" c1_st_index="266" c1_end_index="266" c2_st_index="106" c2_end_index="106"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c27" typical_delay="5" c1_st_index="267" c1_end_index="267" c2_st_index="107" c2_end_index="107"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c28" typical_delay="5" c1_st_index="268" c1_end_index="268" c2_st_index="108" c2_end_index="108"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c29" typical_delay="5" c1_st_index="269" c1_end_index="269" c2_st_index="109" c2_end_index="109"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c30" typical_delay="5" c1_st_index="270" c1_end_index="270" c2_st_index="110" c2_end_index="110"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c31" typical_delay="5" c1_st_index="271" c1_end_index="271" c2_st_index="111" c2_end_index="111"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_c32" typical_delay="5" c1_st_index="272" c1_end_index="272" c2_st_index="112" c2_end_index="112"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_c33" typical_delay="5" c1_st_index="273" c1_end_index="273" c2_st_index="113" c2_end_index="113"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_c34" typical_delay="5" c1_st_index="274" c1_end_index="274" c2_st_index="114" c2_end_index="114"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_c35" typical_delay="5" c1_st_index="275" c1_end_index="275" c2_st_index="115" c2_end_index="115"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_c36" typical_delay="5" c1_st_index="276" c1_end_index="276" c2_st_index="116" c2_end_index="116"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c37" typical_delay="5" c1_st_index="277" c1_end_index="277" c2_st_index="117" c2_end_index="117"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c38" typical_delay="5" c1_st_index="278" c1_end_index="278" c2_st_index="118" c2_end_index="118"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx2_c39" typical_delay="5" c1_st_index="279" c1_end_index="279" c2_st_index="119" c2_end_index="119"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_c40" typical_delay="5" c1_st_index="280" c1_end_index="280" c2_st_index="120" c2_end_index="120"/> --> <!-- +1V8 -->
+		    
+		    <!-- <connection_map name="part0_jx2_d1" typical_delay="5" c1_st_index="281" c1_end_index="281" c2_st_index="121" c2_end_index="121"/> --> <!-- +1V2 -->
+		    <!-- <connection_map name="part0_jx2_d2" typical_delay="5" c1_st_index="282" c1_end_index="282" c2_st_index="122" c2_end_index="122"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_d3" typical_delay="5" c1_st_index="283" c1_end_index="283" c2_st_index="123" c2_end_index="123"/> <!-- HDIO_503_L7_P -->
+		    <connection_map name="part0_jx2_d4" typical_delay="5" c1_st_index="284" c1_end_index="284" c2_st_index="124" c2_end_index="124"/> <!-- HDIO_503_L7_N -->
+		    <!-- <connection_map name="part0_jx2_d5" typical_delay="5" c1_st_index="285" c1_end_index="285" c2_st_index="125" c2_end_index="125"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_d6" typical_delay="5" c1_st_index="286" c1_end_index="286" c2_st_index="126" c2_end_index="126"/> <!-- HDIO_503_L15_P -->
+		    <connection_map name="part0_jx2_d7" typical_delay="5" c1_st_index="287" c1_end_index="287" c2_st_index="127" c2_end_index="127"/> <!-- HDIO_503_L15_N -->
+		    <!-- <connection_map name="part0_jx2_d8" typical_delay="5" c1_st_index="288" c1_end_index="288" c2_st_index="128" c2_end_index="128"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_d9" typical_delay="5" c1_st_index="289" c1_end_index="289" c2_st_index="129" c2_end_index="129"/> <!-- HDIO_504_L12_P -->
+		    <connection_map name="part0_jx2_d10" typical_delay="5" c1_st_index="290" c1_end_index="290" c2_st_index="130" c2_end_index="130"/> <!-- HDIO_504_L12_N -->
+		    <!-- <connection_map name="part0_jx2_d11" typical_delay="5" c1_st_index="291" c1_end_index="291" c2_st_index="131" c2_end_index="131"/> --> <!-- GND -->
+		    <connection_map name="part0_jx2_d12" typical_delay="5" c1_st_index="292" c1_end_index="292" c2_st_index="132" c2_end_index="132"/> <!-- HDIO_504_L1_P -->
+		    <connection_map name="part0_jx2_d13" typical_delay="5" c1_st_index="293" c1_end_index="293" c2_st_index="133" c2_end_index="133"/> <!-- HDIO_504_L1_N -->
+		    <!-- <connection_map name="part0_jx2_d14" typical_delay="5" c1_st_index="294" c1_end_index="294" c2_st_index="134" c2_end_index="134"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d15" typical_delay="5" c1_st_index="295" c1_end_index="295" c2_st_index="135" c2_end_index="135"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d16" typical_delay="5" c1_st_index="296" c1_end_index="296" c2_st_index="136" c2_end_index="136"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d17" typical_delay="5" c1_st_index="297" c1_end_index="297" c2_st_index="137" c2_end_index="137"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d18" typical_delay="5" c1_st_index="298" c1_end_index="298" c2_st_index="138" c2_end_index="138"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d19" typical_delay="5" c1_st_index="299" c1_end_index="299" c2_st_index="139" c2_end_index="139"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d20" typical_delay="5" c1_st_index="300" c1_end_index="300" c2_st_index="140" c2_end_index="140"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d21" typical_delay="5" c1_st_index="301" c1_end_index="301" c2_st_index="141" c2_end_index="141"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d22" typical_delay="5" c1_st_index="302" c1_end_index="302" c2_st_index="142" c2_end_index="142"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d23" typical_delay="5" c1_st_index="303" c1_end_index="303" c2_st_index="143" c2_end_index="143"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d24" typical_delay="5" c1_st_index="304" c1_end_index="304" c2_st_index="144" c2_end_index="144"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d25" typical_delay="5" c1_st_index="305" c1_end_index="305" c2_st_index="145" c2_end_index="145"/> --> <!-- VCCO_706 -->
+		    <!-- <connection_map name="part0_jx2_d26" typical_delay="5" c1_st_index="306" c1_end_index="306" c2_st_index="146" c2_end_index="146"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d27" typical_delay="5" c1_st_index="307" c1_end_index="307" c2_st_index="147" c2_end_index="147"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d28" typical_delay="5" c1_st_index="308" c1_end_index="308" c2_st_index="148" c2_end_index="148"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d29" typical_delay="5" c1_st_index="309" c1_end_index="309" c2_st_index="149" c2_end_index="149"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d30" typical_delay="5" c1_st_index="310" c1_end_index="310" c2_st_index="150" c2_end_index="150"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d31" typical_delay="5" c1_st_index="311" c1_end_index="311" c2_st_index="151" c2_end_index="151"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_d32" typical_delay="5" c1_st_index="312" c1_end_index="312" c2_st_index="152" c2_end_index="152"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_d33" typical_delay="5" c1_st_index="313" c1_end_index="313" c2_st_index="153" c2_end_index="153"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_d34" typical_delay="5" c1_st_index="314" c1_end_index="314" c2_st_index="154" c2_end_index="154"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_d35" typical_delay="5" c1_st_index="315" c1_end_index="315" c2_st_index="155" c2_end_index="155"/> --> <!-- +VCCINT -->
+		    <!-- <connection_map name="part0_jx2_d36" typical_delay="5" c1_st_index="316" c1_end_index="316" c2_st_index="156" c2_end_index="156"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d37" typical_delay="5" c1_st_index="317" c1_end_index="317" c2_st_index="157" c2_end_index="157"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d38" typical_delay="5" c1_st_index="318" c1_end_index="318" c2_st_index="158" c2_end_index="158"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx2_d39" typical_delay="5" c1_st_index="319" c1_end_index="319" c2_st_index="159" c2_end_index="159"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx2_d40" typical_delay="5" c1_st_index="320" c1_end_index="320" c2_st_index="160" c2_end_index="160"/> --> <!-- +1V8 -->
+		</connection>
+		
+		<connection name="part0_jx3_connector" component1="part0" component2="jx3_connector">
+		    <!-- <connection_map name="part0_jx3_a1" typical_delay="5" c1_st_index="321" c1_end_index="321" c2_st_index="1" c2_end_index="1"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a2" typical_delay="5" c1_st_index="322" c1_end_index="322" c2_st_index="2" c2_end_index="2"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a3" typical_delay="5" c1_st_index="323" c1_end_index="323" c2_st_index="3" c2_end_index="3"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a4" typical_delay="5" c1_st_index="324" c1_end_index="324" c2_st_index="4" c2_end_index="4"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a5" typical_delay="5" c1_st_index="325" c1_end_index="325" c2_st_index="5" c2_end_index="5"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a6" typical_delay="5" c1_st_index="326" c1_end_index="326" c2_st_index="6" c2_end_index="6"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_a7" typical_delay="5" c1_st_index="327" c1_end_index="327" c2_st_index="7" c2_end_index="7"/> <!-- GTYP_104_REFCLK0_P -->
+		    <connection_map name="part0_jx3_a8" typical_delay="5" c1_st_index="328" c1_end_index="328" c2_st_index="8" c2_end_index="8"/> <!-- GTYP_104_REFCLK0_N -->
+		    <!-- <connection_map name="part0_jx3_a9" typical_delay="5" c1_st_index="329" c1_end_index="329" c2_st_index="9" c2_end_index="9"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a10" typical_delay="5" c1_st_index="330" c1_end_index="330" c2_st_index="10" c2_end_index="10"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a11" typical_delay="5" c1_st_index="331" c1_end_index="331" c2_st_index="11" c2_end_index="11"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a12" typical_delay="5" c1_st_index="332" c1_end_index="332" c2_st_index="12" c2_end_index="12"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a13" typical_delay="5" c1_st_index="333" c1_end_index="333" c2_st_index="13" c2_end_index="13"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_a14" typical_delay="5" c1_st_index="334" c1_end_index="334" c2_st_index="14" c2_end_index="14"/> <!-- GTYP_104_TX1_P -->
+		    <connection_map name="part0_jx3_a15" typical_delay="5" c1_st_index="335" c1_end_index="335" c2_st_index="15" c2_end_index="15"/> <!-- GTYP_104_TX1_N -->
+		    <!-- <connection_map name="part0_jx3_a16" typical_delay="5" c1_st_index="336" c1_end_index="336" c2_st_index="16" c2_end_index="16"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a17" typical_delay="5" c1_st_index="337" c1_end_index="337" c2_st_index="17" c2_end_index="17"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a18" typical_delay="5" c1_st_index="338" c1_end_index="338" c2_st_index="18" c2_end_index="18"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a19" typical_delay="5" c1_st_index="339" c1_end_index="339" c2_st_index="19" c2_end_index="19"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_a20" typical_delay="5" c1_st_index="340" c1_end_index="340" c2_st_index="20" c2_end_index="20"/> <!-- GTYP_104_TX3_P -->
+		    <connection_map name="part0_jx3_a21" typical_delay="5" c1_st_index="341" c1_end_index="341" c2_st_index="21" c2_end_index="21"/> <!-- GTYP_104_TX3_N -->
+		    <!-- <connection_map name="part0_jx3_a22" typical_delay="5" c1_st_index="342" c1_end_index="342" c2_st_index="22" c2_end_index="22"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a23" typical_delay="5" c1_st_index="343" c1_end_index="343" c2_st_index="23" c2_end_index="23"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a24" typical_delay="5" c1_st_index="344" c1_end_index="344" c2_st_index="24" c2_end_index="24"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a25" typical_delay="5" c1_st_index="345" c1_end_index="345" c2_st_index="25" c2_end_index="25"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_a26" typical_delay="5" c1_st_index="346" c1_end_index="346" c2_st_index="26" c2_end_index="26"/> <!-- XPIO_700_L10_P -->
+		    <connection_map name="part0_jx3_a27" typical_delay="5" c1_st_index="347" c1_end_index="347" c2_st_index="27" c2_end_index="27"/> <!-- XPIO_700_L10_N -->
+		    <!-- <connection_map name="part0_jx3_a28" typical_delay="5" c1_st_index="348" c1_end_index="348" c2_st_index="28" c2_end_index="28"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a29" typical_delay="5" c1_st_index="349" c1_end_index="349" c2_st_index="29" c2_end_index="29"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a30" typical_delay="5" c1_st_index="350" c1_end_index="350" c2_st_index="30" c2_end_index="30"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a31" typical_delay="5" c1_st_index="351" c1_end_index="351" c2_st_index="31" c2_end_index="31"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_a32" typical_delay="5" c1_st_index="352" c1_end_index="352" c2_st_index="32" c2_end_index="32"/> <!-- XPIO_700_L1_P -->
+		    <connection_map name="part0_jx3_a33" typical_delay="5" c1_st_index="353" c1_end_index="353" c2_st_index="33" c2_end_index="33"/> <!-- XPIO_700_L1_N -->
+		    <!-- <connection_map name="part0_jx3_a34" typical_delay="5" c1_st_index="354" c1_end_index="354" c2_st_index="34" c2_end_index="34"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a35" typical_delay="5" c1_st_index="355" c1_end_index="355" c2_st_index="35" c2_end_index="35"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a36" typical_delay="5" c1_st_index="356" c1_end_index="356" c2_st_index="36" c2_end_index="36"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a37" typical_delay="5" c1_st_index="357" c1_end_index="357" c2_st_index="37" c2_end_index="37"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a38" typical_delay="5" c1_st_index="358" c1_end_index="358" c2_st_index="38" c2_end_index="38"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx3_a39" typical_delay="5" c1_st_index="359" c1_end_index="359" c2_st_index="39" c2_end_index="39"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_a40" typical_delay="5" c1_st_index="360" c1_end_index="360" c2_st_index="40" c2_end_index="40"/> --> <!-- +1V8 -->
+		    
+		    <!-- <connection_map name="part0_jx3_b1" typical_delay="5" c1_st_index="361" c1_end_index="361" c2_st_index="41" c2_end_index="41"/> --> <!-- +1V2 -->
+		    <!-- <connection_map name="part0_jx3_b2" typical_delay="5" c1_st_index="362" c1_end_index="362" c2_st_index="42" c2_end_index="42"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b3" typical_delay="5" c1_st_index="363" c1_end_index="363" c2_st_index="43" c2_end_index="43"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b4" typical_delay="5" c1_st_index="364" c1_end_index="364" c2_st_index="44" c2_end_index="44"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b5" typical_delay="5" c1_st_index="365" c1_end_index="365" c2_st_index="45" c2_end_index="45"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b6" typical_delay="5" c1_st_index="366" c1_end_index="366" c2_st_index="46" c2_end_index="46"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_b7" typical_delay="5" c1_st_index="367" c1_end_index="367" c2_st_index="47" c2_end_index="47"/> <!-- GTYP_104_REFCLK1_P -->
+		    <connection_map name="part0_jx3_b8" typical_delay="5" c1_st_index="368" c1_end_index="368" c2_st_index="48" c2_end_index="48"/> <!-- GTYP_104_REFCLK1_N -->
+		    <!-- <connection_map name="part0_jx3_b9" typical_delay="5" c1_st_index="369" c1_end_index="369" c2_st_index="49" c2_end_index="49"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b10" typical_delay="5" c1_st_index="370" c1_end_index="370" c2_st_index="50" c2_end_index="50"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b11" typical_delay="5" c1_st_index="371" c1_end_index="371" c2_st_index="51" c2_end_index="51"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b12" typical_delay="5" c1_st_index="372" c1_end_index="372" c2_st_index="52" c2_end_index="52"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b13" typical_delay="5" c1_st_index="373" c1_end_index="373" c2_st_index="53" c2_end_index="53"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b14" typical_delay="5" c1_st_index="374" c1_end_index="374" c2_st_index="54" c2_end_index="54"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b15" typical_delay="5" c1_st_index="375" c1_end_index="375" c2_st_index="55" c2_end_index="55"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b16" typical_delay="5" c1_st_index="376" c1_end_index="376" c2_st_index="56" c2_end_index="56"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_b17" typical_delay="5" c1_st_index="377" c1_end_index="377" c2_st_index="57" c2_end_index="57"/> <!-- GTYP_104_RX0_P -->
+		    <connection_map name="part0_jx3_b18" typical_delay="5" c1_st_index="378" c1_end_index="378" c2_st_index="58" c2_end_index="58"/> <!-- GTYP_104_RX0_N -->
+		    <!-- <connection_map name="part0_jx3_b19" typical_delay="5" c1_st_index="379" c1_end_index="379" c2_st_index="59" c2_end_index="59"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b20" typical_delay="5" c1_st_index="380" c1_end_index="380" c2_st_index="60" c2_end_index="60"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b21" typical_delay="5" c1_st_index="381" c1_end_index="381" c2_st_index="61" c2_end_index="61"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b22" typical_delay="5" c1_st_index="382" c1_end_index="382" c2_st_index="62" c2_end_index="62"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_b23" typical_delay="5" c1_st_index="383" c1_end_index="383" c2_st_index="63" c2_end_index="63"/> <!-- GTYP_104_RX2_P -->
+		    <connection_map name="part0_jx3_b24" typical_delay="5" c1_st_index="384" c1_end_index="384" c2_st_index="64" c2_end_index="64"/> <!-- GTYP_104_RX2_N -->
+		    <!-- <connection_map name="part0_jx3_b25" typical_delay="5" c1_st_index="385" c1_end_index="385" c2_st_index="65" c2_end_index="65"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b26" typical_delay="5" c1_st_index="386" c1_end_index="386" c2_st_index="66" c2_end_index="66"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b27" typical_delay="5" c1_st_index="387" c1_end_index="387" c2_st_index="67" c2_end_index="67"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b28" typical_delay="5" c1_st_index="388" c1_end_index="388" c2_st_index="68" c2_end_index="68"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_b29" typical_delay="5" c1_st_index="389" c1_end_index="389" c2_st_index="69" c2_end_index="69"/> <!-- XPIO_700_L11_P -->
+		    <connection_map name="part0_jx3_b30" typical_delay="5" c1_st_index="390" c1_end_index="390" c2_st_index="70" c2_end_index="70"/> <!-- XPIO_700_L11_N -->
+		    <!-- <connection_map name="part0_jx3_b31" typical_delay="5" c1_st_index="391" c1_end_index="391" c2_st_index="71" c2_end_index="71"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b32" typical_delay="5" c1_st_index="392" c1_end_index="392" c2_st_index="72" c2_end_index="72"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b33" typical_delay="5" c1_st_index="393" c1_end_index="393" c2_st_index="73" c2_end_index="73"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b34" typical_delay="5" c1_st_index="394" c1_end_index="394" c2_st_index="74" c2_end_index="74"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_b35" typical_delay="5" c1_st_index="395" c1_end_index="395" c2_st_index="75" c2_end_index="75"/> <!-- XPIO_700_L2_P -->
+		    <connection_map name="part0_jx3_b36" typical_delay="5" c1_st_index="396" c1_end_index="396" c2_st_index="76" c2_end_index="76"/> <!-- XPIO_700_L2_N -->
+		    <!-- <connection_map name="part0_jx3_b37" typical_delay="5" c1_st_index="397" c1_end_index="397" c2_st_index="77" c2_end_index="77"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b38" typical_delay="5" c1_st_index="398" c1_end_index="398" c2_st_index="78" c2_end_index="78"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx3_b39" typical_delay="5" c1_st_index="399" c1_end_index="399" c2_st_index="79" c2_end_index="79"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_b40" typical_delay="5" c1_st_index="400" c1_end_index="400" c2_st_index="80" c2_end_index="80"/> --> <!-- +1V8 -->
+		    
+		    <!-- <connection_map name="part0_jx3_c1" typical_delay="5" c1_st_index="401" c1_end_index="401" c2_st_index="81" c2_end_index="81"/> --> <!-- +1V2 -->
+		    <!-- <connection_map name="part0_jx3_c2" typical_delay="5" c1_st_index="402" c1_end_index="402" c2_st_index="82" c2_end_index="82"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c3" typical_delay="5" c1_st_index="403" c1_end_index="403" c2_st_index="83" c2_end_index="83"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c4" typical_delay="5" c1_st_index="404" c1_end_index="404" c2_st_index="84" c2_end_index="84"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c5" typical_delay="5" c1_st_index="405" c1_end_index="405" c2_st_index="85" c2_end_index="85"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c6" typical_delay="5" c1_st_index="406" c1_end_index="406" c2_st_index="86" c2_end_index="86"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_c7" typical_delay="5" c1_st_index="407" c1_end_index="407" c2_st_index="87" c2_end_index="87"/> <!-- GTYP_104_TX0_P -->
+		    <connection_map name="part0_jx3_c8" typical_delay="5" c1_st_index="408" c1_end_index="408" c2_st_index="88" c2_end_index="88"/> <!-- GTYP_104_TX0_N -->
+		    <!-- <connection_map name="part0_jx3_c9" typical_delay="5" c1_st_index="409" c1_end_index="409" c2_st_index="89" c2_end_index="89"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c10" typical_delay="5" c1_st_index="410" c1_end_index="410" c2_st_index="90" c2_end_index="90"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c11" typical_delay="5" c1_st_index="411" c1_end_index="411" c2_st_index="91" c2_end_index="91"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c12" typical_delay="5" c1_st_index="412" c1_end_index="412" c2_st_index="92" c2_end_index="92"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c13" typical_delay="5" c1_st_index="413" c1_end_index="413" c2_st_index="93" c2_end_index="93"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_c14" typical_delay="5" c1_st_index="414" c1_end_index="414" c2_st_index="94" c2_end_index="94"/> <!-- GTYP_104_TX2_P -->
+		    <connection_map name="part0_jx3_c15" typical_delay="5" c1_st_index="415" c1_end_index="415" c2_st_index="95" c2_end_index="95"/> <!-- GTYP_104_TX2_N -->
+		    <!-- <connection_map name="part0_jx3_c16" typical_delay="5" c1_st_index="416" c1_end_index="416" c2_st_index="96" c2_end_index="96"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c17" typical_delay="5" c1_st_index="417" c1_end_index="417" c2_st_index="97" c2_end_index="97"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c18" typical_delay="5" c1_st_index="418" c1_end_index="418" c2_st_index="98" c2_end_index="98"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c19" typical_delay="5" c1_st_index="419" c1_end_index="419" c2_st_index="99" c2_end_index="99"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_c20" typical_delay="5" c1_st_index="420" c1_end_index="420" c2_st_index="100" c2_end_index="100"/> <!-- GTYP_104_RX3_P -->
+		    <connection_map name="part0_jx3_c21" typical_delay="5" c1_st_index="421" c1_end_index="421" c2_st_index="101" c2_end_index="101"/> <!-- GTYP_104_RX3_N -->
+		    <!-- <connection_map name="part0_jx3_c22" typical_delay="5" c1_st_index="422" c1_end_index="422" c2_st_index="102" c2_end_index="102"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c23" typical_delay="5" c1_st_index="423" c1_end_index="423" c2_st_index="103" c2_end_index="103"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c24" typical_delay="5" c1_st_index="424" c1_end_index="424" c2_st_index="104" c2_end_index="104"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c25" typical_delay="5" c1_st_index="425" c1_end_index="425" c2_st_index="105" c2_end_index="105"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_c26" typical_delay="5" c1_st_index="426" c1_end_index="426" c2_st_index="106" c2_end_index="106"/> <!-- XPIO_700_L12_P -->
+		    <connection_map name="part0_jx3_c27" typical_delay="5" c1_st_index="427" c1_end_index="427" c2_st_index="107" c2_end_index="107"/> <!-- XPIO_700_L12_N -->
+		    <!-- <connection_map name="part0_jx3_c28" typical_delay="5" c1_st_index="428" c1_end_index="428" c2_st_index="108" c2_end_index="108"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c29" typical_delay="5" c1_st_index="429" c1_end_index="429" c2_st_index="109" c2_end_index="109"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c30" typical_delay="5" c1_st_index="430" c1_end_index="430" c2_st_index="110" c2_end_index="110"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c31" typical_delay="5" c1_st_index="431" c1_end_index="431" c2_st_index="111" c2_end_index="111"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_c32" typical_delay="5" c1_st_index="432" c1_end_index="432" c2_st_index="112" c2_end_index="112"/> <!-- XPIO_700_L3_P -->
+		    <connection_map name="part0_jx3_c33" typical_delay="5" c1_st_index="433" c1_end_index="433" c2_st_index="113" c2_end_index="113"/> <!-- XPIO_700_L3_N -->
+		    <!-- <connection_map name="part0_jx3_c34" typical_delay="5" c1_st_index="434" c1_end_index="434" c2_st_index="114" c2_end_index="114"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c35" typical_delay="5" c1_st_index="435" c1_end_index="435" c2_st_index="115" c2_end_index="115"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c36" typical_delay="5" c1_st_index="436" c1_end_index="436" c2_st_index="116" c2_end_index="116"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c37" typical_delay="5" c1_st_index="437" c1_end_index="437" c2_st_index="117" c2_end_index="117"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c38" typical_delay="5" c1_st_index="438" c1_end_index="438" c2_st_index="118" c2_end_index="118"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx3_c39" typical_delay="5" c1_st_index="439" c1_end_index="439" c2_st_index="119" c2_end_index="119"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_c40" typical_delay="5" c1_st_index="440" c1_end_index="440" c2_st_index="120" c2_end_index="120"/> --> <!-- +1V8 -->
+		    
+		    <!-- <connection_map name="part0_jx3_d1" typical_delay="5" c1_st_index="441" c1_end_index="441" c2_st_index="121" c2_end_index="121"/> --> <!-- +1V2 -->
+		    <!-- <connection_map name="part0_jx3_d2" typical_delay="5" c1_st_index="442" c1_end_index="442" c2_st_index="122" c2_end_index="122"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d3" typical_delay="5" c1_st_index="443" c1_end_index="443" c2_st_index="123" c2_end_index="123"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d4" typical_delay="5" c1_st_index="444" c1_end_index="444" c2_st_index="124" c2_end_index="124"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d5" typical_delay="5" c1_st_index="445" c1_end_index="445" c2_st_index="125" c2_end_index="125"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d6" typical_delay="5" c1_st_index="446" c1_end_index="446" c2_st_index="126" c2_end_index="126"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d7" typical_delay="5" c1_st_index="447" c1_end_index="447" c2_st_index="127" c2_end_index="127"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d8" typical_delay="5" c1_st_index="448" c1_end_index="448" c2_st_index="128" c2_end_index="128"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d9" typical_delay="5" c1_st_index="449" c1_end_index="449" c2_st_index="129" c2_end_index="129"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d10" typical_delay="5" c1_st_index="450" c1_end_index="450" c2_st_index="130" c2_end_index="130"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d11" typical_delay="5" c1_st_index="451" c1_end_index="451" c2_st_index="131" c2_end_index="131"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d12" typical_delay="5" c1_st_index="452" c1_end_index="452" c2_st_index="132" c2_end_index="132"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d13" typical_delay="5" c1_st_index="453" c1_end_index="453" c2_st_index="133" c2_end_index="133"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d14" typical_delay="5" c1_st_index="454" c1_end_index="454" c2_st_index="134" c2_end_index="134"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d15" typical_delay="5" c1_st_index="455" c1_end_index="455" c2_st_index="135" c2_end_index="135"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d16" typical_delay="5" c1_st_index="456" c1_end_index="456" c2_st_index="136" c2_end_index="136"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_d17" typical_delay="5" c1_st_index="457" c1_end_index="457" c2_st_index="137" c2_end_index="137"/> <!-- GTYP_104_RX1_P -->
+		    <connection_map name="part0_jx3_d18" typical_delay="5" c1_st_index="458" c1_end_index="458" c2_st_index="138" c2_end_index="138"/> <!-- GTYP_104_RX1_N -->
+		    <!-- <connection_map name="part0_jx3_d19" typical_delay="5" c1_st_index="459" c1_end_index="459" c2_st_index="139" c2_end_index="139"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d20" typical_delay="5" c1_st_index="460" c1_end_index="460" c2_st_index="140" c2_end_index="140"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d21" typical_delay="5" c1_st_index="461" c1_end_index="461" c2_st_index="141" c2_end_index="141"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d22" typical_delay="5" c1_st_index="462" c1_end_index="462" c2_st_index="142" c2_end_index="142"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_d23" typical_delay="5" c1_st_index="463" c1_end_index="463" c2_st_index="143" c2_end_index="143"/> <!-- XPIO_700_L13_P -->
+		    <connection_map name="part0_jx3_d24" typical_delay="5" c1_st_index="464" c1_end_index="464" c2_st_index="144" c2_end_index="144"/> <!-- XPIO_700_L13_N -->
+		    <!-- <connection_map name="part0_jx3_d25" typical_delay="5" c1_st_index="465" c1_end_index="465" c2_st_index="145" c2_end_index="145"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d26" typical_delay="5" c1_st_index="466" c1_end_index="466" c2_st_index="146" c2_end_index="146"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d27" typical_delay="5" c1_st_index="467" c1_end_index="467" c2_st_index="147" c2_end_index="147"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d28" typical_delay="5" c1_st_index="468" c1_end_index="468" c2_st_index="148" c2_end_index="148"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_d29" typical_delay="5" c1_st_index="469" c1_end_index="469" c2_st_index="149" c2_end_index="149"/> <!-- XPIO_700_L4_P -->
+		    <connection_map name="part0_jx3_d30" typical_delay="5" c1_st_index="470" c1_end_index="470" c2_st_index="150" c2_end_index="150"/> <!-- XPIO_700_L4_N -->
+		    <!-- <connection_map name="part0_jx3_d31" typical_delay="5" c1_st_index="471" c1_end_index="471" c2_st_index="151" c2_end_index="151"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d32" typical_delay="5" c1_st_index="472" c1_end_index="472" c2_st_index="152" c2_end_index="152"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d33" typical_delay="5" c1_st_index="473" c1_end_index="473" c2_st_index="153" c2_end_index="153"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d34" typical_delay="5" c1_st_index="474" c1_end_index="474" c2_st_index="154" c2_end_index="154"/> --> <!-- GND -->
+		    <connection_map name="part0_jx3_d35" typical_delay="5" c1_st_index="475" c1_end_index="475" c2_st_index="155" c2_end_index="155"/> <!-- XPIO_700_L5_P -->
+		    <connection_map name="part0_jx3_d36" typical_delay="5" c1_st_index="476" c1_end_index="476" c2_st_index="156" c2_end_index="156"/> <!-- XPIO_700_L5_N -->
+		    <!-- <connection_map name="part0_jx3_d37" typical_delay="5" c1_st_index="477" c1_end_index="477" c2_st_index="157" c2_end_index="157"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d38" typical_delay="5" c1_st_index="478" c1_end_index="478" c2_st_index="158" c2_end_index="158"/> --> <!-- +1V8 -->
+		    <!-- <connection_map name="part0_jx3_d39" typical_delay="5" c1_st_index="479" c1_end_index="479" c2_st_index="159" c2_end_index="159"/> --> <!-- GND -->
+		    <!-- <connection_map name="part0_jx3_d40" typical_delay="5" c1_st_index="480" c1_end_index="480" c2_st_index="160" c2_end_index="160"/> --> <!-- +1V8 -->
+		</connection>
+
+		<connection name="part0_lpddr4_clk1" component1="part0" component2="lpddr4_clk1">
+			<connection_map name="part0_lpddr4_clk1_1" typical_delay="5" c1_st_index="0" c1_end_index="1" c2_st_index="0" c2_end_index="1" />
+		</connection>
+
+		<connection name="part0_LPDDR4_Controller0" component1="part0" component2="LPDDR4_Controller0">
+			<connection_map name="part0_lpddr4_0_1" typical_delay="5" c1_st_index="300" c1_end_index="433" c2_st_index="0" c2_end_index="133" />
+		</connection>		
+	</connections>
+
+</board>
+
