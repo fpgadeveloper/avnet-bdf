@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no" ?>
+
+<!-- Copyright (C) 2025, Tria Technologies Inc - All rights reserved
+ Licensed under the Apache License, Version 2.0 (the "License"). You may
+ not use this file except in compliance with the License. A copy of the
+ License is located at
+     http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ License for the specific language governing permissions and limitations
+ under the License. -->
+
+<ip_presets schema="1.0">
+
+        <!--
+	<ip_preset preset_proc_name="ps_pmc_fixed_io_preset">
+		<ip vendor="xilinx.com" library="ip" name="versal_cips" version="*">
+			<user_parameters>
+		`	</user_parameters>
+		</ip>
+	</ip_preset>
+	-->
+
+	<!-- Some are PMC so I don't know if I should put them in the "ps_pmc_fixed_io_preset".
+		xpio and gpio are physically the same (see package files and the doc:AM013) -->
+	<!-- Push Buttons -->
+	<ip_preset preset_proc_name="pmc_pb_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="2" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="1" />
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1" />
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="2" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="0" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="1" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+
+	<ip_preset preset_proc_name="xpio_pb_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="2" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="1" />
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1" />
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="2" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="0" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="1" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	
+	<!-- 4-port Dipswitch -->
+	<ip_preset preset_proc_name="xpio_dp_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="4" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="1" />
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1" />
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="4" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="0" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="1" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	
+	<!-- LEDs -->
+	<ip_preset preset_proc_name="pmc_led_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="2" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="0" />
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1" />
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="2" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	<ip_preset preset_proc_name="xpio_led_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="3" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="0" />
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1" />
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="3" />
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1" />
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+
+</ip_presets>

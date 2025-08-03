@@ -3,7 +3,7 @@
     "items": [
       {
         "infra": {
-          "name": "ve2302_io_dk_som", 
+          "name": "ve2302_io_dk_carrier", 
           "display": "Versal AI Edge (VE2302) Development Kit - SOM and Carrier Card", 
           "revision": "1.0", 
           "description": "Versal AI Edge (VE2302) Development Kit - SOM and Carrier Card", 

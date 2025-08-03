@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
 <!-- Copyright (C) 2025, Tria Technologies Inc - All rights reserved
  Licensed under the Apache License, Version 2.0 (the "License"). You may
  not use this file except in compliance with the License. A copy of the
@@ -12,680 +13,680 @@
 
 <part_info part_name="xcve2302-sfva784-1LP-e-S">
 	<pins>
-		<!-- JX1 Connector Pins -->
-		<!-- <pin index="1" name="jx1_a1" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="2" name="jx1_a2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="3" name="jx1_a3" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="4" name="jx1_a4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="5" name="jx1_a5" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="6" name="jx1_a6" loc="N/A"/> --> <!-- GND -->
-		<pin index="7" name="jx1_a7" loc="B13"/> <!-- HDIO_302_L10_P -->
-		<pin index="8" name="jx1_a8" loc="A14"/> <!-- HDIO_302_L10_N -->
-		<!-- <pin index="9" name="jx1_a9" loc="N/A"/> --> <!-- GND -->
-		<pin index="10" name="jx1_a10" loc="C14"/> <!-- HDIO_302_L1_P -->
-		<pin index="11" name="jx1_a11" loc="C13"/> <!-- HDIO_302_L1_N -->
-		<!-- <pin index="12" name="jx1_a12" loc="N/A"/> --> <!-- GND -->
-		<pin index="13" name="jx1_a13" loc="E12"/> <!-- HDIO_302_L3_P -->
-		<pin index="14" name="jx1_a14" loc="D12"/> <!-- HDIO_302_L3_N -->
-		<!-- <pin index="15" name="jx1_a15" loc="N/A"/> --> <!-- GND -->
-		<pin index="16" name="jx1_a16" loc="Y7"/> <!-- LPD_MIO23 -->
-		<pin index="17" name="jx1_a17" loc="T6"/> <!-- LPD_MIO22 -->
-		<!-- <pin index="18" name="jx1_a18" loc="N/A"/> --> <!-- GND -->
-		<pin index="19" name="jx1_a19" loc="AF10"/> <!-- PMC_MIO0 -->
-		<pin index="20" name="jx1_a20" loc="AF9"/> <!-- PMC_MIO1 -->
-		<!-- <pin index="21" name="jx1_a21" loc="N/A"/> --> <!-- GND -->
-		<pin index="22" name="jx1_a22" loc="AE9"/> <!-- PMC_MIO2 -->
-		<pin index="23" name="jx1_a23" loc="AD9"/> <!-- PMC_MIO3 -->
-		<!-- <pin index="24" name="jx1_a24" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="25" name="jx1_a25" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="26" name="jx1_a26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="27" name="jx1_a27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="28" name="jx1_a28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="29" name="jx1_a29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="30" name="jx1_a30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="31" name="jx1_a31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="32" name="jx1_a32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="33" name="jx1_a33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="34" name="jx1_a34" loc="N/A"/> --> <!-- +VCCINT -->
-		<pin index="35" name="jx1_a35" loc="AG8"/> <!-- PMC_MIO_WAKE_UP -->
-		<!-- <pin index="36" name="jx1_a36" loc="N/A"/> --> <!-- GND -->
-		<pin index="37" name="jx1_a37" loc="AH10"/> <!-- JTAG_TCK -->
-		<!-- <pin index="38" name="jx1_a38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="39" name="jx1_a39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="40" name="jx1_a40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="41" name="jx1_b1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="42" name="jx1_b2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="43" name="jx1_b3" loc="N/A"/> --> <!-- +VCCINT_IO -->
-		<!-- <pin index="44" name="jx1_b4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="45" name="jx1_b5" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="46" name="jx1_b6" loc="N/A"/> --> <!-- GND -->
-		<pin index="47" name="jx1_b7" loc="B12"/> <!-- HDIO_302_L9_P -->
-		<pin index="48" name="jx1_b8" loc="A13"/> <!-- HDIO_302_L9_N -->
-		<!-- <pin index="49" name="jx1_b9" loc="N/A"/> --> <!-- GND -->
-		<pin index="50" name="jx1_b10" loc="E13"/> <!-- HDIO_302_L2_P -->
-		<pin index="51" name="jx1_b11" loc="D14"/> <!-- HDIO_302_L2_N -->
-		<!-- <pin index="52" name="jx1_b12" loc="N/A"/> --> <!-- GND -->
-		<pin index="53" name="jx1_b13" loc="D11"/> <!-- HDIO_302_L4_P -->
-		<pin index="54" name="jx1_b14" loc="C12"/> <!-- HDIO_302_L4_N -->
-		<!-- <pin index="55" name="jx1_b15" loc="N/A"/> --> <!-- GND -->
-		<pin index="56" name="jx1_b16" loc="U6"/> <!-- LPD_MIO27 -->
-		<pin index="57" name="jx1_b17" loc="W6"/> <!-- LPD_MIO26 -->
-		<!-- <pin index="58" name="jx1_b18" loc="N/A"/> --> <!-- GND -->
-		<pin index="59" name="jx1_b19" loc="AC10"/> <!-- PMC_MIO4 -->
-		<pin index="60" name="jx1_b20" loc="AD10"/> <!-- PMC_MIO5 -->
-		<!-- <pin index="61" name="jx1_b21" loc="N/A"/> --> <!-- GND -->
-		<pin index="62" name="jx1_b22" loc="AC9"/> <!-- PMC_MIO6 -->
-		<pin index="63" name="jx1_b23" loc="AA9"/> <!-- PMC_MIO7 -->
-		<!-- <pin index="64" name="jx1_b24" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="65" name="jx1_b25" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="66" name="jx1_b26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="67" name="jx1_b27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="68" name="jx1_b28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="69" name="jx1_b29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="70" name="jx1_b30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="71" name="jx1_b31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="72" name="jx1_b32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="73" name="jx1_b33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="74" name="jx1_b34" loc="N/A"/> --> <!-- +VCCINT -->
-		<pin index="75" name="jx1_b35" loc="AG7"/> <!-- PMC_MIO_TAMPER_TRIGGER -->
-		<!-- <pin index="76" name="jx1_b36" loc="N/A"/> --> <!-- GND -->
-		<pin index="77" name="jx1_b37" loc="AH9"/> <!-- JTAG_TMS -->
-		<!-- <pin index="78" name="jx1_b38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="79" name="jx1_b39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="80" name="jx1_b40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="81" name="jx1_c1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="82" name="jx1_c2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="83" name="jx1_c3" loc="N/A"/> --> <!-- +VCCINT_IO -->
-		<!-- <pin index="84" name="jx1_c4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="85" name="jx1_c5" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="86" name="jx1_c6" loc="N/A"/> --> <!-- GND -->
-		<pin index="87" name="jx1_c7" loc="B11"/> <!-- HDIO_302_L8_P -->
-		<pin index="88" name="jx1_c8" loc="A11"/> <!-- HDIO_302_L8_N -->
-		<!-- <pin index="89" name="jx1_c9" loc="N/A"/> --> <!-- GND -->
-		<pin index="90" name="jx1_c10" loc="D10"/> <!-- HDIO_302_L5_P -->
-		<pin index="91" name="jx1_c11" loc="C10"/> <!-- HDIO_302_L5_N -->
-		<!-- <pin index="92" name="jx1_c12" loc="N/A"/> --> <!-- GND -->
-		<pin index="93" name="jx1_c13" loc="F14"/> <!-- HDIO_302_L0_P -->
-		<pin index="94" name="jx1_c14" loc="E14"/> <!-- HDIO_302_L0_N -->
-		<!-- <pin index="95" name="jx1_c15" loc="N/A"/> --> <!-- GND -->
-		<pin index="96" name="jx1_c16" loc="F10"/> <!-- LPD_MIO31 -->
-		<!-- <pin index="97" name="jx1_c17" loc="N/A"/> --> <!-- GND -->
-		<pin index="98" name="jx1_c18" loc="Y6"/> <!-- LPD_MIO25 -->
-		<pin index="99" name="jx1_c19" loc="W5"/> <!-- LPD_MIO24 -->
-		<!-- <pin index="100" name="jx1_c20" loc="N/A"/> --> <!-- GND -->
-		<pin index="101" name="jx1_c21" loc="V4"/> <!-- XPIO_706_L12_P -->
-		<pin index="102" name="jx1_c22" loc="W4"/> <!-- XPIO_706_L12_N -->
-		<!-- <pin index="103" name="jx1_c23" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="104" name="jx1_c24" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="105" name="jx1_c25" loc="N/A"/> --> <!-- GND -->
-		<pin index="106" name="jx1_c26" loc="AA8"/> <!-- PMC_MIO8 -->
-		<pin index="107" name="jx1_c27" loc="AB8"/> <!-- PMC_MIO9 -->
-		<!-- <pin index="108" name="jx1_c28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="109" name="jx1_c29" loc="N/A"/> --> <!-- PMC_MIO_PS_REF_CLK_P -->
-		<!-- <pin index="110" name="jx1_c30" loc="N/A"/> --> <!-- PMC_MIO_PS_REF_CLK_N -->
-		<!-- <pin index="111" name="jx1_c31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="112" name="jx1_c32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="113" name="jx1_c33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="114" name="jx1_c34" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="115" name="jx1_c35" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="116" name="jx1_c36" loc="N/A"/> --> <!-- GND -->
-		<pin index="117" name="jx1_c37" loc="AG10"/> <!-- JTAG_TDI -->
-		<!-- <pin index="118" name="jx1_c38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="119" name="jx1_c39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="120" name="jx1_c40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="121" name="jx1_d1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="122" name="jx1_d2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="123" name="jx1_d3" loc="N/A"/> --> <!-- +VCCINT_IO -->
-		<!-- <pin index="124" name="jx1_d4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="125" name="jx1_d5" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="126" name="jx1_d6" loc="N/A"/> --> <!-- GND -->
-		<pin index="127" name="jx1_d7" loc="B10"/> <!-- HDIO_302_L7_P -->
-		<pin index="128" name="jx1_d8" loc="A10"/> <!-- HDIO_302_L7_N -->
-		<!-- <pin index="129" name="jx1_d9" loc="N/A"/> --> <!-- GND -->
-		<pin index="130" name="jx1_d10" loc="F11"/> <!-- HDIO_302_L6_P -->
-		<pin index="131" name="jx1_d11" loc="E11"/> <!-- HDIO_302_L6_N -->
-		<!-- <pin index="132" name="jx1_d12" loc="N/A"/> --> <!-- GND -->
-		<pin index="133" name="jx1_d13" loc="AH5"/> <!-- ERROR_OUT_N -->
-		<pin index="134" name="jx1_d14" loc="N23"/> <!-- SYSCLK_P -->
-		<pin index="135" name="jx1_d15" loc="N24"/> <!-- SYSCLK_N -->
-		<!-- <pin index="136" name="jx1_d16" loc="N/A"/> --> <!-- GND -->
-		<pin index="137" name="jx1_d17" loc="V5"/> <!-- XPIO_706_L13_P -->
-		<pin index="138" name="jx1_d18" loc="U5"/> <!-- XPIO_706_L13_N -->
-		<!-- <pin index="139" name="jx1_d19" loc="N/A"/> --> <!-- GND -->
-		<pin index="140" name="jx1_d20" loc="T5"/> <!-- XPIO_706_L14_P -->
-		<pin index="141" name="jx1_d21" loc="T4"/> <!-- XPIO_706_L14_N -->
-		<!-- <pin index="142" name="jx1_d22" loc="N/A"/> --> <!-- GND -->
-		<pin index="143" name="jx1_d23" loc="AC8"/> <!-- PMC_MIO10 -->
-		<pin index="144" name="jx1_d24" loc="AE8"/> <!-- PMC_MIO11 -->
-		<!-- <pin index="145" name="jx1_d25" loc="N/A"/> --> <!-- GND -->
-		<pin index="146" name="jx1_d26" loc="AE7"/> <!-- PMC_MIO12 -->
-		<!-- <pin index="147" name="jx1_d27" loc="N/A"/> --> <!-- GND -->
-		<pin index="148" name="jx1_d28" loc="AF5"/> <!-- DONE_OUT -->
-		<!-- <pin index="149" name="jx1_d29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="150" name="jx1_d30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="151" name="jx1_d31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="152" name="jx1_d32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="153" name="jx1_d33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="154" name="jx1_d34" loc="N/A"/> --> <!-- +VCCINT -->
-		<pin index="155" name="jx1_d35" loc="AG5"/> <!-- SYSMON_DXP -->
-		<!-- <pin index="156" name="jx1_d36" loc="N/A"/> --> <!-- GND -->
-		<pin index="157" name="jx1_d37" loc="AF8"/> <!-- JTAG_TDO -->
-		<!-- <pin index="158" name="jx1_d38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="159" name="jx1_d39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="160" name="jx1_d40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- JX2 Connector Pins -->
-		<!-- <pin index="161" name="jx2_a1" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="162" name="jx2_a2" loc="N/A"/> --> <!-- GND -->
-		<pin index="163" name="jx2_a3" loc="A25"/> <!-- HDIO_503_L10_P -->
-		<pin index="164" name="jx2_a4" loc="A26"/> <!-- HDIO_503_L10_N -->
-		<!-- <pin index="165" name="jx2_a5" loc="N/A"/> --> <!-- GND -->
-		<pin index="166" name="jx2_a6" loc="B26"/> <!-- HDIO_503_L1_P -->
-		<pin index="167" name="jx2_a7" loc="B27"/> <!-- HDIO_503_L1_N -->
-		<!-- <pin index="168" name="jx2_a8" loc="N/A"/> --> <!-- GND -->
-		<pin index="169" name="jx2_a9" loc="C23"/> <!-- HDIO_503_L3_P -->
-		<pin index="170" name="jx2_a10" loc="B23"/> <!-- HDIO_503_L3_N -->
-		<!-- <pin index="171" name="jx2_a11" loc="N/A"/> --> !-- GND -->
-		<pin index="172" name="jx2_a12" loc="D24"/> <!-- HDIO_503_L12_P -->
-		<pin index="173" name="jx2_a13" loc="C24"/> <!-- HDIO_503_L12_N -->
-		<!-- <pin index="174" name="jx2_a14" loc="N/A"/> --> <!-- GND -->
-		<pin index="175" name="jx2_a15" loc="B20"/> <!-- HDIO_503_L0_P -->
-		<pin index="176" name="jx2_a16" loc="C21"/> <!-- HDIO_503_L0_N -->
-		<!-- <pin index="177" name="jx2_a17" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="178" name="jx2_a18" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="179" name="jx2_a19" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="180" name="jx2_a20" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="181" name="jx2_a21" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="182" name="jx2_a22" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="183" name="jx2_a23" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="184" name="jx2_a24" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="185" name="jx2_a25" loc="N/A"/> --> <!-- VCCO_302 -->
-		<!-- <pin index="186" name="jx2_a26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="187" name="jx2_a27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="188" name="jx2_a28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="189" name="jx2_a29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="190" name="jx2_a30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="191" name="jx2_a31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="192" name="jx2_a32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="193" name="jx2_a33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="194" name="jx2_a34" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="195" name="jx2_a35" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="196" name="jx2_a36" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="197" name="jx2_a37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="198" name="jx2_a38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="199" name="jx2_a39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="200" name="jx2_a40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="201" name="jx2_b1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="202" name="jx2_b2" loc="N/A"/> --> <!-- GND -->
-		<pin index="203" name="jx2_b3" loc="E27"/> <!-- HDIO_503_L9_P -->
-		<pin index="204" name="jx2_b4" loc="E28"/> <!-- HDIO_503_L9_N -->
-		<!-- <pin index="205" name="jx2_b5" loc="N/A"/> --> <!-- GND -->
-		<pin index="206" name="jx2_b6" loc="C25"/> <!-- HDIO_503_L2_P -->
-		<pin index="207" name="jx2_b7" loc="B25"/> <!-- HDIO_503_L2_N -->
-		<!-- <pin index="208" name="jx2_b8" loc="N/A"/> --> <!-- GND -->
-		<pin index="209" name="jx2_b9" loc="N25"/> <!-- HDIO_503_L4_P -->
-		<pin index="210" name="jx2_b10" loc="M25"/> <!-- HDIO_503_L4_N -->
-		<!-- <pin index="211" name="jx2_b11" loc="N/A"/> --> <!-- GND -->
-		<pin index="212" name="jx2_b12" loc="A23"/> <!-- HDIO_503_L13_P -->
-		<pin index="213" name="jx2_b13" loc="A24"/> <!-- HDIO_503_L13_N -->
-		<!-- <pin index="214" name="jx2_b14" loc="N/A"/> --> <!-- GND -->
-		<pin index="215" name="jx2_b15" loc="A20"/> <!-- HDIO_503_L6_P -->
-		<pin index="216" name="jx2_b16" loc="A21"/> <!-- HDIO_503_L6_N -->
-		<!-- <pin index="217" name="jx2_b17" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="218" name="jx2_b18" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="219" name="jx2_b19" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="220" name="jx2_b20" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="221" name="jx2_b21" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="222" name="jx2_b22" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="223" name="jx2_b23" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="224" name="jx2_b24" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="225" name="jx2_b25" loc="N/A"/> --> <!-- VCCO_503 -->
-		<!-- <pin index="226" name="jx2_b26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="227" name="jx2_b27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="228" name="jx2_b28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="229" name="jx2_b29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="230" name="jx2_b30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="231" name="jx2_b31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="232" name="jx2_b32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="233" name="jx2_b33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="234" name="jx2_b34" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="235" name="jx2_b35" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="236" name="jx2_b36" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="237" name="jx2_b37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="238" name="jx2_b38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="239" name="jx2_b39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="240" name="jx2_b40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="241" name="jx2_c1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="242" name="jx2_c2" loc="N/A"/> --> <!-- GND -->
-		<pin index="243" name="jx2_c3" loc="D27"/> <!-- HDIO_503_L8_P -->
-		<pin index="244" name="jx2_c4" loc="C28"/> <!-- HDIO_503_L8_N -->
-		<!-- <pin index="245" name="jx2_c5" loc="N/A"/> --> <!-- GND -->
-		<pin index="246" name="jx2_c6" loc="H27"/> <!-- HDIO_503_L5_P -->
-		<pin index="247" name="jx2_c7" loc="G28"/> <!-- HDIO_503_L5_N -->
-		<!-- <pin index="248" name="jx2_c8" loc="N/A"/> --> <!-- GND -->
-		<pin index="249" name="jx2_c9" loc="F23"/> <!-- HDIO_504_L10_P -->
-		<pin index="250" name="jx2_c10" loc="F24"/> <!-- HDIO_504_L10_N -->
-		<!-- <pin index="251" name="jx2_c11" loc="N/A"/> --> <!-- GND -->
-		<pin index="252" name="jx2_c12" loc="D25"/> <!-- HDIO_503_L14_P -->
-		<pin index="253" name="jx2_c13" loc="D26"/> <!-- HDIO_503_L14_N -->
-		<!-- <pin index="254" name="jx2_c14" loc="N/A"/> --> <!-- GND -->
-		<pin index="255" name="jx2_c15" loc="G25"/> <!-- HDIO_504_L0_P -->
-		<pin index="256" name="jx2_c16" loc="G26"/> <!-- HDIO_504_L0_N -->
-		<!-- <pin index="257" name="jx2_c17" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="258" name="jx2_c18" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="259" name="jx2_c19" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="260" name="jx2_c20" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="261" name="jx2_c21" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="262" name="jx2_c22" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="263" name="jx2_c23" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="264" name="jx2_c24" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="265" name="jx2_c25" loc="N/A"/> --> <!-- VCCO_504 -->
-		<!-- <pin index="266" name="jx2_c26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="267" name="jx2_c27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="268" name="jx2_c28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="269" name="jx2_c29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="270" name="jx2_c30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="271" name="jx2_c31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="272" name="jx2_c32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="273" name="jx2_c33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="274" name="jx2_c34" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="275" name="jx2_c35" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="276" name="jx2_c36" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="277" name="jx2_c37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="278" name="jx2_c38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="279" name="jx2_c39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="280" name="jx2_c40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="281" name="jx2_d1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="282" name="jx2_d2" loc="N/A"/> --> <!-- GND -->
-		<pin index="283" name="jx2_d3" loc="C27"/> <!-- HDIO_503_L7_P -->
-		<pin index="284" name="jx2_d4" loc="B28"/> <!-- HDIO_503_L7_N -->
-		<!-- <pin index="285" name="jx2_d5" loc="N/A"/> --> <!-- GND -->
-		<pin index="286" name="jx2_d6" loc="J27"/> <!-- HDIO_503_L15_P -->
-		<pin index="287" name="jx2_d7" loc="H28"/> <!-- HDIO_503_L15_N -->
-		<!-- <pin index="288" name="jx2_d8" loc="N/A"/> --> <!-- GND -->
-		<pin index="289" name="jx2_d9" loc="E24"/> <!-- HDIO_504_L12_P -->
-		<pin index="290" name="jx2_d10" loc="F25"/> <!-- HDIO_504_L12_N -->
-		<!-- <pin index="291" name="jx2_d11" loc="N/A"/> --> <!-- GND -->
-		<pin index="292" name="jx2_d12" loc="F26"/> <!-- HDIO_504_L1_P -->
-		<pin index="293" name="jx2_d13" loc="E26"/> <!-- HDIO_504_L1_N -->
-		<!-- <pin index="294" name="jx2_d14" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="295" name="jx2_d15" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="296" name="jx2_d16" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="297" name="jx2_d17" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="298" name="jx2_d18" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="299" name="jx2_d19" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="300" name="jx2_d20" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="301" name="jx2_d21" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="302" name="jx2_d22" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="303" name="jx2_d23" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="304" name="jx2_d24" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="305" name="jx2_d25" loc="N/A"/> --> <!-- VCCO_706 -->
-		<!-- <pin index="306" name="jx2_d26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="307" name="jx2_d27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="308" name="jx2_d28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="309" name="jx2_d29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="310" name="jx2_d30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="311" name="jx2_d31" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="312" name="jx2_d32" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="313" name="jx2_d33" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="314" name="jx2_d34" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="315" name="jx2_d35" loc="N/A"/> --> <!-- +VCCINT -->
-		<!-- <pin index="316" name="jx2_d36" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="317" name="jx2_d37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="318" name="jx2_d38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="319" name="jx2_d39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="320" name="jx2_d40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- JX3 Connector Pins -->
-		<!-- <pin index="321" name="jx3_a1" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="322" name="jx3_a2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="323" name="jx3_a3" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="324" name="jx3_a4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="325" name="jx3_a5" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="326" name="jx3_a6" loc="N/A"/> --> <!-- GND -->
-		<pin index="327" name="jx3_a7" loc="H7"/> <!-- GTYP_104_REFCLK0_P -->
-		<pin index="328" name="jx3_a8" loc="H6"/> <!-- GTYP_104_REFCLK0_N -->
-		<!-- <pin index="329" name="jx3_a9" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="330" name="jx3_a10" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="331" name="jx3_a11" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="332" name="jx3_a12" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="333" name="jx3_a13" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="334" name="jx3_a14" loc="D8"/> --> <!-- GTYP_104_TX1_P -->
-		<!-- <pin index="335" name="jx3_a15" loc="D7"/> --> <!-- GTYP_104_TX1_N -->
-		<!-- <pin index="336" name="jx3_a16" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="337" name="jx3_a17" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="338" name="jx3_a18" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="339" name="jx3_a19" loc="N/A"/> --> <!-- GND -->
-		<pin index="340" name="jx3_a20" loc="C5"/> <!-- GTYP_104_TX3_P -->
-		<pin index="341" name="jx3_a21" loc="C4"/> <!-- GTYP_104_TX3_N -->
-		<!-- <pin index="342" name="jx3_a22" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="343" name="jx3_a23" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="344" name="jx3_a24" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="345" name="jx3_a25" loc="N/A"/> --> <!-- GND -->
-		<pin index="346" name="jx3_a26" loc="G5"/> <!-- XPIO_700_L10_P -->
-		<pin index="347" name="jx3_a27" loc="G4"/> <!-- XPIO_700_L10_N -->
-		<!-- <pin index="348" name="jx3_a28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="349" name="jx3_a29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="350" name="jx3_a30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="351" name="jx3_a31" loc="N/A"/> --> <!-- GND -->
-		<pin index="352" name="jx3_a32" loc="L5"/> <!-- XPIO_700_L1_P -->
-		<pin index="353" name="jx3_a33" loc="L4"/> <!-- XPIO_700_L1_N -->
-		<!-- <pin index="354" name="jx3_a34" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="355" name="jx3_a35" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="356" name="jx3_a36" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="357" name="jx3_a37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="358" name="jx3_a38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="359" name="jx3_a39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="360" name="jx3_a40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="361" name="jx3_b1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="362" name="jx3_b2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="363" name="jx3_b3" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="364" name="jx3_b4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="365" name="jx3_b5" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="366" name="jx3_b6" loc="N/A"/> --> <!-- GND -->
-		<pin index="367" name="jx3_b7" loc="K7"/> <!-- GTYP_104_REFCLK1_P -->
-		<pin index="368" name="jx3_b8" loc="K6"/> <!-- GTYP_104_REFCLK1_N -->
-		<!-- <pin index="369" name="jx3_b9" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="370" name="jx3_b10" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="371" name="jx3_b11" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="372" name="jx3_b12" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="373" name="jx3_b13" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="374" name="jx3_b14" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="375" name="jx3_b15" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="376" name="jx3_b16" loc="N/A"/> --> <!-- GND -->
-		<pin index="377" name="jx3_b17" loc="B8"/> <!-- GTYP_104_RX0_P -->
-		<pin index="378" name="jx3_b18" loc="B7"/> <!-- GTYP_104_RX0_N -->
-		<!-- <pin index="379" name="jx3_b19" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="380" name="jx3_b20" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="381" name="jx3_b21" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="382" name="jx3_b22" loc="N/A"/> --> <!-- GND -->
-		<pin index="383" name="jx3_b23" loc="E5"/> <!-- GTYP_104_RX2_P -->
-		<pin index="384" name="jx3_b24" loc="E4"/> <!-- GTYP_104_RX2_N -->
-		<!-- <pin index="385" name="jx3_b25" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="386" name="jx3_b26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="387" name="jx3_b27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="388" name="jx3_b28" loc="N/A"/> --> <!-- GND -->
-		<pin index="389" name="jx3_b29" loc="J5"/> <!-- XPIO_700_L11_P -->
-		<pin index="390" name="jx3_b30" loc="J4"/> <!-- XPIO_700_L11_N -->
-		<!-- <pin index="391" name="jx3_b31" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="392" name="jx3_b32" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="393" name="jx3_b33" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="394" name="jx3_b34" loc="N/A"/> --> <!-- GND -->
-		<pin index="395" name="jx3_b35" loc="N5"/> <!-- XPIO_700_L2_P -->
-		<pin index="396" name="jx3_b36" loc="N4"/> <!-- XPIO_700_L2_N -->
-		<!-- <pin index="397" name="jx3_b37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="398" name="jx3_b38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="399" name="jx3_b39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="400" name="jx3_b40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="401" name="jx3_c1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="402" name="jx3_c2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="403" name="jx3_c3" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="404" name="jx3_c4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="405" name="jx3_c5" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="406" name="jx3_c6" loc="N/A"/> --> <!-- GND -->
-		<pin index="407" name="jx3_c7" loc="M7"/> <!-- GTYP_104_TX0_P -->
-		<pin index="408" name="jx3_c8" loc="M6"/> <!-- GTYP_104_TX0_N -->
-		<!-- <pin index="409" name="jx3_c9" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="410" name="jx3_c10" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="411" name="jx3_c11" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="412" name="jx3_c12" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="413" name="jx3_c13" loc="N/A"/> --> <!-- GND -->
-		<pin index="414" name="jx3_c14" loc="A5"/> <!-- GTYP_104_TX2_P -->
-		<pin index="415" name="jx3_c15" loc="A4"/> <!-- GTYP_104_TX2_N -->
-		<!-- <pin index="416" name="jx3_c16" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="417" name="jx3_c17" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="418" name="jx3_c18" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="419" name="jx3_c19" loc="N/A"/> --> <!-- GND -->
-		<pin index="420" name="jx3_c20" loc="D5"/> <!-- GTYP_104_RX3_P -->
-		<pin index="421" name="jx3_c21" loc="D4"/> <!-- GTYP_104_RX3_N -->
-		<!-- <pin index="422" name="jx3_c22" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="423" name="jx3_c23" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="424" name="jx3_c24" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="425" name="jx3_c25" loc="N/A"/> --> <!-- GND -->
-		<pin index="426" name="jx3_c26" loc="H2"/> <!-- XPIO_700_L12_P -->
-		<pin index="427" name="jx3_c27" loc="H1"/> <!-- XPIO_700_L12_N -->
-		<!-- <pin index="428" name="jx3_c28" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="429" name="jx3_c29" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="430" name="jx3_c30" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="431" name="jx3_c31" loc="N/A"/> --> <!-- GND -->
-		<pin index="432" name="jx3_c32" loc="M2"/> <!-- XPIO_700_L3_P -->
-		<pin index="433" name="jx3_c33" loc="M1"/> <!-- XPIO_700_L3_N -->
-		<!-- <pin index="434" name="jx3_c34" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="435" name="jx3_c35" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="436" name="jx3_c36" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="437" name="jx3_c37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="438" name="jx3_c38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="439" name="jx3_c39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="440" name="jx3_c40" loc="N/A"/> --> <!-- +1V8 -->
-
-		<!-- <pin index="441" name="jx3_d1" loc="N/A"/> --> <!-- +1V2 -->
-		<!-- <pin index="442" name="jx3_d2" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="443" name="jx3_d3" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="444" name="jx3_d4" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="445" name="jx3_d5" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="446" name="jx3_d6" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="447" name="jx3_d7" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="448" name="jx3_d8" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="449" name="jx3_d9" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="450" name="jx3_d10" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="451" name="jx3_d11" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="452" name="jx3_d12" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="453" name="jx3_d13" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="454" name="jx3_d14" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="455" name="jx3_d15" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="456" name="jx3_d16" loc="N/A"/> --> <!-- GND -->
-		<pin index="457" name="jx3_d17" loc="B2"/> <!-- GTYP_104_RX1_P -->
-		<pin index="458" name="jx3_d18" loc="B1"/> <!-- GTYP_104_RX1_N -->
-		<!-- <pin index="459" name="jx3_d19" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="460" name="jx3_d20" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="461" name="jx3_d21" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="462" name="jx3_d22" loc="N/A"/> --> <!-- GND -->
-		<pin index="463" name="jx3_d23" loc="F2"/> <!-- XPIO_700_L13_P -->
-		<pin index="464" name="jx3_d24" loc="F1"/> <!-- XPIO_700_L13_N -->
-		<!-- <pin index="465" name="jx3_d25" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="466" name="jx3_d26" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="467" name="jx3_d27" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="468" name="jx3_d28" loc="N/A"/> --> <!-- GND -->
-		<pin index="469" name="jx3_d29" loc="K2"/> <!-- XPIO_700_L4_P -->
-		<pin index="470" name="jx3_d30" loc="K1"/> <!-- XPIO_700_L4_N -->
-		<!-- <pin index="471" name="jx3_d31" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="472" name="jx3_d32" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="473" name="jx3_d33" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="474" name="jx3_d34" loc="N/A"/> --> <!-- GND -->
-		<pin index="475" name="jx3_d35" loc="P2"/> <!-- XPIO_700_L5_P -->
-		<pin index="476" name="jx3_d36" loc="P1"/> <!-- XPIO_700_L5_N -->
-		<!-- <pin index="477" name="jx3_d37" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="478" name="jx3_d38" loc="N/A"/> --> <!-- +1V8 -->
-		<!-- <pin index="479" name="jx3_d39" loc="N/A"/> --> <!-- GND -->
-		<!-- <pin index="480" name="jx3_d40" loc="N/A"/> --> <!-- +1V8 -->
-
 		<!-- <pin index="0" name="lpddr4_clk1_p" iostandard="DIFF_SSTL15" loc="N23" /> -->
 		<!-- <pin index="1" name="lpddr4_clk1_n" iostandard="DIFF_SSTL15" loc="N24" /> -->
 		<!-- LPDDR4_CH0_CLK1 is in BANK 702, which conflicts with MIPI I/O -->
 		<!-- Refer to https://support.xilinx.com/s/article/55734 for resolution  -->
-		<pin index="1000" name="lpddr4_clk1_p" iostandard="LVDS15" loc="N23" />
-		<pin index="1001" name="lpddr4_clk1_n" iostandard="LVDS15" loc="N24" />
+		<pin index="0" name="lpddr4_clk1_p" iostandard="LVDS15" loc="N23" />
+		<pin index="1" name="lpddr4_clk1_n" iostandard="LVDS15" loc="N24" />
 
 		<!-- LPDDR4_Channel_0 -->
 		<!-- lpddr4_0_dq[15:0] == LPDDR4_CH0_DQ_A[15:0] -->
-		<pin index="1300" name="lpddr4_0_dq0" loc="AB21" />
-		<pin index="1301" name="lpddr4_0_dq1" loc="AC20" />
-		<pin index="1302" name="lpddr4_0_dq2" loc="AB15" />
-		<pin index="1303" name="lpddr4_0_dq3" loc="AC16" />
-		<pin index="1304" name="lpddr4_0_dq4" loc="AC13" />
-		<pin index="1305" name="lpddr4_0_dq5" loc="AB14" />
-		<pin index="1306" name="lpddr4_0_dq6" loc="AB20" />
-		<pin index="1307" name="lpddr4_0_dq7" loc="AC22" />
-		<pin index="1308" name="lpddr4_0_dq8" loc="AE22" />
-		<pin index="1309" name="lpddr4_0_dq9" loc="AD22" />
-		<pin index="1310" name="lpddr4_0_dq10" loc="AD21" />
-		<pin index="1311" name="lpddr4_0_dq11" loc="AC14" />
-		<pin index="1312" name="lpddr4_0_dq12" loc="AD14" />
-		<pin index="1313" name="lpddr4_0_dq13" loc="AD17" />
-		<pin index="1314" name="lpddr4_0_dq14" loc="AC17" />
-		<pin index="1315" name="lpddr4_0_dq15" loc="AD20" />
+		<pin index="300" name="lpddr4_0_dq0" loc="AB21" />
+		<pin index="301" name="lpddr4_0_dq1" loc="AC20" />
+		<pin index="302" name="lpddr4_0_dq2" loc="AB15" />
+		<pin index="303" name="lpddr4_0_dq3" loc="AC16" />
+		<pin index="304" name="lpddr4_0_dq4" loc="AC13" />
+		<pin index="305" name="lpddr4_0_dq5" loc="AB14" />
+		<pin index="306" name="lpddr4_0_dq6" loc="AB20" />
+		<pin index="307" name="lpddr4_0_dq7" loc="AC22" />
+		<pin index="308" name="lpddr4_0_dq8" loc="AE22" />
+		<pin index="309" name="lpddr4_0_dq9" loc="AD22" />
+		<pin index="310" name="lpddr4_0_dq10" loc="AD21" />
+		<pin index="311" name="lpddr4_0_dq11" loc="AC14" />
+		<pin index="312" name="lpddr4_0_dq12" loc="AD14" />
+		<pin index="313" name="lpddr4_0_dq13" loc="AD17" />
+		<pin index="314" name="lpddr4_0_dq14" loc="AC17" />
+		<pin index="315" name="lpddr4_0_dq15" loc="AD20" />
 		<!-- lpddr4_0_dq[31:16] == LPDDR4_CH0_DQ_B[15:0] -->
-		<pin index="1316" name="lpddr4_0_dq16" loc="AF13" />
-		<pin index="1317" name="lpddr4_0_dq17" loc="AG15" />
-		<pin index="1318" name="lpddr4_0_dq18" loc="AF18" />
-		<pin index="1319" name="lpddr4_0_dq19" loc="AG18" />
-		<pin index="1320" name="lpddr4_0_dq20" loc="AF19" />
-		<pin index="1321" name="lpddr4_0_dq21" loc="AE19" />
-		<pin index="1322" name="lpddr4_0_dq22" loc="AF14" />
-		<pin index="1323" name="lpddr4_0_dq23" loc="AG13" />
-		<pin index="1324" name="lpddr4_0_dq24" loc="AH22" />
-		<pin index="1325" name="lpddr4_0_dq25" loc="AG22" />
-		<pin index="1326" name="lpddr4_0_dq26" loc="AG21" />
-		<pin index="1327" name="lpddr4_0_dq27" loc="AH20" />
-		<pin index="1328" name="lpddr4_0_dq28" loc="AH18" />
-		<pin index="1329" name="lpddr4_0_dq29" loc="AH17" />
-		<pin index="1330" name="lpddr4_0_dq30" loc="AH14" />
-		<pin index="1331" name="lpddr4_0_dq31" loc="AH15" />
+		<pin index="316" name="lpddr4_0_dq16" loc="AF13" />
+		<pin index="317" name="lpddr4_0_dq17" loc="AG15" />
+		<pin index="318" name="lpddr4_0_dq18" loc="AF18" />
+		<pin index="319" name="lpddr4_0_dq19" loc="AG18" />
+		<pin index="320" name="lpddr4_0_dq20" loc="AF19" />
+		<pin index="321" name="lpddr4_0_dq21" loc="AE19" />
+		<pin index="322" name="lpddr4_0_dq22" loc="AF14" />
+		<pin index="323" name="lpddr4_0_dq23" loc="AG13" />
+		<pin index="324" name="lpddr4_0_dq24" loc="AH22" />
+		<pin index="325" name="lpddr4_0_dq25" loc="AG22" />
+		<pin index="326" name="lpddr4_0_dq26" loc="AG21" />
+		<pin index="327" name="lpddr4_0_dq27" loc="AH20" />
+		<pin index="328" name="lpddr4_0_dq28" loc="AH18" />
+		<pin index="329" name="lpddr4_0_dq29" loc="AH17" />
+		<pin index="330" name="lpddr4_0_dq30" loc="AH14" />
+		<pin index="331" name="lpddr4_0_dq31" loc="AH15" />
 
 		<!-- lpddr4_0_dqs[1:0]_c/t == LPDDR4_CH0_DQS_C/T_A[1:0] -->
-		<pin index="1332" name="lpddr4_0_dqs0_c" loc="AB17" />
-		<pin index="1333" name="lpddr4_0_dqs0_t" loc="AB18" />
-		<pin index="1334" name="lpddr4_0_dqs1_c" loc="AD11" />
-		<pin index="1335" name="lpddr4_0_dqs1_t" loc="AD12" />
+		<pin index="332" name="lpddr4_0_dqs0_c" loc="AB17" />
+		<pin index="333" name="lpddr4_0_dqs0_t" loc="AB18" />
+		<pin index="334" name="lpddr4_0_dqs1_c" loc="AD11" />
+		<pin index="335" name="lpddr4_0_dqs1_t" loc="AD12" />
 		<!-- lpddr4_0_dqs[3:2]_c/t == LPDDR4_CH0_DQS_C/T_B[1:0] -->
-		<pin index="1336" name="lpddr4_0_dqs2_c" loc="AG16" />
-		<pin index="1337" name="lpddr4_0_dqs2_t" loc="AG17" />
-		<pin index="1338" name="lpddr4_0_dqs3_c" loc="AH19" />
-		<pin index="1339" name="lpddr4_0_dqs3_t" loc="AG20" />
+		<pin index="336" name="lpddr4_0_dqs2_c" loc="AG16" />
+		<pin index="337" name="lpddr4_0_dqs2_t" loc="AG17" />
+		<pin index="338" name="lpddr4_0_dqs3_c" loc="AH19" />
+		<pin index="339" name="lpddr4_0_dqs3_t" loc="AG20" />
 
-		<pin index="1340" name="lpddr4_0_ca_a0" loc="AH12" />
-		<pin index="1341" name="lpddr4_0_ca_a1" loc="AE17" />
-		<pin index="1342" name="lpddr4_0_ca_a2" loc="AE14" />
-		<pin index="1343" name="lpddr4_0_ca_a3" loc="AD19" />
-		<pin index="1344" name="lpddr4_0_ca_a4" loc="AC11" />
-		<pin index="1345" name="lpddr4_0_ca_a5" loc="AE13" />
+		<pin index="340" name="lpddr4_0_ca_a0" loc="AH12" />
+		<pin index="341" name="lpddr4_0_ca_a1" loc="AE17" />
+		<pin index="342" name="lpddr4_0_ca_a2" loc="AE14" />
+		<pin index="343" name="lpddr4_0_ca_a3" loc="AD19" />
+		<pin index="344" name="lpddr4_0_ca_a4" loc="AC11" />
+		<pin index="345" name="lpddr4_0_ca_a5" loc="AE13" />
 
 	       	 
-		<!-- <pin index="1346" name="lpddr4_0_ca_b0" loc="" /> -->
-		<!-- <pin index="1347" name="lpddr4_0_ca_b1" loc="" /> -->
-		<!-- <pin index="1348" name="lpddr4_0_ca_b2" loc="" /> -->
-		<!-- <pin index="1349" name="lpddr4_0_ca_b3" loc="" /> -->
-		<!-- <pin index="1350" name="lpddr4_0_ca_b4" loc="" /> -->
-		<!-- <pin index="1351" name="lpddr4_0_ca_b5" loc="" /> -->
+		<!-- <pin index="346" name="lpddr4_0_ca_b0" loc="" /> -->
+		<!-- <pin index="347" name="lpddr4_0_ca_b1" loc="" /> -->
+		<!-- <pin index="348" name="lpddr4_0_ca_b2" loc="" /> -->
+		<!-- <pin index="349" name="lpddr4_0_ca_b3" loc="" /> -->
+		<!-- <pin index="350" name="lpddr4_0_ca_b4" loc="" /> -->
+		<!-- <pin index="351" name="lpddr4_0_ca_b5" loc="" /> -->
 		
 		
-		<pin index="1352" name="lpddr4_0_cs_a0" loc="AG11" />
-		<!-- <pin index="1353" name="lpddr4_0_cs_a1" loc="" /> -->
-		<!-- <pin index="1354" name="lpddr4_0_cs_b0" loc="" /> -->
-		<!-- <pin index="1355" name="lpddr4_0_cs_b1" loc="" /> -->
+		<pin index="352" name="lpddr4_0_cs_a0" loc="AG11" />
+		<!-- <pin index="353" name="lpddr4_0_cs_a1" loc="" /> -->
+		<!-- <pin index="354" name="lpddr4_0_cs_b0" loc="" /> -->
+		<!-- <pin index="355" name="lpddr4_0_cs_b1" loc="" /> -->
 
-		<pin index="1356" name="lpddr4_0_cka_t" loc="AD16" />
-		<!-- <pin index="1357" name="lpddr4_0_ckb_t" loc="" /> -->
-		<pin index="1358" name="lpddr4_0_cka_c" loc="AD15" />
-		<!-- <pin index="1359" name="lpddr4_0_ckb_c" loc="" /> -->
-		<pin index="1360" name="lpddr4_0_cke_a" loc="AE18" />
+		<pin index="356" name="lpddr4_0_cka_t" loc="AD16" />
+		<!-- <pin index="357" name="lpddr4_0_ckb_t" loc="" /> -->
+		<pin index="358" name="lpddr4_0_cka_c" loc="AD15" />
+		<!-- <pin index="359" name="lpddr4_0_ckb_c" loc="" /> -->
+		<pin index="360" name="lpddr4_0_cke_a" loc="AE18" />
 		<!-- <pin index="361" name="lpddr4_0_cke_b" loc="" /> -->
 
 		<!-- lpddr4_0_dmi[1:0] == LPDDR4_CH0_DMI_A[1:0] -->
-		<pin index="1362" name="lpddr4_0_dmi0" loc="AB12" />
-		<pin index="1363" name="lpddr4_0_dmi1" loc="AC19" />
+		<pin index="362" name="lpddr4_0_dmi0" loc="AB12" />
+		<pin index="363" name="lpddr4_0_dmi1" loc="AC19" />
 		<!-- lpddr4_0_dmi[3:2] == LPDDR4_CH0_DMI_B[1:0] -->
-		<pin index="1364" name="lpddr4_0_dmi2" loc="AG12" />
-		<pin index="1365" name="lpddr4_0_dmi3" loc="AH13" />
+		<pin index="364" name="lpddr4_0_dmi2" loc="AG12" />
+		<pin index="365" name="lpddr4_0_dmi3" loc="AH13" />
 		
 		<!-- <pin index="366" name="lpddr4_0_reset_n" iostandard="LVCMOS15" loc="L25" /> -->
 		<!-- LPDDR4_CH0_RESET_N is in BANK 702, which conflicts with MIPI I/O -->
 		<!-- Refer to https://support.xilinx.com/s/article/55734 for resolution  -->
-		<pin index="1366" name="lpddr4_0_reset_n" iostandard="LVCMOS12" loc="L25" />
+		<pin index="366" name="lpddr4_0_reset_n" iostandard="LVCMOS12" loc="L25" />
 
 		<!-- LPDDR4_Channel_1 -->
 		<!-- lpddr4_1_dq[15:0] == LPDDR4_CH1_DQ_A[15:0] -->
-		<pin index="1367" name="lpddr4_1_dq0" loc="AA22" />
-		<pin index="1368" name="lpddr4_1_dq1" loc="V23" />
-		<pin index="1369" name="lpddr4_1_dq2" loc="V24" />
-		<pin index="1370" name="lpddr4_1_dq3" loc="Y23" />
-		<pin index="1371" name="lpddr4_1_dq4" loc="W25" />
-		<pin index="1372" name="lpddr4_1_dq5" loc="W24" />
-		<pin index="1373" name="lpddr4_1_dq6" loc="Y22" />
-		<pin index="1374" name="lpddr4_1_dq7" loc="AA21" />
-		<pin index="1375" name="lpddr4_1_dq8" loc="AE24" />
-		<pin index="1376" name="lpddr4_1_dq9" loc="AG23" />
-		<pin index="1377" name="lpddr4_1_dq10" loc="AH25" />
-		<pin index="1378" name="lpddr4_1_dq11" loc="AH23" />
-		<pin index="1379" name="lpddr4_1_dq12" loc="AH24" />
-		<pin index="1380" name="lpddr4_1_dq13" loc="AG25" />
-		<pin index="1381" name="lpddr4_1_dq14" loc="AF25" />
-		<pin index="1382" name="lpddr4_1_dq15" loc="AD25" />
+		<pin index="367" name="lpddr4_1_dq0" loc="AA22" />
+		<pin index="368" name="lpddr4_1_dq1" loc="V23" />
+		<pin index="369" name="lpddr4_1_dq2" loc="V24" />
+		<pin index="370" name="lpddr4_1_dq3" loc="Y23" />
+		<pin index="371" name="lpddr4_1_dq4" loc="W25" />
+		<pin index="372" name="lpddr4_1_dq5" loc="W24" />
+		<pin index="373" name="lpddr4_1_dq6" loc="Y22" />
+		<pin index="374" name="lpddr4_1_dq7" loc="AA21" />
+		<pin index="375" name="lpddr4_1_dq8" loc="AE24" />
+		<pin index="376" name="lpddr4_1_dq9" loc="AG23" />
+		<pin index="377" name="lpddr4_1_dq10" loc="AH25" />
+		<pin index="378" name="lpddr4_1_dq11" loc="AH23" />
+		<pin index="379" name="lpddr4_1_dq12" loc="AH24" />
+		<pin index="380" name="lpddr4_1_dq13" loc="AG25" />
+		<pin index="381" name="lpddr4_1_dq14" loc="AF25" />
+		<pin index="382" name="lpddr4_1_dq15" loc="AD25" />
 		<!-- lpddr4_1_dq[31:16] == LPDDR4_CH1_DQ_B[15:0] -->
-		<pin index="1383" name="lpddr4_1_dq16" loc="AG27" />
-		<pin index="1384" name="lpddr4_1_dq17" loc="AG28" />
-		<pin index="1385" name="lpddr4_1_dq18" loc="AE27" />
-		<pin index="1386" name="lpddr4_1_dq19" loc="AD26" />
-		<pin index="1387" name="lpddr4_1_dq20" loc="AE26" />
-		<pin index="1388" name="lpddr4_1_dq21" loc="AF26" />
-		<pin index="1389" name="lpddr4_1_dq22" loc="AH27" />
-		<pin index="1390" name="lpddr4_1_dq23" loc="AG26" />
-		<pin index="1391" name="lpddr4_1_dq24" loc="AB26" />
-		<pin index="1392" name="lpddr4_1_dq25" loc="AB28" />
-		<pin index="1393" name="lpddr4_1_dq26" loc="V25" />
-		<pin index="1394" name="lpddr4_1_dq27" loc="W27" />
-		<pin index="1395" name="lpddr4_1_dq28" loc="W26" />
-		<pin index="1396" name="lpddr4_1_dq29" loc="AA28" />
-		<pin index="1397" name="lpddr4_1_dq30" loc="Y26" />
-		<pin index="1398" name="lpddr4_1_dq31" loc="AA26" />
+		<pin index="383" name="lpddr4_1_dq16" loc="AG27" />
+		<pin index="384" name="lpddr4_1_dq17" loc="AG28" />
+		<pin index="385" name="lpddr4_1_dq18" loc="AE27" />
+		<pin index="386" name="lpddr4_1_dq19" loc="AD26" />
+		<pin index="387" name="lpddr4_1_dq20" loc="AE26" />
+		<pin index="388" name="lpddr4_1_dq21" loc="AF26" />
+		<pin index="389" name="lpddr4_1_dq22" loc="AH27" />
+		<pin index="390" name="lpddr4_1_dq23" loc="AG26" />
+		<pin index="391" name="lpddr4_1_dq24" loc="AB26" />
+		<pin index="392" name="lpddr4_1_dq25" loc="AB28" />
+		<pin index="393" name="lpddr4_1_dq26" loc="V25" />
+		<pin index="394" name="lpddr4_1_dq27" loc="W27" />
+		<pin index="395" name="lpddr4_1_dq28" loc="W26" />
+		<pin index="396" name="lpddr4_1_dq29" loc="AA28" />
+		<pin index="397" name="lpddr4_1_dq30" loc="Y26" />
+		<pin index="398" name="lpddr4_1_dq31" loc="AA26" />
 
 		<!-- lpddr4_1_dqs[1:0]_c/t == LPDDR4_CH1_DQS_C/T_A[1:0] -->
-		<pin index="1399" name="lpddr4_1_dqs0_c" loc="AA23" />
-		<pin index="1400" name="lpddr4_1_dqs0_t" loc="Y24" />
-		<pin index="1401" name="lpddr4_1_dqs1_c" loc="AF23" />
-		<pin index="1402" name="lpddr4_1_dqs1_t" loc="AF24" />
+		<pin index="399" name="lpddr4_1_dqs0_c" loc="AA23" />
+		<pin index="400" name="lpddr4_1_dqs0_t" loc="Y24" />
+		<pin index="401" name="lpddr4_1_dqs1_c" loc="AF23" />
+		<pin index="402" name="lpddr4_1_dqs1_t" loc="AF24" />
 		<!-- lpddr4_1_dqs[3:2]_c/t == LPDDR4_CH1_DQS_C/T_B[1:0] -->
-		<pin index="1405" name="lpddr4_1_dqs2_c" loc="AD27" />
-		<pin index="1406" name="lpddr4_1_dqs2_t" loc="AC28" />
-		<pin index="1403" name="lpddr4_1_dqs3_c" loc="V27" />
-		<pin index="1404" name="lpddr4_1_dqs3_t" loc="V28" />
+		<pin index="405" name="lpddr4_1_dqs2_c" loc="AD27" />
+		<pin index="406" name="lpddr4_1_dqs2_t" loc="AC28" />
+		<pin index="403" name="lpddr4_1_dqs3_c" loc="V27" />
+		<pin index="404" name="lpddr4_1_dqs3_t" loc="V28" />
 
-		<pin index="1407" name="lpddr4_1_ca_a0" loc="AC27" />
-		<pin index="1408" name="lpddr4_1_ca_a1" loc="AF28" />
-		<pin index="1409" name="lpddr4_1_ca_a2" loc="AE23" />
-		<pin index="1410" name="lpddr4_1_ca_a3" loc="AC25" />
-		<pin index="1411" name="lpddr4_1_ca_a4" loc="W21" />
-		<pin index="1412" name="lpddr4_1_ca_a5" loc="AC24" />
+		<pin index="407" name="lpddr4_1_ca_a0" loc="AC27" />
+		<pin index="408" name="lpddr4_1_ca_a1" loc="AF28" />
+		<pin index="409" name="lpddr4_1_ca_a2" loc="AE23" />
+		<pin index="410" name="lpddr4_1_ca_a3" loc="AC25" />
+		<pin index="411" name="lpddr4_1_ca_a4" loc="W21" />
+		<pin index="412" name="lpddr4_1_ca_a5" loc="AC24" />
 
-		<!-- <pin index="1413" name="lpddr4_1_ca_b0" loc="" /> -->
-		<!-- <pin index="1414" name="lpddr4_1_ca_b1" loc="" /> -->
-		<!-- <pin index="1415" name="lpddr4_1_ca_b2" loc="" /> -->
-		<!-- <pin index="1416" name="lpddr4_1_ca_b3" loc="" /> -->
-		<!-- <pin index="1417" name="lpddr4_1_ca_b4" loc="" /> -->
-		<!-- <pin index="1418" name="lpddr4_1_ca_b5" loc="" /> -->
+		<!-- <pin index="413" name="lpddr4_1_ca_b0" loc="" /> -->
+		<!-- <pin index="414" name="lpddr4_1_ca_b1" loc="" /> -->
+		<!-- <pin index="415" name="lpddr4_1_ca_b2" loc="" /> -->
+		<!-- <pin index="416" name="lpddr4_1_ca_b3" loc="" /> -->
+		<!-- <pin index="417" name="lpddr4_1_ca_b4" loc="" /> -->
+		<!-- <pin index="418" name="lpddr4_1_ca_b5" loc="" /> -->
 
-		<pin index="1419" name="lpddr4_1_cs_a0" loc="Y27" />
+		<pin index="419" name="lpddr4_1_cs_a0" loc="Y27" />
 
-		<!-- <pin index="1420" name="lpddr4_1_cs_a1" loc="" /> -->
-		<!-- <pin index="1421" name="lpddr4_1_cs_b0" loc="" /> -->
-		<!-- <pin index="1422" name="lpddr4_1_cs_b1" loc="" /> -->
+		<!-- <pin index="420" name="lpddr4_1_cs_a1" loc="" /> -->
+		<!-- <pin index="421" name="lpddr4_1_cs_b0" loc="" /> -->
+		<!-- <pin index="422" name="lpddr4_1_cs_b1" loc="" /> -->
 
-		<pin index="1423" name="lpddr4_1_cka_t" loc="AB23" />
+		<pin index="423" name="lpddr4_1_cka_t" loc="AB23" />
 		<!-- <pin index="424" name="lpddr4_1_ckb_t" loc="" /> -->
-		<pin index="1425" name="lpddr4_1_cka_c" loc="AC23" />
+		<pin index="425" name="lpddr4_1_cka_c" loc="AC23" />
 		<!-- <pin index="426" name="lpddr4_1_ckb_c" loc="" /> -->
-		<pin index="1427" name="lpddr4_1_cke_a" loc="AB27" />
+		<pin index="427" name="lpddr4_1_cke_a" loc="AB27" />
 		<!-- <pin index="428" name="lpddr4_1_cke_b" loc="" /> -->
 
 		<!-- lpddr4_1_dmi[1:0] == LPDDR4_CH1_DMI_A[1:0] -->
-		<pin index="1429" name="lpddr4_1_dmi0" loc="V22" />
-		<pin index="1430" name="lpddr4_1_dmi1" loc="AD24" />
+		<pin index="429" name="lpddr4_1_dmi0" loc="V22" />
+		<pin index="430" name="lpddr4_1_dmi1" loc="AD24" />
 		<!-- lpddr4_1_dmi[3:2] == LPDDR4_CH1_DMI_B[1:0] -->
-		<pin index="1432" name="lpddr4_1_dmi2" loc="AE28" />
-		<pin index="1431" name="lpddr4_1_dmi3" loc="Y28" />
+		<pin index="432" name="lpddr4_1_dmi2" loc="AE28" />
+		<pin index="431" name="lpddr4_1_dmi3" loc="Y28" />
 		
 		<!-- <pin index="433" name="lpddr4_1_reset_n" iostandard="LVCMOS15" loc="L24" /> -->
 		<!-- LPDDR4_CH0_RESET_N is in BANK 702, which conflicts with MIPI I/O -->
 		<!-- Refer to https://support.xilinx.com/s/article/55734 for resolution  -->
-		<pin index="1433" name="lpddr4_1_reset_n" iostandard="LVCMOS12" loc="L24" />
-        
+		<pin index="433" name="lpddr4_1_reset_n" iostandard="LVCMOS12" loc="L24" />
+
+		<!-- JX1 Connector Pins -->
+		<!-- <pin index="1001" name="jx1_a1" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1002" name="jx1_a2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1003" name="jx1_a3" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1004" name="jx1_a4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1005" name="jx1_a5" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1006" name="jx1_a6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1007" name="jx1_a7" loc="B13"/> <!-- HDIO_302_L10_P -->
+		<pin index="1008" name="jx1_a8" loc="A14"/> <!-- HDIO_302_L10_N -->
+		<!-- <pin index="1009" name="jx1_a9" loc="N/A"/> --> <!-- GND -->
+		<pin index="1010" name="jx1_a10" loc="C14"/> <!-- HDIO_302_L1_P -->
+		<pin index="1011" name="jx1_a11" loc="C13"/> <!-- HDIO_302_L1_N -->
+		<!-- <pin index="1012" name="jx1_a12" loc="N/A"/> --> <!-- GND -->
+		<pin index="1013" name="jx1_a13" loc="E12"/> <!-- HDIO_302_L3_P -->
+		<pin index="1014" name="jx1_a14" loc="D12"/> <!-- HDIO_302_L3_N -->
+		<!-- <pin index="1015" name="jx1_a15" loc="N/A"/> --> <!-- GND -->
+		<pin index="1016" name="jx1_a16" loc="Y7"/> <!-- LPD_MIO23 -->
+		<pin index="1017" name="jx1_a17" loc="T6"/> <!-- LPD_MIO22 -->
+		<!-- <pin index="1018" name="jx1_a18" loc="N/A"/> --> <!-- GND -->
+		<pin index="1019" name="jx1_a19" loc="AF10"/> <!-- PMC_MIO0 -->
+		<pin index="1020" name="jx1_a20" loc="AF9"/> <!-- PMC_MIO1 -->
+		<!-- <pin index="1021" name="jx1_a21" loc="N/A"/> --> <!-- GND -->
+		<pin index="1022" name="jx1_a22" loc="AE9"/> <!-- PMC_MIO2 -->
+		<pin index="1023" name="jx1_a23" loc="AD9"/> <!-- PMC_MIO3 -->
+		<!-- <pin index="1024" name="jx1_a24" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1025" name="jx1_a25" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1026" name="jx1_a26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1027" name="jx1_a27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1028" name="jx1_a28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1029" name="jx1_a29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1030" name="jx1_a30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1031" name="jx1_a31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1032" name="jx1_a32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1033" name="jx1_a33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1034" name="jx1_a34" loc="N/A"/> --> <!-- +VCCINT -->
+		<pin index="1035" name="jx1_a35" loc="AG8"/> <!-- PMC_MIO_WAKE_UP -->
+		<!-- <pin index="1036" name="jx1_a36" loc="N/A"/> --> <!-- GND -->
+		<pin index="1037" name="jx1_a37" loc="AH10"/> <!-- JTAG_TCK -->
+		<!-- <pin index="1038" name="jx1_a38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1039" name="jx1_a39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1040" name="jx1_a40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1041" name="jx1_b1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1042" name="jx1_b2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1043" name="jx1_b3" loc="N/A"/> --> <!-- +VCCINT_IO -->
+		<!-- <pin index="1044" name="jx1_b4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1045" name="jx1_b5" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1046" name="jx1_b6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1047" name="jx1_b7" loc="B12"/> <!-- HDIO_302_L9_P -->
+		<pin index="1048" name="jx1_b8" loc="A13"/> <!-- HDIO_302_L9_N -->
+		<!-- <pin index="1049" name="jx1_b9" loc="N/A"/> --> <!-- GND -->
+		<pin index="1050" name="jx1_b10" loc="E13"/> <!-- HDIO_302_L2_P -->
+		<pin index="1051" name="jx1_b11" loc="D14"/> <!-- HDIO_302_L2_N -->
+		<!-- <pin index="1052" name="jx1_b12" loc="N/A"/> --> <!-- GND -->
+		<pin index="1053" name="jx1_b13" loc="D11"/> <!-- HDIO_302_L4_P -->
+		<pin index="1054" name="jx1_b14" loc="C12"/> <!-- HDIO_302_L4_N -->
+		<!-- <pin index="1055" name="jx1_b15" loc="N/A"/> --> <!-- GND -->
+		<pin index="1056" name="jx1_b16" loc="U6"/> <!-- LPD_MIO27 -->
+		<pin index="1057" name="jx1_b17" loc="W6"/> <!-- LPD_MIO26 -->
+		<!-- <pin index="1058" name="jx1_b18" loc="N/A"/> --> <!-- GND -->
+		<pin index="1059" name="jx1_b19" loc="AC10"/> <!-- PMC_MIO4 -->
+		<pin index="1060" name="jx1_b20" loc="AD10"/> <!-- PMC_MIO5 -->
+		<!-- <pin index="1061" name="jx1_b21" loc="N/A"/> --> <!-- GND -->
+		<pin index="1062" name="jx1_b22" loc="AC9"/> <!-- PMC_MIO6 -->
+		<pin index="1063" name="jx1_b23" loc="AA9"/> <!-- PMC_MIO7 -->
+		<!-- <pin index="1064" name="jx1_b24" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1065" name="jx1_b25" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1066" name="jx1_b26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1067" name="jx1_b27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1068" name="jx1_b28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1069" name="jx1_b29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1070" name="jx1_b30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1071" name="jx1_b31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1072" name="jx1_b32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1073" name="jx1_b33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1074" name="jx1_b34" loc="N/A"/> --> <!-- +VCCINT -->
+		<pin index="1075" name="jx1_b35" loc="AG7"/> <!-- PMC_MIO_TAMPER_TRIGGER -->
+		<!-- <pin index="1076" name="jx1_b36" loc="N/A"/> --> <!-- GND -->
+		<pin index="1077" name="jx1_b37" loc="AH9"/> <!-- JTAG_TMS -->
+		<!-- <pin index="1078" name="jx1_b38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1079" name="jx1_b39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1080" name="jx1_b40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1081" name="jx1_c1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1082" name="jx1_c2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1083" name="jx1_c3" loc="N/A"/> --> <!-- +VCCINT_IO -->
+		<!-- <pin index="1084" name="jx1_c4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1085" name="jx1_c5" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1086" name="jx1_c6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1087" name="jx1_c7" loc="B11"/> <!-- HDIO_302_L8_P -->
+		<pin index="1088" name="jx1_c8" loc="A11"/> <!-- HDIO_302_L8_N -->
+		<!-- <pin index="1089" name="jx1_c9" loc="N/A"/> --> <!-- GND -->
+		<pin index="1090" name="jx1_c10" loc="D10"/> <!-- HDIO_302_L5_P -->
+		<pin index="1091" name="jx1_c11" loc="C10"/> <!-- HDIO_302_L5_N -->
+		<!-- <pin index="1092" name="jx1_c12" loc="N/A"/> --> <!-- GND -->
+		<pin index="1093" name="jx1_c13" loc="F14"/> <!-- HDIO_302_L0_P -->
+		<pin index="1094" name="jx1_c14" loc="E14"/> <!-- HDIO_302_L0_N -->
+		<!-- <pin index="1095" name="jx1_c15" loc="N/A"/> --> <!-- GND -->
+		<pin index="1096" name="jx1_c16" loc="F10"/> <!-- LPD_MIO31 -->
+		<!-- <pin index="1097" name="jx1_c17" loc="N/A"/> --> <!-- GND -->
+		<pin index="1098" name="jx1_c18" loc="Y6"/> <!-- LPD_MIO25 -->
+		<pin index="1099" name="jx1_c19" loc="W5"/> <!-- LPD_MIO24 -->
+		<!-- <pin index="1100" name="jx1_c20" loc="N/A"/> --> <!-- GND -->
+		<pin index="1101" name="jx1_c21" loc="V4"/> <!-- XPIO_706_L12_P -->
+		<pin index="1102" name="jx1_c22" loc="W4"/> <!-- XPIO_706_L12_N -->
+		<!-- <pin index="1103" name="jx1_c23" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1104" name="jx1_c24" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1105" name="jx1_c25" loc="N/A"/> --> <!-- GND -->
+		<pin index="1106" name="jx1_c26" loc="AA8"/> <!-- PMC_MIO8 -->
+		<pin index="1107" name="jx1_c27" loc="AB8"/> <!-- PMC_MIO9 -->
+		<!-- <pin index="1108" name="jx1_c28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1109" name="jx1_c29" loc="N/A"/> --> <!-- PMC_MIO_PS_REF_CLK_P -->
+		<!-- <pin index="1110" name="jx1_c30" loc="N/A"/> --> <!-- PMC_MIO_PS_REF_CLK_N -->
+		<!-- <pin index="1111" name="jx1_c31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1112" name="jx1_c32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1113" name="jx1_c33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1114" name="jx1_c34" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1115" name="jx1_c35" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1116" name="jx1_c36" loc="N/A"/> --> <!-- GND -->
+		<pin index="1117" name="jx1_c37" loc="AG10"/> <!-- JTAG_TDI -->
+		<!-- <pin index="1118" name="jx1_c38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1119" name="jx1_c39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1120" name="jx1_c40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1121" name="jx1_d1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1122" name="jx1_d2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1123" name="jx1_d3" loc="N/A"/> --> <!-- +VCCINT_IO -->
+		<!-- <pin index="1124" name="jx1_d4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1125" name="jx1_d5" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1126" name="jx1_d6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1127" name="jx1_d7" loc="B10"/> <!-- HDIO_302_L7_P -->
+		<pin index="1128" name="jx1_d8" loc="A10"/> <!-- HDIO_302_L7_N -->
+		<!-- <pin index="1129" name="jx1_d9" loc="N/A"/> --> <!-- GND -->
+		<pin index="1130" name="jx1_d10" loc="F11"/> <!-- HDIO_302_L6_P -->
+		<pin index="1131" name="jx1_d11" loc="E11"/> <!-- HDIO_302_L6_N -->
+		<!-- <pin index="1132" name="jx1_d12" loc="N/A"/> --> <!-- GND -->
+		<pin index="1133" name="jx1_d13" loc="AH5"/> <!-- ERROR_OUT_N -->
+<!--		<pin index="1134" name="jx1_d14" loc="N23"/> --> <!-- SYSCLK_P -->
+<!--		<pin index="1135" name="jx1_d15" loc="N24"/> --> <!-- SYSCLK_N -->
+		<!-- <pin index="1136" name="jx1_d16" loc="N/A"/> --> <!-- GND -->
+		<pin index="1137" name="jx1_d17" loc="V5"/> <!-- XPIO_706_L13_P -->
+		<pin index="1138" name="jx1_d18" loc="U5"/> <!-- XPIO_706_L13_N -->
+		<!-- <pin index="1139" name="jx1_d19" loc="N/A"/> --> <!-- GND -->
+		<pin index="1140" name="jx1_d20" loc="T5"/> <!-- XPIO_706_L14_P -->
+		<pin index="1141" name="jx1_d21" loc="T4"/> <!-- XPIO_706_L14_N -->
+		<!-- <pin index="1142" name="jx1_d22" loc="N/A"/> --> <!-- GND -->
+		<pin index="1143" name="jx1_d23" loc="AC8"/> <!-- PMC_MIO10 -->
+		<pin index="1144" name="jx1_d24" loc="AE8"/> <!-- PMC_MIO11 -->
+		<!-- <pin index="1145" name="jx1_d25" loc="N/A"/> --> <!-- GND -->
+		<pin index="1146" name="jx1_d26" loc="AE7"/> <!-- PMC_MIO12 -->
+		<!-- <pin index="1147" name="jx1_d27" loc="N/A"/> --> <!-- GND -->
+		<pin index="1148" name="jx1_d28" loc="AF5"/> <!-- DONE_OUT -->
+		<!-- <pin index="1149" name="jx1_d29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1150" name="jx1_d30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1151" name="jx1_d31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1152" name="jx1_d32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1153" name="jx1_d33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1154" name="jx1_d34" loc="N/A"/> --> <!-- +VCCINT -->
+		<pin index="1155" name="jx1_d35" loc="AG5"/> <!-- SYSMON_DXP -->
+		<!-- <pin index="1156" name="jx1_d36" loc="N/A"/> --> <!-- GND -->
+		<pin index="1157" name="jx1_d37" loc="AF8"/> <!-- JTAG_TDO -->
+		<!-- <pin index="1158" name="jx1_d38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1159" name="jx1_d39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1160" name="jx1_d40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- JX2 Connector Pins -->
+		<!-- <pin index="1161" name="jx2_a1" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1162" name="jx2_a2" loc="N/A"/> --> <!-- GND -->
+		<pin index="1163" name="jx2_a3" loc="A25"/> <!-- HDIO_503_L10_P -->
+		<pin index="1164" name="jx2_a4" loc="A26"/> <!-- HDIO_503_L10_N -->
+		<!-- <pin index="1165" name="jx2_a5" loc="N/A"/> --> <!-- GND -->
+		<pin index="1166" name="jx2_a6" loc="B26"/> <!-- HDIO_503_L1_P -->
+		<pin index="1167" name="jx2_a7" loc="B27"/> <!-- HDIO_503_L1_N -->
+		<!-- <pin index="1168" name="jx2_a8" loc="N/A"/> --> <!-- GND -->
+		<pin index="1169" name="jx2_a9" loc="C23"/> <!-- HDIO_503_L3_P -->
+		<pin index="1170" name="jx2_a10" loc="B23"/> <!-- HDIO_503_L3_N -->
+		<!-- <pin index="1171" name="jx2_a11" loc="N/A"/> --> !-- GND -->
+		<pin index="1172" name="jx2_a12" loc="D24"/> <!-- HDIO_503_L12_P -->
+		<pin index="1173" name="jx2_a13" loc="C24"/> <!-- HDIO_503_L12_N -->
+		<!-- <pin index="1174" name="jx2_a14" loc="N/A"/> --> <!-- GND -->
+		<pin index="1175" name="jx2_a15" loc="B20"/> <!-- HDIO_503_L0_P -->
+		<pin index="1176" name="jx2_a16" loc="C21"/> <!-- HDIO_503_L0_N -->
+		<!-- <pin index="1177" name="jx2_a17" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1178" name="jx2_a18" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1179" name="jx2_a19" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1180" name="jx2_a20" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1181" name="jx2_a21" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1182" name="jx2_a22" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1183" name="jx2_a23" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1184" name="jx2_a24" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1185" name="jx2_a25" loc="N/A"/> --> <!-- VCCO_302 -->
+		<!-- <pin index="1186" name="jx2_a26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1187" name="jx2_a27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1188" name="jx2_a28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1189" name="jx2_a29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1190" name="jx2_a30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1191" name="jx2_a31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1192" name="jx2_a32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1193" name="jx2_a33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1194" name="jx2_a34" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1195" name="jx2_a35" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1196" name="jx2_a36" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1197" name="jx2_a37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1198" name="jx2_a38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1199" name="jx2_a39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1200" name="jx2_a40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1201" name="jx2_b1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1202" name="jx2_b2" loc="N/A"/> --> <!-- GND -->
+		<pin index="1203" name="jx2_b3" loc="E27"/> <!-- HDIO_503_L9_P -->
+		<pin index="1204" name="jx2_b4" loc="E28"/> <!-- HDIO_503_L9_N -->
+		<!-- <pin index="1205" name="jx2_b5" loc="N/A"/> --> <!-- GND -->
+		<pin index="1206" name="jx2_b6" loc="C25"/> <!-- HDIO_503_L2_P -->
+		<pin index="1207" name="jx2_b7" loc="B25"/> <!-- HDIO_503_L2_N -->
+		<!-- <pin index="1208" name="jx2_b8" loc="N/A"/> --> <!-- GND -->
+		<pin index="1209" name="jx2_b9" loc="N25"/> <!-- HDIO_503_L4_P -->
+		<pin index="1210" name="jx2_b10" loc="M25"/> <!-- HDIO_503_L4_N -->
+		<!-- <pin index="1211" name="jx2_b11" loc="N/A"/> --> <!-- GND -->
+		<pin index="1212" name="jx2_b12" loc="A23"/> <!-- HDIO_503_L13_P -->
+		<pin index="1213" name="jx2_b13" loc="A24"/> <!-- HDIO_503_L13_N -->
+		<!-- <pin index="1214" name="jx2_b14" loc="N/A"/> --> <!-- GND -->
+		<pin index="1215" name="jx2_b15" loc="A20"/> <!-- HDIO_503_L6_P -->
+		<pin index="1216" name="jx2_b16" loc="A21"/> <!-- HDIO_503_L6_N -->
+		<!-- <pin index="1217" name="jx2_b17" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1218" name="jx2_b18" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1219" name="jx2_b19" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1220" name="jx2_b20" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1221" name="jx2_b21" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1222" name="jx2_b22" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1223" name="jx2_b23" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1224" name="jx2_b24" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1225" name="jx2_b25" loc="N/A"/> --> <!-- VCCO_503 -->
+		<!-- <pin index="1226" name="jx2_b26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1227" name="jx2_b27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1228" name="jx2_b28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1229" name="jx2_b29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1230" name="jx2_b30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1231" name="jx2_b31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1232" name="jx2_b32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1233" name="jx2_b33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1234" name="jx2_b34" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1235" name="jx2_b35" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1236" name="jx2_b36" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1237" name="jx2_b37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1238" name="jx2_b38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1239" name="jx2_b39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1240" name="jx2_b40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1241" name="jx2_c1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1242" name="jx2_c2" loc="N/A"/> --> <!-- GND -->
+		<pin index="1243" name="jx2_c3" loc="D27"/> <!-- HDIO_503_L8_P -->
+		<pin index="1244" name="jx2_c4" loc="C28"/> <!-- HDIO_503_L8_N -->
+		<!-- <pin index="1245" name="jx2_c5" loc="N/A"/> --> <!-- GND -->
+		<pin index="1246" name="jx2_c6" loc="H27"/> <!-- HDIO_503_L5_P -->
+		<pin index="1247" name="jx2_c7" loc="G28"/> <!-- HDIO_503_L5_N -->
+		<!-- <pin index="1248" name="jx2_c8" loc="N/A"/> --> <!-- GND -->
+		<pin index="1249" name="jx2_c9" loc="F23"/> <!-- HDIO_504_L10_P -->
+		<pin index="1250" name="jx2_c10" loc="F24"/> <!-- HDIO_504_L10_N -->
+		<!-- <pin index="1251" name="jx2_c11" loc="N/A"/> --> <!-- GND -->
+		<pin index="1252" name="jx2_c12" loc="D25"/> <!-- HDIO_503_L14_P -->
+		<pin index="1253" name="jx2_c13" loc="D26"/> <!-- HDIO_503_L14_N -->
+		<!-- <pin index="1254" name="jx2_c14" loc="N/A"/> --> <!-- GND -->
+		<pin index="1255" name="jx2_c15" loc="G25"/> <!-- HDIO_504_L0_P -->
+		<pin index="1256" name="jx2_c16" loc="G26"/> <!-- HDIO_504_L0_N -->
+		<!-- <pin index="1257" name="jx2_c17" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1258" name="jx2_c18" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1259" name="jx2_c19" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1260" name="jx2_c20" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1261" name="jx2_c21" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1262" name="jx2_c22" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1263" name="jx2_c23" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1264" name="jx2_c24" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1265" name="jx2_c25" loc="N/A"/> --> <!-- VCCO_504 -->
+		<!-- <pin index="1266" name="jx2_c26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1267" name="jx2_c27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1268" name="jx2_c28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1269" name="jx2_c29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1270" name="jx2_c30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1271" name="jx2_c31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1272" name="jx2_c32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1273" name="jx2_c33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1274" name="jx2_c34" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1275" name="jx2_c35" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1276" name="jx2_c36" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1277" name="jx2_c37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1278" name="jx2_c38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1279" name="jx2_c39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1280" name="jx2_c40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1281" name="jx2_d1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1282" name="jx2_d2" loc="N/A"/> --> <!-- GND -->
+		<pin index="1283" name="jx2_d3" loc="C27"/> <!-- HDIO_503_L7_P -->
+		<pin index="1284" name="jx2_d4" loc="B28"/> <!-- HDIO_503_L7_N -->
+		<!-- <pin index="1285" name="jx2_d5" loc="N/A"/> --> <!-- GND -->
+		<pin index="1286" name="jx2_d6" loc="J27"/> <!-- HDIO_503_L15_P -->
+		<pin index="1287" name="jx2_d7" loc="H28"/> <!-- HDIO_503_L15_N -->
+		<!-- <pin index="1288" name="jx2_d8" loc="N/A"/> --> <!-- GND -->
+		<pin index="1289" name="jx2_d9" loc="E24"/> <!-- HDIO_504_L12_P -->
+		<pin index="1290" name="jx2_d10" loc="F25"/> <!-- HDIO_504_L12_N -->
+		<!-- <pin index="1291" name="jx2_d11" loc="N/A"/> --> <!-- GND -->
+		<pin index="1292" name="jx2_d12" loc="F26"/> <!-- HDIO_504_L1_P -->
+		<pin index="1293" name="jx2_d13" loc="E26"/> <!-- HDIO_504_L1_N -->
+		<!-- <pin index="1294" name="jx2_d14" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1295" name="jx2_d15" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1296" name="jx2_d16" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1297" name="jx2_d17" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1298" name="jx2_d18" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1299" name="jx2_d19" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1300" name="jx2_d20" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1301" name="jx2_d21" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1302" name="jx2_d22" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1303" name="jx2_d23" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1304" name="jx2_d24" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1305" name="jx2_d25" loc="N/A"/> --> <!-- VCCO_706 -->
+		<!-- <pin index="1306" name="jx2_d26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1307" name="jx2_d27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1308" name="jx2_d28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1309" name="jx2_d29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1310" name="jx2_d30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1311" name="jx2_d31" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1312" name="jx2_d32" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1313" name="jx2_d33" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1314" name="jx2_d34" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1315" name="jx2_d35" loc="N/A"/> --> <!-- +VCCINT -->
+		<!-- <pin index="1316" name="jx2_d36" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1317" name="jx2_d37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1318" name="jx2_d38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1319" name="jx2_d39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1320" name="jx2_d40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- JX3 Connector Pins -->
+		<!-- <pin index="1321" name="jx3_a1" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1322" name="jx3_a2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1323" name="jx3_a3" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1324" name="jx3_a4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1325" name="jx3_a5" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1326" name="jx3_a6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1327" name="jx3_a7" loc="H7"/> <!-- GTYP_104_REFCLK0_P -->
+		<pin index="1328" name="jx3_a8" loc="H6"/> <!-- GTYP_104_REFCLK0_N -->
+		<!-- <pin index="1329" name="jx3_a9" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1330" name="jx3_a10" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1331" name="jx3_a11" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1332" name="jx3_a12" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1333" name="jx3_a13" loc="N/A"/> --> <!-- GND -->
+		<pin index="1334" name="jx3_a14" loc="D8"/> <!-- GTYP_104_TX1_P -->
+		<pin index="1335" name="jx3_a15" loc="D7"/> <!-- GTYP_104_TX1_N -->
+		<!-- <pin index="1336" name="jx3_a16" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1337" name="jx3_a17" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1338" name="jx3_a18" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1339" name="jx3_a19" loc="N/A"/> --> <!-- GND -->
+		<pin index="1340" name="jx3_a20" loc="C5"/> <!-- GTYP_104_TX3_P -->
+		<pin index="1341" name="jx3_a21" loc="C4"/> <!-- GTYP_104_TX3_N -->
+		<!-- <pin index="1342" name="jx3_a22" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1343" name="jx3_a23" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1344" name="jx3_a24" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1345" name="jx3_a25" loc="N/A"/> --> <!-- GND -->
+		<pin index="1346" name="jx3_a26" loc="G5"/> <!-- XPIO_700_L10_P -->
+		<pin index="1347" name="jx3_a27" loc="G4"/> <!-- XPIO_700_L10_N -->
+		<!-- <pin index="1348" name="jx3_a28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1349" name="jx3_a29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1350" name="jx3_a30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1351" name="jx3_a31" loc="N/A"/> --> <!-- GND -->
+		<pin index="1352" name="jx3_a32" loc="L5"/> <!-- XPIO_700_L1_P -->
+		<pin index="1353" name="jx3_a33" loc="L4"/> <!-- XPIO_700_L1_N -->
+		<!-- <pin index="1354" name="jx3_a34" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1355" name="jx3_a35" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1356" name="jx3_a36" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1357" name="jx3_a37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1358" name="jx3_a38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1359" name="jx3_a39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1360" name="jx3_a40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1361" name="jx3_b1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1362" name="jx3_b2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1363" name="jx3_b3" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1364" name="jx3_b4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1365" name="jx3_b5" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1366" name="jx3_b6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1367" name="jx3_b7" loc="K7"/> <!-- GTYP_104_REFCLK1_P -->
+		<pin index="1368" name="jx3_b8" loc="K6"/> <!-- GTYP_104_REFCLK1_N -->
+		<!-- <pin index="1369" name="jx3_b9" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1370" name="jx3_b10" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1371" name="jx3_b11" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1372" name="jx3_b12" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1373" name="jx3_b13" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1374" name="jx3_b14" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1375" name="jx3_b15" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1376" name="jx3_b16" loc="N/A"/> --> <!-- GND -->
+		<pin index="1377" name="jx3_b17" loc="B8"/> <!-- GTYP_104_RX0_P -->
+		<pin index="1378" name="jx3_b18" loc="B7"/> <!-- GTYP_104_RX0_N -->
+		<!-- <pin index="1379" name="jx3_b19" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1380" name="jx3_b20" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1381" name="jx3_b21" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1382" name="jx3_b22" loc="N/A"/> --> <!-- GND -->
+		<pin index="1383" name="jx3_b23" loc="E5"/> <!-- GTYP_104_RX2_P -->
+		<pin index="1384" name="jx3_b24" loc="E4"/> <!-- GTYP_104_RX2_N -->
+		<!-- <pin index="1385" name="jx3_b25" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1386" name="jx3_b26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1387" name="jx3_b27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1388" name="jx3_b28" loc="N/A"/> --> <!-- GND -->
+		<pin index="1389" name="jx3_b29" loc="J5"/> <!-- XPIO_700_L11_P -->
+		<pin index="1390" name="jx3_b30" loc="J4"/> <!-- XPIO_700_L11_N -->
+		<!-- <pin index="1391" name="jx3_b31" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1392" name="jx3_b32" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1393" name="jx3_b33" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1394" name="jx3_b34" loc="N/A"/> --> <!-- GND -->
+		<pin index="1395" name="jx3_b35" loc="N5"/> <!-- XPIO_700_L2_P -->
+		<pin index="1396" name="jx3_b36" loc="N4"/> <!-- XPIO_700_L2_N -->
+		<!-- <pin index="1397" name="jx3_b37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1398" name="jx3_b38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1399" name="jx3_b39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1400" name="jx3_b40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1401" name="jx3_c1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1402" name="jx3_c2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1403" name="jx3_c3" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1404" name="jx3_c4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1405" name="jx3_c5" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1406" name="jx3_c6" loc="N/A"/> --> <!-- GND -->
+		<pin index="1407" name="jx3_c7" loc="M7"/> <!-- GTYP_104_TX0_P -->
+		<pin index="1408" name="jx3_c8" loc="M6"/> <!-- GTYP_104_TX0_N -->
+		<!-- <pin index="1409" name="jx3_c9" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1410" name="jx3_c10" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1411" name="jx3_c11" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1412" name="jx3_c12" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1413" name="jx3_c13" loc="N/A"/> --> <!-- GND -->
+		<pin index="1414" name="jx3_c14" loc="A5"/> <!-- GTYP_104_TX2_P -->
+		<pin index="1415" name="jx3_c15" loc="A4"/> <!-- GTYP_104_TX2_N -->
+		<!-- <pin index="1416" name="jx3_c16" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1417" name="jx3_c17" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1418" name="jx3_c18" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1419" name="jx3_c19" loc="N/A"/> --> <!-- GND -->
+		<pin index="1420" name="jx3_c20" loc="D5"/> <!-- GTYP_104_RX3_P -->
+		<pin index="1421" name="jx3_c21" loc="D4"/> <!-- GTYP_104_RX3_N -->
+		<!-- <pin index="1422" name="jx3_c22" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1423" name="jx3_c23" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1424" name="jx3_c24" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1425" name="jx3_c25" loc="N/A"/> --> <!-- GND -->
+		<pin index="1426" name="jx3_c26" loc="H2"/> <!-- XPIO_700_L12_P -->
+		<pin index="1427" name="jx3_c27" loc="H1"/> <!-- XPIO_700_L12_N -->
+		<!-- <pin index="1428" name="jx3_c28" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1429" name="jx3_c29" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1430" name="jx3_c30" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1431" name="jx3_c31" loc="N/A"/> --> <!-- GND -->
+		<pin index="1432" name="jx3_c32" loc="M2"/> <!-- XPIO_700_L3_P -->
+		<pin index="1433" name="jx3_c33" loc="M1"/> <!-- XPIO_700_L3_N -->
+		<!-- <pin index="1434" name="jx3_c34" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1435" name="jx3_c35" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1436" name="jx3_c36" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1437" name="jx3_c37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1438" name="jx3_c38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1439" name="jx3_c39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1440" name="jx3_c40" loc="N/A"/> --> <!-- +1V8 -->
+
+		<!-- <pin index="1441" name="jx3_d1" loc="N/A"/> --> <!-- +1V2 -->
+		<!-- <pin index="1442" name="jx3_d2" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1443" name="jx3_d3" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1444" name="jx3_d4" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1445" name="jx3_d5" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1446" name="jx3_d6" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1447" name="jx3_d7" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1448" name="jx3_d8" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1449" name="jx3_d9" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1450" name="jx3_d10" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1451" name="jx3_d11" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1452" name="jx3_d12" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1453" name="jx3_d13" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1454" name="jx3_d14" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1455" name="jx3_d15" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1456" name="jx3_d16" loc="N/A"/> --> <!-- GND -->
+		<pin index="1457" name="jx3_d17" loc="B2"/> <!-- GTYP_104_RX1_P -->
+		<pin index="1458" name="jx3_d18" loc="B1"/> <!-- GTYP_104_RX1_N -->
+		<!-- <pin index="1459" name="jx3_d19" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1460" name="jx3_d20" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1461" name="jx3_d21" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1462" name="jx3_d22" loc="N/A"/> --> <!-- GND -->
+		<pin index="1463" name="jx3_d23" loc="F2"/> <!-- XPIO_700_L13_P -->
+		<pin index="1464" name="jx3_d24" loc="F1"/> <!-- XPIO_700_L13_N -->
+		<!-- <pin index="1465" name="jx3_d25" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1466" name="jx3_d26" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1467" name="jx3_d27" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1468" name="jx3_d28" loc="N/A"/> --> <!-- GND -->
+		<pin index="1469" name="jx3_d29" loc="K2"/> <!-- XPIO_700_L4_P -->
+		<pin index="1470" name="jx3_d30" loc="K1"/> <!-- XPIO_700_L4_N -->
+		<!-- <pin index="1471" name="jx3_d31" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1472" name="jx3_d32" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1473" name="jx3_d33" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1474" name="jx3_d34" loc="N/A"/> --> <!-- GND -->
+		<pin index="1475" name="jx3_d35" loc="P2"/> <!-- XPIO_700_L5_P -->
+		<pin index="1476" name="jx3_d36" loc="P1"/> <!-- XPIO_700_L5_N -->
+		<!-- <pin index="1477" name="jx3_d37" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1478" name="jx3_d38" loc="N/A"/> --> <!-- +1V8 -->
+		<!-- <pin index="1479" name="jx3_d39" loc="N/A"/> --> <!-- GND -->
+		<!-- <pin index="1480" name="jx3_d40" loc="N/A"/> --> <!-- +1V8 -->
+
 	</pins>
 </part_info>
