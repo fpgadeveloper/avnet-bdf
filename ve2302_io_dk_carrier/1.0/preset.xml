@@ -13,15 +13,6 @@
 
 <ip_presets schema="1.0">
 
-        <!--
-	<ip_preset preset_proc_name="ps_pmc_fixed_io_preset">
-		<ip vendor="xilinx.com" library="ip" name="versal_cips" version="*">
-			<user_parameters>
-		`	</user_parameters>
-		</ip>
-	</ip_preset>
-	-->
-
 	<!-- Some are PMC so I don't know if I should put them in the "ps_pmc_fixed_io_preset".
 		xpio and gpio are physically the same (see package files and the doc:AM013) -->
 	<!-- Push Buttons -->
