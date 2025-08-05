@@ -195,6 +195,37 @@
 				<pin index="159" name="jx1_d39" /> <!-- SMON_AGND -->
 				<pin index="160" name="jx1_d40" /> <!-- VCCAUX_SMON -->
 			</pins>
+			<interfaces> 
+				<!-- Push Buttons -->
+				<interface mode="master" name="pmc_pb" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pmc_pb" preset_proc="pmc_pb_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="pmc_pb_tri_i" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx1_a20" /> <!-- PMC_MIO46 -->
+								<pin_map port_index="1" component_pin="jx1_d26" /> <!-- PMC_MIO37 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<!-- LEDs -->
+				<interface mode="master" name="pmc_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pmc_led" preset_proc="pmc_led_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="pmc_led_tri_o" dir="out" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx1_a19" /> <!-- PMC_MIO47 -->
+								<pin_map port_index="1" component_pin="jx1_b20" /> <!-- PMC_MIO48 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+			</interfaces>
 		</component>
 
 		<component name="jx2_connector" type="connector" sub_type="som" display_name="Connector 2 on VE2302 Carrier Card (JX2)">
@@ -363,6 +394,55 @@
 				<pin index="159" name="jx2_d39" /> <!-- XPIO_702_L14_P -->
 				<pin index="160" name="jx2_d40" /> <!-- XPIO_702_L14_N -->
 			</pins>
+			<interfaces> 
+				<!-- Push Buttons -->
+				<interface mode="master" name="xpio_pb" type="xilinx.com:interface:gpio_rtl:1.0" of_component="xpio_pb" preset_proc="xpio_pb_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="xpio_pb_tri_i" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_b9" /> <!-- XPIO_702_L26_P -->
+								<pin_map port_index="1" component_pin="jx2_c9" /> <!-- XPIO_703_GC_XCC_L24_P --> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<!-- 4-port Dipswitch -->
+				<interface mode="master" name="xpio_dp" type="xilinx.com:interface:gpio_rtl:1.0" of_component="xpio_dp" preset_proc="xpio_dp_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="xpio_dp_tri_i" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d12" /> <!-- XPIO_703_L25_P -->
+								<pin_map port_index="1" component_pin="jx2_d13" /> <!-- XPIO_703_L25_N -->
+								<pin_map port_index="2" component_pin="jx2_c12" /> <!-- XPIO_703_L26_P -->
+								<pin_map port_index="3" component_pin="jx2_c13" /> <!-- XPIO_703_L26_N -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<!-- LEDs -->
+				<interface mode="master" name="xpio_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="xpio_led" preset_proc="xpio_led_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="xpio_led_tri_o" dir="out" left="2" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c10" /> <!-- XPIO_703_GC_XCC_L24_N -->
+								<pin_map port_index="1" component_pin="jx2_b10" /> <!-- XPIO_702_L26_N -->
+								<pin_map port_index="2" component_pin="jx2_b36" /> <!-- XPIO_702_XCC_L21_P -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+			</interfaces>
 		</component>
 
 		<component name="jx3_connector" type="connector" sub_type="som" display_name="Connector 3 on VE2302 Carrier Card (JX3)">
@@ -532,10 +612,52 @@
 				<pin index="160" name="jx3_d40" /> <!-- +VIN -->
 			</pins>
 		</component>
+
+		<component name="pmc_pb" display_name="PMC PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+			<description>PMC Push Buttons</description>
+		</component>
+		<component name="pmc_led" display_name="PMC LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+			<description>PMC LEDs</description>
+		</component>
+
+		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+			<description>XPIO Push Buttons</description>
+		</component>
+		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+			<description>XPIO DIP Switches</description>
+		</component>
+		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+			<description>XPIO LEDs</description>
+		</component>
+
 		
 	</components>
 
 	<connections>
+		<connection name="jx1_connector_pmc_pb_connection" component1="jx1_connector" component2="pmc_pb">
+			<connection_map name="jx1_connector_pmc_pb_0" typical_delay="5" c1_st_index="20" c1_end_index="20" c2_st_index="0" c2_end_index="0" /> <!-- JX1 A20 : PMC_MIO46 -->
+			<connection_map name="jx1_connector_pmc_pb_1" typical_delay="5" c1_st_index="146" c1_end_index="146" c2_st_index="1" c2_end_index="1" /> <!-- JX1 D26 : PMC_MIO37 -->
+		</connection>
+		<connection name="jx1_connector_pmc_led_connection" component1="jx1_connector" component2="pmc_led">
+			<connection_map name="jx1_connector_pmc_led_0" typical_delay="5" c1_st_index="19" c1_end_index="19" c2_st_index="0" c2_end_index="0" /> <!-- JX1 A19 : PMC_MIO47 -->
+			<connection_map name="jx1_connector_pmc_led_1" typical_delay="5" c1_st_index="60" c1_end_index="60" c2_st_index="1" c2_end_index="1" /> <!-- JX1 B20 : PMC_MIO48 -->
+		</connection>
+
+		<connection name="jx2_connector_xpio_pb_connection" component1="jx2_connector" component2="xpio_pb">
+			<connection_map name="jx2_connector_xpio_pb_0" typical_delay="5" c1_st_index="49" c1_end_index="49" c2_st_index="0" c2_end_index="0" /> <!-- JX2 B9 : XPIO_702_L26_P -->
+			<connection_map name="jx2_connector_xpio_pb_1" typical_delay="5" c1_st_index="89" c1_end_index="89" c2_st_index="1" c2_end_index="1" /> <!-- JX2 C9 : XPIO_703_GC_XCC_L24_P -->
+		</connection>
+		<connection name="jx2_connector_xpio_dp_connection" component1="jx2_connector" component2="xpio_dp">
+			<connection_map name="jx2_connector_xpio_dp_0" typical_delay="5" c1_st_index="132" c1_end_index="132" c2_st_index="0" c2_end_index="0" /> <!-- JX2 D12 : XPIO_703_L25_P -->
+			<connection_map name="jx2_connector_xpio_dp_1" typical_delay="5" c1_st_index="133" c1_end_index="133" c2_st_index="1" c2_end_index="1" /> <!-- JX2 D13 : XPIO_703_L25_N -->
+			<connection_map name="jx2_connector_xpio_dp_2" typical_delay="5" c1_st_index="92" c1_end_index="92" c2_st_index="2" c2_end_index="2" /> <!-- JX2 C12 : XPIO_703_L26_P -->
+			<connection_map name="jx2_connector_xpio_dp_3" typical_delay="5" c1_st_index="93" c1_end_index="93" c2_st_index="3" c2_end_index="3" /> <!-- JX2 C13 : XPIO_703_L26_N -->
+		</connection>
+		<connection name="jx2_connector_xpio_led_connection" component1="jx2_connector" component2="xpio_led">
+			<connection_map name="jx2_connector_xpio_led_0" typical_delay="5" c1_st_index="90" c1_end_index="90" c2_st_index="0" c2_end_index="0" /> <!-- JX2 C10 : XPIO_703_GC_XCC_L24_N -->
+			<connection_map name="jx2_connector_xpio_led_1" typical_delay="5" c1_st_index="50" c1_end_index="50" c2_st_index="1" c2_end_index="1" /> <!-- JX2 B10 : XPIO_702_L26_N -->
+			<connection_map name="jx2_connector_xpio_led_2" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="2" c2_end_index="2" /> <!-- JX2 B36 : XPIO_702_XCC_L21_P -->
+		</connection>
 	</connections>
 </board>
 
