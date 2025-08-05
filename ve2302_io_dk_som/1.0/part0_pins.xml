@@ -194,7 +194,7 @@
 		<pin index="433" name="lpddr4_1_reset_n" iostandard="LVCMOS12" loc="L24" />
 
 		<!-- JX1 Connector Pins -->
-		
+
 		<!-- <pin index="1001" name="jx1_a1" loc="N/A" /> --> <!-- +VCCINT -->
 		<!-- <pin index="1002" name="jx1_a2" loc="N/A" /> --> <!-- +VCCINT -->
 		<!-- <pin index="1003" name="jx1_a3" loc="N/A" /> --> <!-- +VCCINT -->
@@ -401,7 +401,7 @@
 		<!-- <pin index="1198" name="jx2_a38" loc="N/A" /> --> <!-- GND -->
 		<pin index="1199" name="jx2_a39" loc="R21" /> <!-- XPIO_702_L19_P -->
 		<pin index="1200" name="jx2_a40" loc="P22" /> <!-- XPIO_702_L19_N -->
-		
+
 		<!-- <pin index="1201" name="jx2_b1" loc="N/A" /> --> <!-- +VCCINT -->
 		<!-- <pin index="1202" name="jx2_b2" loc="N/A" /> --> <!-- +VCCINT -->
 		<pin index="1203" name="jx2_b3" loc="E27" /> <!-- XPIO_703_XCC_L3_P -->
