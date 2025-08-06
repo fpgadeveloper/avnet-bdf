@@ -17,77 +17,105 @@
 			<user_parameters>
 				<user_hier_parameter name="CONFIG.PS_PMC_CONFIG">
 
-					<!-- They are just input bit to a flash memory -->
-					<!-- <user_hier_parameter name="PS_MIO7">
-						<user_parameter name="AUX_IO" value="0"/>
-						<user_parameter name="OUTPUT_DATA" value="high"/>
-						<user_parameter name="PULL" value="disable"/>
-					</user_hier_parameter>
-					<user_hier_parameter name="PS_MIO9">
-						<user_parameter name="AUX_IO" value="0"/>
-						<user_parameter name="OUTPUT_DATA" value="high"/>
-						<user_parameter name="PULL" value="disable"/>
-					</user_hier_parameter> -->
-
-					<!-- CAN Inhibit functionality not present -->
-					<!-- <user_hier_parameter name="PMC_MIO37">
-						<user_parameter name="AUX_IO" value="0"/>
-						<user_parameter name="DIRECTION" value="out"/>
-						<user_parameter name="OUTPUT_DATA" value="high"/>
-						<user_parameter name="USAGE" value="GPIO"/>
-					</user_hier_parameter> -->
-
-					<user_hier_parameter name="PMC_MIO12">
-						<user_parameter name="AUX_IO" value="0"/>
-						<user_parameter name="DIRECTION" value="out"/>
-						<!-- <user_parameter name="OUTPUT_DATA" value="high"/> -->
-						<user_parameter name="USAGE" value="GPIO"/>
-					</user_hier_parameter>	
-					
-					<user_hier_parameter name="PMC_SD1">
-						<user_parameter name="CD_ENABLE" value="1"/>
-						<user_parameter name="POW_ENABLE" value="1"/>
-						<user_parameter name="RESET_ENABLE" value="0"/>
-						<user_parameter name="WP_ENABLE" value="0"/>
-					</user_hier_parameter>
-
-
-					<!-- <user_parameter name="PMC_SD1_COHERENCY" value="0"/> -->
-					<!-- <user_parameter name="PMC_SD1_DATA_TRANSFER_MODE" value="8Bit"/> -->
-					<user_hier_parameter name="PMC_SD1_PERIPHERAL">
-						<user_parameter name="ENABLE" value="1"/>
-						<user_hier_parameter name="IO">
-							<user_parameter name="PMC_MIO" value="38 .. 45"/>
-						</user_hier_parameter>
-					</user_hier_parameter>
-					<user_hier_parameter name="PMC_SD1_SLOT_TYPE">
-						<user_parameter name="SD" value="3.0"/>
-					</user_hier_parameter>
-					
-					<!-- BANK 500 (OSPI, USB) -->
-					<user_hier_parameter name="PMC_GPIO0_MIO_PERIPHERAL">
-						<user_parameter name="ENABLE" value="1"/>
-						<user_hier_parameter name="IO">
-							<user_parameter name="PMC_MIO" value="0 .. 25"/>
-						</user_hier_parameter>
-					</user_hier_parameter>
-					
-					<!-- BANK 501 (EMMC, PBs, LEDs, SD, I2C)-->
-					<user_hier_parameter name="PMC_GPIO1_MIO_PERIPHERAL">
-						<user_parameter name="ENABLE" value="1"/>
-						<user_hier_parameter name="IO">
-							<user_parameter name="PMC_MIO" value="26 .. 51"/>
-						</user_hier_parameter>
-					</user_hier_parameter>
-					
-					<!-- I2C -->
-					<user_hier_parameter name="PS_I2C0_PERIPHERAL">
+					<!-- PMC I2C -->
+					<user_hier_parameter name="PMC_I2CPMC_PERIPHERAL">
 						<user_parameter name="ENABLE" value="1"/>
 						<user_hier_parameter name="IO">
 							<user_parameter name="PMC_MIO" value="50 .. 51"/>
 						</user_hier_parameter>
 					</user_hier_parameter>
+
+					<!-- PMC GPIO -->
+					<user_hier_parameter name="PMC_MIO11">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="in"/>
+						<user_parameter name="OUTPUT_DATA" value="default"/>
+						<user_parameter name="PULL" value="disable"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PMC_MIO12">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pullup"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<user_hier_parameter name="PMC_MIO28">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pullup"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<user_hier_parameter name="PMC_MIO37">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="in"/>
+						<user_parameter name="OUTPUT_DATA" value="default"/>
+						<user_parameter name="PULL" value="pullup"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<user_hier_parameter name="PMC_MIO46">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="in"/>
+						<user_parameter name="OUTPUT_DATA" value="default"/>
+						<user_parameter name="PULL" value="disable"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PMC_MIO47">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PMC_MIO48">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
 					
+					
+					<!-- PS I2C -->
+					<user_hier_parameter name="PS_I2C0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="22 .. 23"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+
+					<!-- PS GPIO -->
+					<user_hier_parameter name="PS_MIO12">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="low"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PS_MIO13">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="low"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
 					<!-- OSPI -->
 					<user_hier_parameter name="PMC_OSPI_PERIPHERAL">
 						<user_parameter name="ENABLE" value="1"/>
@@ -97,34 +125,56 @@
 						<user_parameter name="MODE" value="Single"/>
 					</user_hier_parameter>
 
-					<!-- EMMC (NOTE PMC_MIO28 -> MIO28_I2C_EXP_RST_B) -->
-					<user_hier_parameter name="PMC_EMMC_PERIPHERAL">
+					<!-- SD0 (micro SD card) -->
+					<user_hier_parameter name="PMC_SD0_SLOT_TYPE">
+						<user_parameter name="SD" value="3.0 AUTODIR"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="PMC_SD0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PMC_MIO" value="37 .. 49"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					<user_hier_parameter name="PMC_SD0">
+						<user_parameter name="CD_ENABLE" value="1"/>
+						<user_hier_parameter name="CD_IO">
+							<user_parameter name="PMC_MIO" value="39"/>
+						</user_hier_parameter>
+						<user_parameter name="POW_ENABLE" value="1"/>
+						<user_hier_parameter name="POW_IO">
+							<user_parameter name="PMC_MIO" value="49"/>
+						</user_hier_parameter>
+						<user_parameter name="RESET_IO" value="0"/>
+						<user_parameter name="WP_IO" value="0"/>
+					</user_hier_parameter>
+					
+					<!-- SD1 (eMMC) -->
+					<user_parameter name="PMC_SD1_SLOT_TYPE" value="eMMC"/>
+					<user_parameter name="PMC_SD1_DATA_TRANSFER_MODE" value="8Bit"/>
+					<user_hier_parameter name="PMC_SD1_PERIPHERAL">
 						<user_parameter name="ENABLE" value="1"/>
 						<user_hier_parameter name="IO">
 							<user_parameter name="PMC_MIO" value="26 .. 36"/>
 						</user_hier_parameter>
-						<user_parameter name="MODE" value="Single"/>
 					</user_hier_parameter>
-					<!-- <user_parameter name="PMC_QSPI_COHERENCY" value="0"/> -->
-					<!-- <user_hier_parameter name="PMC_QSPI_FBCLK"> -->
-					<!-- <user_parameter name="ENABLE" value="1"/> -->
-					<!-- <user_hier_parameter name="IO"> -->
-					<!-- <user_parameter name="PMC_MIO" value="6"/> -->
-					<!-- </user_hier_parameter> -->
-					<!-- </user_hier_parameter> -->
-					<!-- <user_parameter name="PMC_QSPI_PERIPHERAL_DATA_MODE" value="x4"/> -->
-					<!-- <user_parameter name="PMC_QSPI_PERIPHERAL_ENABLE" value="1"/> -->
-					<!-- <user_hier_parameter name="PMC_QSPI_PERIPHERAL_MODE"> -->
-					<!-- <user_parameter name="Dual" value="Parallel"/> -->
-					<!-- </user_hier_parameter> -->
-					<!-- <user_parameter name="PS_CAN1_PERIPHERAL"> -->
-					<!-- <user_parameter name="ENABLE" value="1"/> -->
-					<!-- <user_parameter name="IO"> -->
-					<!-- <user_parameter name="PMC_MIO" value="40 .. 41"/> -->
-					<!-- </user_parameter> -->
-					<!-- </user_parameter> -->
+					
+					<!-- CAN0 -->
+					<user_hier_parameter name="PS_CAN0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="14 .. 15"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					
+					<!-- CAN1 -->
+					<user_hier_parameter name="PS_CAN1_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="20 .. 21"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
 
-					<!-- GIGABIT ETHERNET -->
+					<!-- ENET0 (GIGABIT ETHERNET) -->
 					<user_hier_parameter name="PS_ENET0_MDIO">
 						<user_parameter name="ENABLE" value="1"/>
 						<user_hier_parameter name="IO">
@@ -137,18 +187,18 @@
 							<user_parameter name="PS_MIO" value="0 .. 11"/>
 						</user_hier_parameter>
 					</user_hier_parameter>
-					<!-- <user_parameter name="PS_ENET1_PERIPHERAL"> -->
-					<!-- <user_parameter name="ENABLE" value="1"/> -->
-					<!-- <user_parameter name="IO"> -->
-					<!-- <user_parameter name="PS_MIO" value="12 .. 23"/> -->
-					<!-- </user_parameter> -->
-					<!-- </user_parameter> -->
 					
 					<!-- UART -->
 					<user_hier_parameter name="PS_UART0_PERIPHERAL">
 						<user_parameter name="ENABLE" value="1"/>
 						<user_hier_parameter name="IO">
-							<user_parameter name="PMC_MIO" value="16 .. 17"/>
+							<user_parameter name="PS_MIO" value="16 .. 17"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					<user_hier_parameter name="PS_UART0_RTS_CTS">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="18 .. 19"/>
 						</user_hier_parameter>
 					</user_hier_parameter>
 
