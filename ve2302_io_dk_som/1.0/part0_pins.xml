@@ -207,7 +207,7 @@
 		<pin index="1020" name="jx1_a20" loc="AF9" /> <!-- PMC_MIO46 -->
 		<pin index="1022" name="jx1_a22" loc="AE9" /> <!-- PMC_MIO45 -->
 		<pin index="1023" name="jx1_a23" loc="AD9" /> <!-- PMC_MIO44 -->
-		
+
 		<pin index="1047" name="jx1_b7" loc="B12" /> <!-- HDIO_302_L9_P -->
 		<pin index="1048" name="jx1_b8" loc="A13" /> <!-- HDIO_302_L9_N -->
 		<pin index="1050" name="jx1_b10" loc="E13" /> <!-- HDIO_302_L2_P -->
@@ -220,7 +220,7 @@
 		<pin index="1060" name="jx1_b20" loc="AD10" /> <!-- PMC_MIO48 -->
 		<pin index="1062" name="jx1_b22" loc="AC9" /> <!-- PMC_MIO43 -->
 		<pin index="1063" name="jx1_b23" loc="AA9" /> <!-- PMC_MIO42 -->
-		
+
 		<pin index="1087" name="jx1_c7" loc="B11" /> <!-- HDIO_302_L8_P -->
 		<pin index="1088" name="jx1_c8" loc="A11" /> <!-- HDIO_302_L8_N -->
 		<pin index="1090" name="jx1_c10" loc="D10" /> <!-- HDIO_302_HDGC_L6_P -->
@@ -233,7 +233,7 @@
 		<pin index="1104" name="jx1_c24" loc="W4" /> <!-- LPD_MIO12 -->
 		<pin index="1106" name="jx1_c26" loc="AA8" /> <!-- PMC_MIO41 -->
 		<pin index="1107" name="jx1_c27" loc="AB8" /> <!-- PMC_MIO40 -->
-		
+
 		<pin index="1127" name="jx1_d7" loc="B10" /> <!-- HDIO_302_L7_P -->
 		<pin index="1128" name="jx1_d8" loc="A10" /> <!-- HDIO_302_L7_N -->
 		<pin index="1130" name="jx1_d10" loc="F11" /> <!-- HDIO_302_L4_P -->
@@ -303,7 +303,7 @@
 		<pin index="1237" name="jx2_b37" loc="M21" /> <!-- XPIO_702_XCC_L21_N -->
 		<pin index="1239" name="jx2_b39" loc="V21" /> <!-- XPIO_702_XCC_L18_P -->
 		<pin index="1240" name="jx2_b40" loc="U22" /> <!-- XPIO_702_XCC_L18_N -->
-		
+
 		<pin index="1243" name="jx2_c3" loc="D27" /> <!-- XPIO_703_L4_P -->
 		<pin index="1244" name="jx2_c4" loc="C28" /> <!-- XPIO_703_L4_N -->
 		<pin index="1246" name="jx2_c6" loc="H27" /> <!-- XPIO_703_L1_P -->
@@ -330,7 +330,7 @@
 		<pin index="1277" name="jx2_c37" loc="U26" /> <!-- XPIO_702_GC_XCC_L6_N -->
 		<pin index="1279" name="jx2_c39" loc="U23" /> <!-- XPIO_702_GC_XCC_L12_P -->
 		<pin index="1280" name="jx2_c40" loc="T24" /> <!-- XPIO_702_GC_XCC_L12_N -->
-		
+
 		<pin index="1283" name="jx2_d3" loc="C27" /> <!-- XPIO_703_L5_P -->
 		<pin index="1284" name="jx2_d4" loc="B28" /> <!-- XPIO_703_L5_N -->
 		<pin index="1286" name="jx2_d6" loc="G27" /> <!-- XPIO_703_L2_P -->
@@ -370,7 +370,7 @@
 		<pin index="1347" name="jx3_a27" loc="G4" /> <!-- GTYP_103_TX3_N -->
 		<pin index="1352" name="jx3_a32" loc="L5" /> <!-- GTYP_103_TX1_P -->
 		<pin index="1353" name="jx3_a33" loc="L4" /> <!-- GTYP_103_TX1_N -->
-		
+
 		<pin index="1370" name="jx3_b10" loc="F7" /> <!-- GTYP_104_REFCLK1_P -->
 		<pin index="1371" name="jx3_b11" loc="F6" /> <!-- GTYP_104_REFCLK1_N -->
 		<pin index="1377" name="jx3_b17" loc="B8" /> <!-- GTYP_104_TX3_P -->
@@ -381,7 +381,7 @@
 		<pin index="1390" name="jx3_b30" loc="J4" /> <!-- GTYP_103_TX2_N -->
 		<pin index="1395" name="jx3_b35" loc="N5" /> <!-- GTYP_103_TX0_P -->
 		<pin index="1396" name="jx3_b36" loc="N4" /> <!-- GTYP_103_TX0_N -->
-		
+
 		<pin index="1407" name="jx3_c7" loc="M7" /> <!-- GTYP_103_REFCLK0_P -->
 		<pin index="1408" name="jx3_c8" loc="M6" /> <!-- GTYP_103_REFCLK0_N -->
 		<pin index="1414" name="jx3_c14" loc="A5" /> <!-- GTYP_104_RX3_P -->
@@ -392,7 +392,7 @@
 		<pin index="1427" name="jx3_c27" loc="H1" /> <!-- GTYP_103_RX3_N -->
 		<pin index="1432" name="jx3_c32" loc="M2" /> <!-- GTYP_103_RX1_P -->
 		<pin index="1433" name="jx3_c33" loc="M1" /> <!-- GTYP_103_RX1_N -->
-		
+
 		<pin index="1450" name="jx3_d10" loc="K7" /> <!-- GTYP_103_REFCLK1_P -->
 		<pin index="1451" name="jx3_d11" loc="K6" /> <!-- GTYP_103_REFCLK1_N -->
 		<pin index="1457" name="jx3_d17" loc="B2" /> <!-- GTYP_104_RX2_P -->
