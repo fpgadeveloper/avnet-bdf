@@ -203,26 +203,26 @@
 			<pins>
 				<pin index="1" name="jx2_a1" /> <!-- +VCCINT -->
 				<pin index="2" name="jx2_a2" /> <!-- +VCCINT -->
-				<pin index="3" name="jx2_a3" /> <!-- XPIO_703_L10_P -->
-				<pin index="4" name="jx2_a4" /> <!-- XPIO_703_L10_N -->
+				<pin index="3" name="jx2_a3" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L10_P => cam1_mipi_data_rxp[3] -->
+				<pin index="4" name="jx2_a4" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L10_N => cam1_mipi_data_rxn[3] -->
 				<pin index="5" name="jx2_a5" /> <!-- GND -->
-				<pin index="6" name="jx2_a6" /> <!-- XPIO_703_L11_P -->
-				<pin index="7" name="jx2_a7" /> <!-- XPIO_703_L11_N -->
+				<pin index="6" name="jx2_a6" iostandard="LVCMOS12" /> <!-- XPIO_703_L11_P => cam1_gpio[1] -->
+				<pin index="7" name="jx2_a7" iostandard="LVCMOS12" /> <!-- XPIO_703_L11_N => cam1_gpio[0] -->
 				<pin index="8" name="jx2_a8" /> <!-- +VCCO_702 -->
-				<pin index="9" name="jx2_a9" /> <!-- XPIO_703_L16_P -->
-				<pin index="10" name="jx2_a10" /> <!-- XPIO_703_L16_N -->
+				<pin index="9" name="jx2_a9" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L16_P => cam2_mipi_data_rxp[2] -->
+				<pin index="10" name="jx2_a10" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L16_N => cam2_mipi_data_rxn[2] -->
 				<pin index="11" name="jx2_a11" /> <!-- GND -->
-				<pin index="12" name="jx2_a12" /> <!-- XPIO_703_XCC_L15_P -->
-				<pin index="13" name="jx2_a13" /> <!-- XPIO_703_XCC_L15_N -->
+				<pin index="12" name="jx2_a12" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L15_P => cam2_mipi_data_rxp[3] -->
+				<pin index="13" name="jx2_a13" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L15_N => cam2_mipi_data_rxn[3] -->
 				<pin index="14" name="jx2_a14" /> <!-- VCCO_703 -->
-				<pin index="15" name="jx2_a15" /> <!-- XPIO_703_XCC_L21_P -->
-				<pin index="16" name="jx2_a16" /> <!-- XPIO_703_XCC_L21_N -->
+				<pin index="15" name="jx2_a15" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L21_P => cam3_mipi_data_rxp[2] -->
+				<pin index="16" name="jx2_a16" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L21_N => cam3_mipi_data_rxp[2] -->
 				<pin index="17" name="jx2_a17" /> <!-- GND -->
-				<pin index="18" name="jx2_a18" /> <!-- XPIO_703_L20_P -->
-				<pin index="19" name="jx2_a19" /> <!-- XPIO_703_L20_N -->
+				<pin index="18" name="jx2_a18" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L20_P => cam3_mipi_data_rxp[1] -->
+				<pin index="19" name="jx2_a19" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L20_N => cam3_mipi_data_rxn[1] -->
 				<pin index="20" name="jx2_a20" /> <!-- VCCO_702_SENSE -->
-				<pin index="21" name="jx2_a21" /> <!-- XPIO_703_XCC_L18_P -->
-				<pin index="22" name="jx2_a22" /> <!-- XPIO_703_XCC_L18_N -->
+				<pin index="21" name="jx2_a21" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L18_P => cam3_mipi_clk_rxp -->
+				<pin index="22" name="jx2_a22" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L18_N => cam3_mipi_clk_rxn -->
 				<pin index="23" name="jx2_a23" /> <!-- GND -->
 				<pin index="24" name="jx2_a24" /> <!-- XPIO_702_L1_P -->
 				<pin index="25" name="jx2_a25" /> <!-- XPIO_702_L1_N -->
@@ -244,26 +244,26 @@
 
 				<pin index="41" name="jx2_b1" /> <!-- +VCCINT -->
 				<pin index="42" name="jx2_b2" /> <!-- +VCCINT -->
-				<pin index="43" name="jx2_b3" /> <!-- XPIO_703_XCC_L3_P -->
-				<pin index="44" name="jx2_b4" /> <!-- XPIO_703_XCC_L3_N -->
+				<pin index="43" name="jx2_b3" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L3_P => cam0_mipi_data_rxp[2] -->
+				<pin index="44" name="jx2_b4" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L3_N => cam0_mipi_data_rxn[2] -->
 				<pin index="45" name="jx2_b5" /> <!-- GND -->
-				<pin index="46" name="jx2_b6" /> <!-- XPIO_703_GC_XCC_L9_P -->
-				<pin index="47" name="jx2_b7" /> <!-- XPIO_703_GC_XCC_L9_N -->
+				<pin index="46" name="jx2_b6" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L9_P => cam1_mipi_data_rxp[2] -->
+				<pin index="47" name="jx2_b7" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L9_N => cam1_mipi_data_rxn[2] -->
 				<pin index="48" name="jx2_b8" /> <!-- +VCCO_702 -->
-				<pin index="49" name="jx2_b9" iostandard="LVCMOS12" /> <!-- XPIO_702_L26_P => XPIO_PB[0] -->
-				<pin index="50" name="jx2_b10" iostandard="LVCMOS12" /> <!-- XPIO_702_L26_N => XPIO_LED[1]-->
+				<pin index="49" name="jx2_b9" iostandard="LVCMOS12" /> <!-- XPIO_702_L26_P => xpio_pb[0] -->
+				<pin index="50" name="jx2_b10" iostandard="LVCMOS12" /> <!-- XPIO_702_L26_N => xpio_led[1]-->
 				<pin index="51" name="jx2_b11" /> <!-- GND -->
-				<pin index="52" name="jx2_b12" /> <!-- XPIO_703_L17_P -->
-				<pin index="53" name="jx2_b13" /> <!-- XPIO_703_L17_N -->
+				<pin index="52" name="jx2_b12" iostandard="LVCMOS12" /> <!-- XPIO_703_L17_P => cam2_gpio[1] -->
+				<pin index="53" name="jx2_b13" iostandard="LVCMOS12" /> <!-- XPIO_703_L17_N => cam2_gpio[0]-->
 				<pin index="54" name="jx2_b14" /> <!-- VCCO_703 -->
-				<pin index="55" name="jx2_b15" /> <!-- XPIO_703_L22_P -->
-				<pin index="56" name="jx2_b16" /> <!-- XPIO_703_L22_N -->
+				<pin index="55" name="jx2_b15" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L22_P => cam3_mipi_data_rxp[3] -->
+				<pin index="56" name="jx2_b16" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L22_N => cam3_mipi_data_rxn[3] -->
 				<pin index="57" name="jx2_b17" /> <!-- GND -->
-				<pin index="58" name="jx2_b18" /> <!-- XPIO_703_L23_P -->
-				<pin index="59" name="jx2_b19" /> <!-- XPIO_703_L23_N -->
+				<pin index="58" name="jx2_b18" iostandard="LVCMOS12" /> <!-- XPIO_703_L23_P => cam3_gpio[1] -->
+				<pin index="59" name="jx2_b19" iostandard="LVCMOS12" /> <!-- XPIO_703_L23_N => cam3_gpio[0] -->
 				<pin index="60" name="jx2_b20" /> <!-- VCCO_703_SENSE -->
-				<pin index="61" name="jx2_b21" /> <!-- XPIO_703_L19_P -->
-				<pin index="62" name="jx2_b22" /> <!-- XPIO_703_L19_N -->
+				<pin index="61" name="jx2_b21" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L19_P => cam3_mipi_data_rxp[0] -->
+				<pin index="62" name="jx2_b22" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L19_N => cam3_mipi_data_rxn[0] -->
 				<pin index="63" name="jx2_b23" /> <!-- GND -->
 				<pin index="64" name="jx2_b24" /> <!-- XPIO_702_L2_P -->
 				<pin index="65" name="jx2_b25" /> <!-- XPIO_702_L2_N -->
@@ -277,7 +277,7 @@
 				<pin index="73" name="jx2_b33" /> <!-- XPIO_702_L23_P -->
 				<pin index="74" name="jx2_b34" /> <!-- XPIO_702_L23_N -->
 				<pin index="75" name="jx2_b35" /> <!-- GND -->
-				<pin index="76" name="jx2_b36" iostandard="LVCMOS12" /> <!-- XPIO_702_XCC_L21_P => XPIO_LED[2] -->
+				<pin index="76" name="jx2_b36" iostandard="LVCMOS12" /> <!-- XPIO_702_XCC_L21_P => xpio_led[2] -->
 				<pin index="77" name="jx2_b37" /> <!-- XPIO_702_XCC_L21_N -->
 				<pin index="78" name="jx2_b38" /> <!-- GND -->
 				<pin index="79" name="jx2_b39" /> <!-- XPIO_702_XCC_L18_P -->
@@ -285,20 +285,20 @@
 
 				<pin index="81" name="jx2_c1" /> <!-- +VCCINT -->
 				<pin index="82" name="jx2_c2" /> <!-- +VCCINT -->
-				<pin index="83" name="jx2_c3" /> <!-- XPIO_703_L4_P -->
-				<pin index="84" name="jx2_c4" /> <!-- XPIO_703_L4_N -->
+				<pin index="83" name="jx2_c3" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L4_P => cam0_mipi_data_rxp[3] -->
+				<pin index="84" name="jx2_c4" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L4_N => cam0_mipi_data_rxn[3] -->
 				<pin index="85" name="jx2_c5" /> <!-- GND -->
-				<pin index="86" name="jx2_c6" /> <!-- XPIO_703_L1_P -->
-				<pin index="87" name="jx2_c7" /> <!-- XPIO_703_L1_N -->
+				<pin index="86" name="jx2_c6" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L1_P => cam0_mipi_data_rxp[0] -->
+				<pin index="87" name="jx2_c7" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L1_N => cam0_mipi_data_rxn[0] -->
 				<pin index="88" name="jx2_c8" /> <!-- VCCO_702_ENB_OUT -->
-				<pin index="89" name="jx2_c9" iostandard="LVCMOS12" /> <!-- XPIO_703_GC_XCC_L24_P => XPIO_PB[1] -->
-				<pin index="90" name="jx2_c10" iostandard="LVCMOS12" /> <!-- XPIO_703_GC_XCC_L24_N => XPIO_LED[0] -->
+				<pin index="89" name="jx2_c9" iostandard="LVCMOS12" /> <!-- XPIO_703_GC_XCC_L24_P => xpio_pb[1] -->
+				<pin index="90" name="jx2_c10" iostandard="LVCMOS12" /> <!-- XPIO_703_GC_XCC_L24_N => xpio_led[0] -->
 				<pin index="91" name="jx2_c11" /> <!-- GND -->
-				<pin index="92" name="jx2_c12" iostandard="LVCMOS12" /> <!-- XPIO_703_L26_P => XPIO_DP[2] -->
-				<pin index="93" name="jx2_c13" iostandard="LVCMOS12" /> <!-- XPIO_703_L26_N => XPIO_DP[3] -->
+				<pin index="92" name="jx2_c12" iostandard="LVCMOS12" /> <!-- XPIO_703_L26_P => xpio_dp[2] -->
+				<pin index="93" name="jx2_c13" iostandard="LVCMOS12" /> <!-- XPIO_703_L26_N => xpio_dp[3] -->
 				<pin index="94" name="jx2_c14" /> <!-- CC_RESET_OUT_B -->
-				<pin index="95" name="jx2_c15" /> <!-- XPIO_703_L7_P -->
-				<pin index="96" name="jx2_c16" /> <!-- XPIO_703_L7_N -->
+				<pin index="95" name="jx2_c15" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L7_P => cam1_mipi_data_rxp[0] -->
+				<pin index="96" name="jx2_c16" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L7_N => cam1_mipi_data_rxn[0] -->
 				<pin index="97" name="jx2_c17" /> <!-- GND -->
 				<pin index="98" name="jx2_c18" /> <!-- XPIO_703_L14_P -->
 				<pin index="99" name="jx2_c19" /> <!-- XPIO_703_L14_N -->
@@ -326,23 +326,23 @@
 
 				<pin index="121" name="jx2_d1" /> <!-- +VCCINT -->
 				<pin index="122" name="jx2_d2" /> <!-- +VCCINT -->
-				<pin index="123" name="jx2_d3" /> <!-- XPIO_703_L5_P -->
-				<pin index="124" name="jx2_d4" /> <!-- XPIO_703_L5_N -->
+				<pin index="123" name="jx2_d3" iostandard="LVCMOS12" /> <!-- XPIO_703_L5_P => cam0_gpio[1] -->
+				<pin index="124" name="jx2_d4" iostandard="LVCMOS12" /> <!-- XPIO_703_L5_N => cam0_gpio[0] -->
 				<pin index="125" name="jx2_d5" /> <!-- GND -->
-				<pin index="126" name="jx2_d6" /> <!-- XPIO_703_L2_P -->
-				<pin index="127" name="jx2_d7" /> <!-- XPIO_703_L2_N -->
+				<pin index="126" name="jx2_d6" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L2_P => cam0_mipi_data_rxp[1] -->
+				<pin index="127" name="jx2_d7" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L2_N => cam0_mipi_data_rxn[1] -->
 				<pin index="128" name="jx2_d8" /> <!-- VCCO_702_PG_IN -->
-				<pin index="129" name="jx2_d9" /> <!-- XPIO_703_XCC_L0_P -->
-				<pin index="130" name="jx2_d10" /> <!-- XPIO_703_XCC_L0_N -->
+				<pin index="129" name="jx2_d9" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L0_P => cam0_mipi_clk_rxp -->
+				<pin index="130" name="jx2_d10" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_XCC_L0_N => cam0_mipi_clk_rxn -->
 				<pin index="131" name="jx2_d11" /> <!-- GND -->
-				<pin index="132" name="jx2_d12" iostandard="LVCMOS12" /> <!-- XPIO_703_L25_P => XPIO_DP[0] -->
-				<pin index="133" name="jx2_d13" iostandard="LVCMOS12" /> <!-- XPIO_703_L25_N => XPIO_DP[1] -->
+				<pin index="132" name="jx2_d12" iostandard="LVCMOS12" /> <!-- XPIO_703_L25_P => xpio_dp[0] -->
+				<pin index="133" name="jx2_d13" iostandard="LVCMOS12" /> <!-- XPIO_703_L25_N => xpio_dp[1] -->
 				<pin index="134" name="jx2_d14" /> <!-- MGTYPVCCAUX_SENSE -->
-				<pin index="135" name="jx2_d15" /> <!-- XPIO_703_L8_P -->
-				<pin index="136" name="jx2_d16" /> <!-- XPIO_703_L8_N -->
+				<pin index="135" name="jx2_d15" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L8_P => cam1_mipi_data_rxp[1] -->
+				<pin index="136" name="jx2_d16" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L8_N => cam1_mipi_data_rxp[1] -->
 				<pin index="137" name="jx2_d17" /> <!-- GND -->
-				<pin index="138" name="jx2_d18" /> <!-- XPIO_703_GC_XCC_L6_P -->
-				<pin index="139" name="jx2_d19" /> <!-- XPIO_703_GC_XCC_L6_N -->
+				<pin index="138" name="jx2_d18" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L6_P => cam1_mipi_clk_rxp -->
+				<pin index="139" name="jx2_d19" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L6_N => cam1_mipi_clk_rxn -->
 				<pin index="140" name="jx2_d20" /> <!-- MGTYPAVTT_SENSE -->
 				<pin index="141" name="jx2_d21" /> <!-- XPIO_703_L13_P -->
 				<pin index="142" name="jx2_d22" /> <!-- XPIO_703_L13_N -->
@@ -409,6 +409,202 @@
 								<pin_map port_index="0" component_pin="jx2_c10" /> <!-- XPIO_703_GC_XCC_L24_N -->
 								<pin_map port_index="1" component_pin="jx2_b10" /> <!-- XPIO_702_L26_N -->
 								<pin_map port_index="2" component_pin="jx2_b36" /> <!-- XPIO_702_XCC_L21_P -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!-- MIPI0 -->
+				<interface mode="master" name="cam0_gpio" type="xilinx.com:interface:gpio_rtl:1.0" of_component="cam0_gpio" preset_proc="cam0_gpio_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="cam0_gpio_tri_o" dir="out" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d4" /> <!-- XPIO_703_L5_N - JX2-D4 - B28 -->
+								<pin_map port_index="1" component_pin="jx2_d3" /> <!-- XPIO_703_L5_P - JX2-D3 - C27 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				<interface mode="slave" name="cam0_mipi" type="xilinx.com:interface:mipi_phy_rtl:1.0" of_component="cam0_mipi" preset_proc="cam0_mipi_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_csi2_rx_subsystem" order="0"/>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_dphy" order="1"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_P" physical_port="cam0_mipi_clk_rxp" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d9"/> <!-- XPIO_703_XCC_L0_P/N - JX2-D9/D10 - J27/H28 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_N" physical_port="cam0_mipi_clk_rxn" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d10"/> <!-- XPIO_703_XCC_L0_P/N - JX2-D9/D10 - J27/H28 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_P" physical_port="cam0_mipi_data_rxp" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c6"/> <!-- XPIO_703_L1_P/N - JX2-C6/C7 - H27/G28 -->
+								<pin_map port_index="1" component_pin="jx2_d6"/> <!-- XPIO_703_L2_P/N - JX2-D6/D7 - G27/F28 -->
+								<pin_map port_index="2" component_pin="jx2_b3"/> <!-- XPIO_703_XCC_L3_P/N - JX2-B3/B4 - E27/E28 -->
+								<pin_map port_index="3" component_pin="jx2_c3"/> <!-- XPIO_703_L4_P/N - JX2-C3/C4 - D27/C28 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_N" physical_port="cam0_mipi_data_rxn" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c7"/> <!-- XPIO_703_L1_P/N - JX2-C6/C7 - H27/G28 -->
+								<pin_map port_index="1" component_pin="jx2_d7"/> <!-- XPIO_703_L2_P/N - JX2-D6/D7 - G27/F28 -->
+								<pin_map port_index="2" component_pin="jx2_b4"/> <!-- XPIO_703_XCC_L3_P/N - JX2-B3/B4 - E27/E28 -->
+								<pin_map port_index="3" component_pin="jx2_c4"/> <!-- XPIO_703_L4_P/N - JX2-C3/C4 - D27/C28 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<!-- MIPI1 -->
+				<interface mode="master" name="cam1_gpio" type="xilinx.com:interface:gpio_rtl:1.0" of_component="cam1_gpio" preset_proc="cam1_gpio_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="cam1_gpio_tri_o" dir="out" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_a7" /> <!-- XPIO_703_L11_N - JX2-A7 - B27 -->
+								<pin_map port_index="1" component_pin="jx2_a6" /> <!-- XPIO_703_L11_p - JX2-A6 - B26 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				<interface mode="slave" name="cam1_mipi" type="xilinx.com:interface:mipi_phy_rtl:1.0" of_component="cam1_mipi" preset_proc="cam1_mipi_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_csi2_rx_subsystem" order="0"/>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_dphy" order="1"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_P" physical_port="cam1_mipi_clk_rxp" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d18"/> <!-- XPIO_703_GC_XCC_L6_P/N - JX2-D18/D19 - H25/J26 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_N" physical_port="cam1_mipi_clk_rxn" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d19"/> <!-- XPIO_703_GC_XCC_L6_P/N - JX2-D18/D19 - H25/J26 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_P" physical_port="cam1_mipi_data_rxp" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c15"/> <!-- XPIO_703_L7_P/N - JX2-C15/C16 - G25/G26 -->
+								<pin_map port_index="1" component_pin="jx2_d15"/> <!-- XPIO_703_L8_P/N - JX2-D15/D16 - F26/E26 -->
+								<pin_map port_index="2" component_pin="jx2_b6"/> <!-- XPIO_703_GC_XCC_L9_P/N - JX2-B6/B7 - C25/B25 -->
+								<pin_map port_index="3" component_pin="jx2_a3"/> <!-- XPIO_703_L10_P/N - JX2-A3/A4 - A25/A26 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_N" physical_port="cam1_mipi_data_rxn" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c16"/> <!-- XPIO_703_L7_P/N - JX2-C15/C16 - G25/G26 -->
+								<pin_map port_index="1" component_pin="jx2_d16"/> <!-- XPIO_703_L8_P/N - JX2-D15/D16 - F26/E26 -->
+								<pin_map port_index="2" component_pin="jx2_b7"/> <!-- XPIO_703_GC_XCC_L9_P/N - JX2-B6/B7 - C25/B25 -->
+								<pin_map port_index="3" component_pin="jx2_a4"/> <!-- XPIO_703_L10_P/N - JX2-A3/A4 - A25/A26 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!-- MIPI2 -->
+				<interface mode="master" name="cam2_gpio" type="xilinx.com:interface:gpio_rtl:1.0" of_component="cam2_gpio" preset_proc="cam2_gpio_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="cam2_gpio_tri_o" dir="out" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_b13" /> <!-- XPIO_703_L17_N - JX2-13 - A24 -->
+								<pin_map port_index="1" component_pin="jx2_b12" /> <!-- XPIO_703_L17_P - JX2-12 - A23 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				<interface mode="slave" name="cam2_mipi" type="xilinx.com:interface:mipi_phy_rtl:1.0" of_component="cam2_mipi" preset_proc="cam2_mipi_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_csi2_rx_subsystem" order="0"/>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_dphy" order="1"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_P" physical_port="cam2_mipi_clk_rxp" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c21"/> <!-- XPIO_703_GC_XCC_L12_P/N - JX2-C21/C22 - H23/H24 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_N" physical_port="cam2_mipi_clk_rxn" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_c22"/> <!-- XPIO_703_GC_XCC_L12_P/N - JX2-C21/C22 - H23/H24 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_P" physical_port="cam2_mipi_data_rxp" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d21"/> <!-- XPIO_703_L13_P/N - JX2-D21/D22 - F22/G23 -->
+								<pin_map port_index="1" component_pin="jx2_c18"/> <!-- XPIO_703_L14_P/N - JX2-C18/C19 - E22/E23 -->
+								<pin_map port_index="2" component_pin="jx2_a12"/> <!-- XPIO_703_XCC_L15_P/N - JX2-A12/A13 - D24/C24 -->
+								<pin_map port_index="3" component_pin="jx2_a9"/> <!-- XPIO_703_L16_P/N - JX2-A9/A10 - C23/B23 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_N" physical_port="cam2_mipi_data_rxn" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_d22"/> <!-- XPIO_703_L13_P/N - JX2-D21/D22 - F22/G23 -->
+								<pin_map port_index="1" component_pin="jx2_c19"/> <!-- XPIO_703_L14_P/N - JX2-C18/C19 - E22/E23 -->
+								<pin_map port_index="2" component_pin="jx2_a13"/> <!-- XPIO_703_XCC_L15_P/N - JX2-A12/A13 - D24/C24 -->
+								<pin_map port_index="3" component_pin="jx2_a10"/> <!-- XPIO_703_L16_P/N - JX2-A9/A10 - C23/B23 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<!-- MIPI3 -->
+				<interface mode="master" name="cam3_gpio" type="xilinx.com:interface:gpio_rtl:1.0" of_component="cam3_gpio" preset_proc="cam3_gpio_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="cam3_gpio_tri_o" dir="out" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_b19" /> <!-- XPIO_703_L23_N - JX2-B19 - B22 -->
+								<pin_map port_index="1" component_pin="jx2_b18" /> <!-- XPIO_703_L23_p - JX2-B18 - C22 -->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>												
+				<interface mode="slave" name="cam3_mipi" type="xilinx.com:interface:mipi_phy_rtl:1.0" of_component="cam3_mipi" preset_proc="cam3_mipi_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_csi2_rx_subsystem" order="0"/>
+						<preferred_ip vendor="xilinx.com" library="ip" name="mipi_dphy" order="1"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_P" physical_port="cam3_mipi_clk_rxp" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_a21"/> <!-- XPIO_703_XCC_L18_P/N - JX2-A21/A22 - G21/H22 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_N" physical_port="cam3_mipi_clk_rxn" dir="in" >
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_a22"/> <!-- XPIO_703_XCC_L18_P/N - JX2-A21/A22 - G21/H22 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_P" physical_port="cam3_mipi_data_rxp" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_b21"/> <!-- XPIO_703_L19_P/N - JX2A-B21/B22 - E20/F21 -->
+								<pin_map port_index="1" component_pin="jx2_a18"/> <!-- XPIO_703_L20_P/N - JX2A-A18/A19 - D20/D21 -->
+								<pin_map port_index="2" component_pin="jx2_a15"/> <!-- XPIO_703_XCC_L21_P/N - JX2-A15/A16 - F23/F24 -->
+								<pin_map port_index="3" component_pin="jx2_b15"/> <!-- XPIO_703_L22_P/N - JX2-B15/B16 - E24/F25 -->
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="DATA_N" physical_port="cam3_mipi_data_rxn" dir="in" left="3" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="jx2_b22"/> <!-- XPIO_703_L19_P/N - JX2A-B21/B22 - E20/F21 -->
+								<pin_map port_index="1" component_pin="jx2_a19"/> <!-- XPIO_703_L20_P/N - JX2A-A18/A19 - D20/D21 -->
+								<pin_map port_index="2" component_pin="jx2_a16"/> <!-- XPIO_703_XCC_L21_P/N - JX2-A15/A16 - F23/F24 -->
+								<pin_map port_index="3" component_pin="jx2_b16"/> <!-- XPIO_703_L22_P/N - JX2-B15/B16 - E24/F25 -->
 							</pin_maps>
 						</port_map>
 					</port_maps>
@@ -586,17 +782,52 @@
 			</interfaces>
 		</component>
 
-		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+		<!-- Push Buttons -->
+		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="GPIO" part_name="PTS810SJG250SMTRLFS" vendor="CandK" spec_url="www.ck-components.com">
 			<description>XPIO Push Buttons</description>
 		</component>
-		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+
+		<!-- 4-port Dipswitch -->
+		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="GPIO" part_name="219-4MSTR" vendor="CTS" spec_url="www.ctscorp.com">
 			<description>XPIO DIP Switches</description>
 		</component>
-		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+				
+		<!-- LEDs -->
+		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="GPIO" part_name="EAST0603RA0" vendor="Everlight" spec_url="en.everlight.com">
 			<description>XPIO LEDs</description>
 		</component>
 
-		
+		<!-- CAM0 -->
+		<component name="cam0_gpio" display_name="CAM0 GPIO" type="chip" sub_type="led" major_group="RPICAM">
+			<description>CAM0 2-bit GPIO for Raspberry Pi 22-pin Connector (J17)</description>
+		</component>
+		<component name="cam0_mipi" display_name="CAM0 MIPI" type="chip" sub_type="chip" major_group="RPICAM">
+			<description>CAM0 4-lane MIPI for Raspberry Pi 22-pin Connector (J17)</description>
+		</component>		
+
+		<!-- CAM1 -->
+		<component name="cam1_gpio" display_name="CAM1 GPIO" type="chip" sub_type="led" major_group="RPICAM">
+			<description>CAM1 2-bit GPIO for Raspberry Pi 22-pin Connector (J18)</description>
+		</component>
+		<component name="cam1_mipi" display_name="CAM1 MIPI" type="chip" sub_type="chip" major_group="RPICAM">
+			<description>CAM1 4-lane MIPI for Raspberry Pi 22-pin Connector (J18)</description>
+		</component>		
+
+		<!-- CAM2 -->
+		<component name="cam2_gpio" display_name="CAM2 GPIO" type="chip" sub_type="led" major_group="RPICAM">
+			<description>CAM2 2-bit GPIO for Raspberry Pi 22-pin Connector (J19)</description>
+		</component>
+		<component name="cam2_mipi" display_name="CAM2 MIPI" type="chip" sub_type="chip" major_group="RPICAM">
+			<description>CAM2 4-lane MIPI for Raspberry Pi 22-pin Connector (J19)</description>
+		</component>		
+
+		<!-- CAM3 -->
+		<component name="cam3_gpio" display_name="CAM3 GPIO" type="chip" sub_type="led" major_group="RPICAM">
+			<description>CAM3 2-bit GPIO for Raspberry Pi 22-pin Connector (J20)</description>
+		</component>
+		<component name="cam3_mipi" display_name="CAM3 MIPI" type="chip" sub_type="chip" major_group="RPICAM">
+			<description>CAM3 4-lane MIPI for Raspberry Pi 22-pin Connector (J20)</description>
+		</component>		
 	</components>
 
 	<connections>
@@ -615,6 +846,12 @@
 			<connection_map name="jx2_connector_xpio_led_1" typical_delay="5" c1_st_index="50" c1_end_index="50" c2_st_index="1" c2_end_index="1" /> <!-- JX2 B10 : XPIO_702_L26_N -->
 			<connection_map name="jx2_connector_xpio_led_2" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="2" c2_end_index="2" /> <!-- JX2 B36 : XPIO_702_XCC_L21_P -->
 		</connection>
+		
+		<connection name="jx2_connector_cam0_gpio_connection" component1="jx2_connector" component2="cam0_gpio">
+			<connection_map name="jx2_connector_cam0_gpio_0" typical_delay="5" c1_st_index="124" c1_end_index="124" c2_st_index="0" c2_end_index="0" /> <!-- XPIO_703_L5_N - JX2-D4 - B28 -->
+			<connection_map name="jx2_connector_cam0_gpio_1" typical_delay="5" c1_st_index="123" c1_end_index="123" c2_st_index="1" c2_end_index="1" /> <!-- XPIO_703_L5_P - JX2-D3 - C27 -->
+		</connection>
+		
 	</connections>
 </board>
 
