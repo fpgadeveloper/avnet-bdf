@@ -49,8 +49,8 @@
 				<pin index="16" name="jx1_a16" /> <!-- LPD_MIO23 -->
 				<pin index="17" name="jx1_a17" /> <!-- LPD_MIO22 -->
 				<pin index="18" name="jx1_a18" /> <!-- GND -->
-				<pin index="19" name="jx1_a19" /> <!-- PMC_MIO47 -->
-				<pin index="20" name="jx1_a20" /> <!-- PMC_MIO46 -->
+				<pin index="19" name="jx1_a19" iostandard="LVCMOS18" /> <!-- PMC_MIO47 => PMC_LED[0] -->
+				<pin index="20" name="jx1_a20" iostandard="LVCMOS18" /> <!-- PMC_MIO46 => PMC_PB[1] -->
 				<pin index="21" name="jx1_a21" /> <!-- GND -->
 				<pin index="22" name="jx1_a22" /> <!-- PMC_MIO45 -->
 				<pin index="23" name="jx1_a23" /> <!-- PMC_MIO44 -->
@@ -91,7 +91,7 @@
 				<pin index="57" name="jx1_b17" /> <!-- LPD_MIO20 -->
 				<pin index="58" name="jx1_b18" /> <!-- VCC_FUSE -->
 				<pin index="59" name="jx1_b19" /> <!-- PMC_MIO49 -->
-				<pin index="60" name="jx1_b20" /> <!-- PMC_MIO48 -->
+				<pin index="60" name="jx1_b20" iostandard="LVCMOS18" /> <!-- PMC_MIO48 => PMC_LED[1] -->
 				<pin index="61" name="jx1_b21" /> <!-- GND -->
 				<pin index="62" name="jx1_b22" /> <!-- PMC_MIO43 -->
 				<pin index="63" name="jx1_b23" /> <!-- PMC_MIO42 -->
@@ -179,7 +179,7 @@
 				<pin index="143" name="jx1_d23" /> <!-- PMC_MIO39 -->
 				<pin index="144" name="jx1_d24" /> <!-- PMC_MIO38 -->
 				<pin index="145" name="jx1_d25" /> <!-- GND -->
-				<pin index="146" name="jx1_d26" /> <!-- PMC_MIO37 -->
+				<pin index="146" name="jx1_d26" iostandard="LVCMOS18" /> <!-- PMC_MIO37 => PMC_PB[0] -->
 				<pin index="147" name="jx1_d27" /> <!-- VCC_BATT -->
 				<pin index="148" name="jx1_d28" /> <!-- DONE_OUT -->
 				<pin index="149" name="jx1_d29" /> <!-- USB_D_P -->
@@ -204,8 +204,8 @@
 					<port_maps>
 						<port_map logical_port="TRI_I" physical_port="pmc_pb_tri_i" dir="in" left="1" right="0">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="jx1_a20" /> <!-- PMC_MIO46 -->
-								<pin_map port_index="1" component_pin="jx1_d26" /> <!-- PMC_MIO37 -->
+								<pin_map port_index="0" component_pin="jx1_d26" /> <!-- PMC_MIO37 -->
+								<pin_map port_index="1" component_pin="jx1_a20" /> <!-- PMC_MIO46 -->
 							</pin_maps>
 						</port_map>
 					</port_maps>
@@ -279,8 +279,8 @@
 				<pin index="46" name="jx2_b6" /> <!-- XPIO_703_GC_XCC_L9_P -->
 				<pin index="47" name="jx2_b7" /> <!-- XPIO_703_GC_XCC_L9_N -->
 				<pin index="48" name="jx2_b8" /> <!-- +VCCO_702 -->
-				<pin index="49" name="jx2_b9" /> <!-- XPIO_702_L26_P -->
-				<pin index="50" name="jx2_b10" /> <!-- XPIO_702_L26_N -->
+				<pin index="49" name="jx2_b9" iostandard="LVCMOS12" /> <!-- XPIO_702_L26_P => XPIO_PB[0] -->
+				<pin index="50" name="jx2_b10" iostandard="LVCMOS12" /> <!-- XPIO_702_L26_N => XPIO_LED[1]-->
 				<pin index="51" name="jx2_b11" /> <!-- GND -->
 				<pin index="52" name="jx2_b12" /> <!-- XPIO_703_L17_P -->
 				<pin index="53" name="jx2_b13" /> <!-- XPIO_703_L17_N -->
@@ -306,7 +306,7 @@
 				<pin index="73" name="jx2_b33" /> <!-- XPIO_702_L23_P -->
 				<pin index="74" name="jx2_b34" /> <!-- XPIO_702_L23_N -->
 				<pin index="75" name="jx2_b35" /> <!-- GND -->
-				<pin index="76" name="jx2_b36" /> <!-- XPIO_702_XCC_L21_P -->
+				<pin index="76" name="jx2_b36" iostandard="LVCMOS12" /> <!-- XPIO_702_XCC_L21_P => XPIO_LED[2] -->
 				<pin index="77" name="jx2_b37" /> <!-- XPIO_702_XCC_L21_N -->
 				<pin index="78" name="jx2_b38" /> <!-- GND -->
 				<pin index="79" name="jx2_b39" /> <!-- XPIO_702_XCC_L18_P -->
@@ -320,11 +320,11 @@
 				<pin index="86" name="jx2_c6" /> <!-- XPIO_703_L1_P -->
 				<pin index="87" name="jx2_c7" /> <!-- XPIO_703_L1_N -->
 				<pin index="88" name="jx2_c8" /> <!-- VCCO_702_ENB_OUT -->
-				<pin index="89" name="jx2_c9" /> <!-- XPIO_703_GC_XCC_L24_P -->
-				<pin index="90" name="jx2_c10" /> <!-- XPIO_703_GC_XCC_L24_N -->
+				<pin index="89" name="jx2_c9" iostandard="LVCMOS12" /> <!-- XPIO_703_GC_XCC_L24_P => XPIO_PB[1] -->
+				<pin index="90" name="jx2_c10" iostandard="LVCMOS12" /> <!-- XPIO_703_GC_XCC_L24_N => XPIO_LED[0] -->
 				<pin index="91" name="jx2_c11" /> <!-- GND -->
-				<pin index="92" name="jx2_c12" /> <!-- XPIO_703_L26_P -->
-				<pin index="93" name="jx2_c13" /> <!-- XPIO_703_L26_N -->
+				<pin index="92" name="jx2_c12" iostandard="LVCMOS12" /> <!-- XPIO_703_L26_P => XPIO_DP[2] -->
+				<pin index="93" name="jx2_c13" iostandard="LVCMOS12" /> <!-- XPIO_703_L26_N => XPIO_DP[3] -->
 				<pin index="94" name="jx2_c14" /> <!-- CC_RESET_OUT_B -->
 				<pin index="95" name="jx2_c15" /> <!-- XPIO_703_L7_P -->
 				<pin index="96" name="jx2_c16" /> <!-- XPIO_703_L7_N -->
@@ -364,8 +364,8 @@
 				<pin index="129" name="jx2_d9" /> <!-- XPIO_703_XCC_L0_P -->
 				<pin index="130" name="jx2_d10" /> <!-- XPIO_703_XCC_L0_N -->
 				<pin index="131" name="jx2_d11" /> <!-- GND -->
-				<pin index="132" name="jx2_d12" /> <!-- XPIO_703_L25_P -->
-				<pin index="133" name="jx2_d13" /> <!-- XPIO_703_L25_N -->
+				<pin index="132" name="jx2_d12" iostandard="LVCMOS12" /> <!-- XPIO_703_L25_P => XPIO_DP[0] -->
+				<pin index="133" name="jx2_d13" iostandard="LVCMOS12" /> <!-- XPIO_703_L25_N => XPIO_DP[1] -->
 				<pin index="134" name="jx2_d14" /> <!-- MGTYPVCCAUX_SENSE -->
 				<pin index="135" name="jx2_d15" /> <!-- XPIO_703_L8_P -->
 				<pin index="136" name="jx2_d16" /> <!-- XPIO_703_L8_N -->
@@ -613,20 +613,20 @@
 			</pins>
 		</component>
 
-		<component name="pmc_pb" display_name="PMC PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+		<component name="pmc_pb" display_name="PMC PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="PTS810SJG250SMTRLFS" vendor="C&K">
 			<description>PMC Push Buttons</description>
 		</component>
-		<component name="pmc_led" display_name="PMC LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+		<component name="pmc_led" display_name="PMC LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="EAST0603RA0" vendor="Everlight">
 			<description>PMC LEDs</description>
 		</component>
 
-		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="PTS810SJG250SMTRLFS" vendor="C&K">
 			<description>XPIO Push Buttons</description>
 		</component>
-		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="219-4MSTR" vendor="CTS">
 			<description>XPIO DIP Switches</description>
 		</component>
-		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
+		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="EAST0603RA0" vendor="Everlight">
 			<description>XPIO LEDs</description>
 		</component>
 
@@ -635,8 +635,8 @@
 
 	<connections>
 		<connection name="jx1_connector_pmc_pb_connection" component1="jx1_connector" component2="pmc_pb">
-			<connection_map name="jx1_connector_pmc_pb_0" typical_delay="5" c1_st_index="20" c1_end_index="20" c2_st_index="0" c2_end_index="0" /> <!-- JX1 A20 : PMC_MIO46 -->
-			<connection_map name="jx1_connector_pmc_pb_1" typical_delay="5" c1_st_index="146" c1_end_index="146" c2_st_index="1" c2_end_index="1" /> <!-- JX1 D26 : PMC_MIO37 -->
+			<connection_map name="jx1_connector_pmc_pb_0" typical_delay="5" c1_st_index="146" c1_end_index="146" c2_st_index="0" c2_end_index="0" /> <!-- JX1 D26 : PMC_MIO37 -->
+			<connection_map name="jx1_connector_pmc_pb_1" typical_delay="5" c1_st_index="20" c1_end_index="20" c2_st_index="1" c2_end_index="1" /> <!-- JX1 A20 : PMC_MIO46 -->
 		</connection>
 		<connection name="jx1_connector_pmc_led_connection" component1="jx1_connector" component2="pmc_led">
 			<connection_map name="jx1_connector_pmc_led_0" typical_delay="5" c1_st_index="19" c1_end_index="19" c2_st_index="0" c2_end_index="0" /> <!-- JX1 A19 : PMC_MIO47 -->
