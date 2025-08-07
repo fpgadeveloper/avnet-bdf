@@ -967,8 +967,8 @@
 			<component_modes>
 				<component_mode name="LPDDR4_Controller0" display_name="LPDDR4_Controller0">
 					<interfaces>
-						<interface name="ch0_lpddr4" />
-						<interface name="ch1_lpddr4" optional="true" />
+						<interface name="ch0_lpddr4_trip1" />
+						<interface name="ch1_lpddr4_trip1" optional="true" />
 						<interface name="lpddr4_clk1" optional="true" />
 					</interfaces>
 				</component_mode>
