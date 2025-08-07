@@ -586,13 +586,13 @@
 			</interfaces>
 		</component>
 
-		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="PTS810SJG250SMTRLFS" vendor="C&K">
+		<component name="xpio_pb" display_name="XPIO PB" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
 			<description>XPIO Push Buttons</description>
 		</component>
-		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="219-4MSTR" vendor="CTS">
+		<component name="xpio_dp" display_name="XPIO DIP" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
 			<description>XPIO DIP Switches</description>
 		</component>
-		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="EAST0603RA0" vendor="Everlight">
+		<component name="xpio_led" display_name="XPIO LED" type="chip" sub_type="led" major_group="General Purpose Input or Output" part_name="SML-LX0603GW-TR" vendor="LUMEX">
 			<description>XPIO LEDs</description>
 		</component>
 
