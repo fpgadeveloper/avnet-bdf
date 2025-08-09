@@ -300,11 +300,11 @@
 				<pin index="95" name="jx2_c15" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L7_P => cam1_mipi_data_rxp[0] -->
 				<pin index="96" name="jx2_c16" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L7_N => cam1_mipi_data_rxn[0] -->
 				<pin index="97" name="jx2_c17" /> <!-- GND -->
-				<pin index="98" name="jx2_c18" /> <!-- XPIO_703_L14_P -->
-				<pin index="99" name="jx2_c19" /> <!-- XPIO_703_L14_N -->
+				<pin index="98" name="jx2_c18" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L14_P => cam2_mipi_data_rxp[1] -->
+				<pin index="99" name="jx2_c19" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L14_N => cam2_mipi_data_rxn[1]  -->
 				<pin index="100" name="jx2_c20" /> <!-- MGTYPAVCC_SENSE -->
-				<pin index="101" name="jx2_c21" /> <!-- XPIO_703_GC_XCC_L12_P -->
-				<pin index="102" name="jx2_c22" /> <!-- XPIO_703_GC_XCC_L12_N -->
+				<pin index="101" name="jx2_c21" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L12_P => cam2_mipi_clk_rxp -->
+				<pin index="102" name="jx2_c22" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L12_N => cam2_mipi_clk_rxn -->
 				<pin index="103" name="jx2_c23" /> <!-- GND -->
 				<pin index="104" name="jx2_c24" /> <!-- XPIO_702_L10_P -->
 				<pin index="105" name="jx2_c25" /> <!-- XPIO_702_L10_N -->
@@ -344,8 +344,8 @@
 				<pin index="138" name="jx2_d18" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L6_P => cam1_mipi_clk_rxp -->
 				<pin index="139" name="jx2_d19" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_GC_XCC_L6_N => cam1_mipi_clk_rxn -->
 				<pin index="140" name="jx2_d20" /> <!-- MGTYPAVTT_SENSE -->
-				<pin index="141" name="jx2_d21" /> <!-- XPIO_703_L13_P -->
-				<pin index="142" name="jx2_d22" /> <!-- XPIO_703_L13_N -->
+				<pin index="141" name="jx2_d21" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L13_P => cam2_mipi_data_rxp[0] -->
+				<pin index="142" name="jx2_d22" iostandard="MIPI_DPHY" diff_term_adv="TERM_100" /> <!-- XPIO_703_L13_N => cam2_mipi_data_rxn[0] -->
 				<pin index="143" name="jx2_d23" /> <!-- GND -->
 				<pin index="144" name="jx2_d24" /> <!-- XPIO_702_L11_P -->
 				<pin index="145" name="jx2_d25" /> <!-- XPIO_702_L11_N -->
