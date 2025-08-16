@@ -21,10 +21,10 @@
 
 	<file_version>1.0</file_version>
 
-	<description>VE2302 Development Kit - SOM and Carrier Card</description>
+	<description>Avnet-Tria Versal AI Edge (VE2302) Development Kit - Carrier Card</description>
 
 	<compatible_board_revisions>
-		<revision id="0">Rev 1</revision>
+		<revision id="0">1-01-01</revision>
 	</compatible_board_revisions>
 
 	<components>
@@ -277,7 +277,7 @@
 				<pin index="73" name="jx2_b33" /> <!-- XPIO_702_L23_P -->
 				<pin index="74" name="jx2_b34" /> <!-- XPIO_702_L23_N -->
 				<pin index="75" name="jx2_b35" /> <!-- GND -->
-				<pin index="76" name="jx2_b36" iostandard="LVCMOS12" /> <!-- XPIO_702_XCC_L21_P => xpio_led[2] -->
+				<pin index="76" name="jx2_b36" iostandard="LVCMOS12" /> <!-- XPIO_702_XCC_L21_P => fan_tach_in -->
 				<pin index="77" name="jx2_b37" /> <!-- XPIO_702_XCC_L21_N -->
 				<pin index="78" name="jx2_b38" /> <!-- GND -->
 				<pin index="79" name="jx2_b39" /> <!-- XPIO_702_XCC_L18_P -->
@@ -322,7 +322,7 @@
 				<pin index="117" name="jx2_c37" /> <!-- XPIO_702_GC_XCC_L6_N -->
 				<pin index="118" name="jx2_c38" /> <!-- GND -->
 				<pin index="119" name="jx2_c39" /> <!-- XPIO_702_GC_XCC_L12_P -->
-				<pin index="120" name="jx2_c40" /> <!-- XPIO_702_GC_XCC_L12_N -->
+				<pin index="120" name="jx2_c40" iostandard="LVCMOS12" /> <!-- XPIO_702_GC_XCC_L12_N => fan_pwm_out -->
 
 				<pin index="121" name="jx2_d1" /> <!-- +VCCINT -->
 				<pin index="122" name="jx2_d2" /> <!-- +VCCINT -->
@@ -404,11 +404,10 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="TRI_O" physical_port="xpio_led_tri_o" dir="out" left="2" right="0">
+						<port_map logical_port="TRI_O" physical_port="xpio_led_tri_o" dir="out" left="1" right="0">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="jx2_c10" /> <!-- XPIO_703_GC_XCC_L24_N -->
 								<pin_map port_index="1" component_pin="jx2_b10" /> <!-- XPIO_702_L26_N -->
-								<pin_map port_index="2" component_pin="jx2_b36" /> <!-- XPIO_702_XCC_L21_P -->
 							</pin_maps>
 						</port_map>
 					</port_maps>
@@ -844,7 +843,6 @@
 		<connection name="jx2_connector_xpio_led_connection" component1="jx2_connector" component2="xpio_led">
 			<connection_map name="jx2_connector_xpio_led_0" typical_delay="5" c1_st_index="90" c1_end_index="90" c2_st_index="0" c2_end_index="0" /> <!-- JX2 C10 : XPIO_703_GC_XCC_L24_N -->
 			<connection_map name="jx2_connector_xpio_led_1" typical_delay="5" c1_st_index="50" c1_end_index="50" c2_st_index="1" c2_end_index="1" /> <!-- JX2 B10 : XPIO_702_L26_N -->
-			<connection_map name="jx2_connector_xpio_led_2" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="2" c2_end_index="2" /> <!-- JX2 B36 : XPIO_702_XCC_L21_P -->
 		</connection>
 		
 		<connection name="jx2_connector_cam0_gpio_connection" component1="jx2_connector" component2="cam0_gpio">
