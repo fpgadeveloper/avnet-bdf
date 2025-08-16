@@ -210,6 +210,131 @@
 						</user_hier_parameter>
 					</user_hier_parameter>
 					
+					<!-- TTC0 -->
+					<user_parameter name="PS_TTC0_PERIPHERAL_ENABLE" value="1"/>
+					<user_hier_parameter name="PS_TTC0_WAVEOUT">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_parameter name="IO" value="EMIO"/>
+					</user_hier_parameter>
+					
+					<!-- SYSMON -->
+					<user_hier_parameter name="SMON_MEAS0">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS1">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS2">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS3">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS4">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS5">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS6">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS7">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS8">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS9">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS10">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS11">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS12">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS13">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS14">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS15">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS16">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS17">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS18">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS19">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS20">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS21">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS22">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS23">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS24">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS25">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_OT">
+						<user_parameter name="THRESHOLD_LOWER" value="70"/>
+						<user_parameter name="THRESHOLD_UPPER" value="100"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_USER_TEMP">
+						<user_parameter name="THRESHOLD_LOWER" value="70"/>
+						<user_parameter name="THRESHOLD_UPPER" value="85"/>
+					</user_hier_parameter>
+					<!-- 
+					SMON_MEAS0 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCCAUX_103} {SUPPLY_NUM 24}} \
+					SMON_MEAS1 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCCAUX_104} {SUPPLY_NUM 25}} \
+					SMON_MEAS10 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_302} {SUPPLY_NUM 11}} \
+					SMON_MEAS11 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_500} {SUPPLY_NUM 12}} \
+					SMON_MEAS12 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_501} {SUPPLY_NUM 13}} \
+					SMON_MEAS13 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_502} {SUPPLY_NUM 14}} \
+					SMON_MEAS14 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_503} {SUPPLY_NUM 15}} \
+					SMON_MEAS15 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_700} {SUPPLY_NUM 16}} \
+					SMON_MEAS16 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_701} {SUPPLY_NUM 17}} \
+					SMON_MEAS17 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_702} {SUPPLY_NUM 18}} \
+					SMON_MEAS18 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_703} {SUPPLY_NUM 19}} \
+					SMON_MEAS19 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_BATT} {SUPPLY_NUM 0}} \
+					SMON_MEAS2 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCC_103} {SUPPLY_NUM 22}} \
+					SMON_MEAS20 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PMC} {SUPPLY_NUM 1}} \
+					SMON_MEAS21 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PSFP} {SUPPLY_NUM 2}} \
+					SMON_MEAS22 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PSLP} {SUPPLY_NUM 3}} \
+					SMON_MEAS23 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_RAM} {SUPPLY_NUM 4}} \
+					SMON_MEAS24 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_SOC} {SUPPLY_NUM 5}} \
+					SMON_MEAS25 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {1 V unipolar}} {NAME VP_VN} {SUPPLY_NUM 10}} \
+					SMON_MEAS3 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCC_104} {SUPPLY_NUM 23}} \
+					SMON_MEAS4 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVTT_103} {SUPPLY_NUM 20}} \
+					SMON_MEAS5 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVTT_104} {SUPPLY_NUM 21}} \
+					SMON_MEAS6 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX} {SUPPLY_NUM 7}} \
+					SMON_MEAS7 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX_PMC} {SUPPLY_NUM 8}} \
+					SMON_MEAS8 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX_SMON} {SUPPLY_NUM 9}} \
+					SMON_MEAS9 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCINT} {SUPPLY_NUM 6}} \
+					SMON_OT {{THRESHOLD_LOWER 70} {THRESHOLD_UPPER 100}} \
+					SMON_USER_TEMP {{THRESHOLD_LOWER 70} {THRESHOLD_UPPER 85} {USER_ALARM_TYPE hysteresis} \
+					--> 					
+					
 				</user_hier_parameter>
 			</user_parameters>
 		</ip>
