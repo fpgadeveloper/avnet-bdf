@@ -210,6 +210,9 @@
 						</user_hier_parameter>
 					</user_hier_parameter>
 					
+					<!-- PL FABRIC CLOCKs & RESETs -->
+					<user_parameter name="PMC_CRP_PL0_REF_CTRL_FREQMHZ" value="100"/>
+					
 					<!-- TTC0 -->
 					<user_parameter name="PS_TTC0_PERIPHERAL_ENABLE" value="1"/>
 					<user_hier_parameter name="PS_TTC0_WAVEOUT">
