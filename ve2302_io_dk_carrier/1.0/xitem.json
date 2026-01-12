@@ -1,0 +1,42 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "ve2302_io_dk_carrier", 
+          "display": "Versal AI Edge (VE2302) Development Kit - SOM and Carrier Card", 
+          "revision": "1.0", 
+          "description": "Versal AI Edge (VE2302) Development Kit - SOM and Carrier Card", 
+          "company": "Tria (an Avnet Company)", 
+          "company_display": "Tria (an Avnet Company)", 
+          "author": "AlbertaBeef", 
+          "contributors": [
+            {
+              "group": "Avnet", 
+              "url": "avnet.me/ve2302-dk"
+            }
+          ], 
+          "category": "System On Modules(SOM)",
+          "logo": "ve2302_development_kit.png",
+          "website": "avnet.me/ve2302-dk", 
+          "search-keywords": [
+            "SOM", 
+            "avnet",
+            "tria",     
+            "avnet.com", 
+            "tria-technologies.com",
+            "ve2302",
+            "ve2302-dk",
+            "ve2302-io-dk",
+            "ve2302_dk",
+            "ve2302_io_dk",
+            "board", 
+            "System On Modules(SOM)"
+          ]
+        }
+      }
+    ]
+  }, 
+  "_major": 1, 
+  "_minor": 0
+}

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- Copyright (C) 2025, Tria Technologies Inc - All rights reserved
+ Licensed under the Apache License, Version 2.0 (the "License"). You may
+ not use this file except in compliance with the License. A copy of the
+ License is located at
+     http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ License for the specific language governing permissions and limitations
+ under the License. -->
+ 
+<ip_presets schema="1.0">
+	<ip_preset preset_proc_name="ps_pmc_fixed_io_preset">
+		<ip vendor="xilinx.com" library="ip" name="versal_cips" version="*" ip_interface="FIXED_IO">
+			<user_parameters>
+				<user_hier_parameter name="CONFIG.PS_PMC_CONFIG">
+
+					<!-- PMC I2C -->
+					<user_hier_parameter name="PMC_I2CPMC_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PMC_MIO" value="50 .. 51"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+
+					<!-- PMC GPIO -->
+					<user_hier_parameter name="PMC_MIO11">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="in"/>
+						<user_parameter name="OUTPUT_DATA" value="default"/>
+						<user_parameter name="PULL" value="disable"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PMC_MIO12">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pullup"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<user_hier_parameter name="PMC_MIO28">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pullup"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<user_hier_parameter name="PMC_MIO37">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="in"/>
+						<user_parameter name="OUTPUT_DATA" value="default"/>
+						<user_parameter name="PULL" value="pullup"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<user_hier_parameter name="PMC_MIO46">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="in"/>
+						<user_parameter name="OUTPUT_DATA" value="default"/>
+						<user_parameter name="PULL" value="disable"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PMC_MIO47">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PMC_MIO48">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="high"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					
+					
+					<!-- PS I2C -->
+					<user_hier_parameter name="PS_I2C0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="22 .. 23"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+
+					<!-- PS GPIO -->
+					<user_hier_parameter name="PS_MIO12">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="low"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+					<user_hier_parameter name="PS_MIO13">
+						<user_parameter name="AUX_IO" value="0"/>
+						<user_parameter name="DIRECTION" value="out"/>
+						<user_parameter name="DRIVE_STRENGTH" value="8mA"/>
+						<user_parameter name="OUTPUT_DATA" value="low"/>
+						<user_parameter name="PULL" value="pulldown"/>
+						<user_parameter name="SLEW" value="slow"/>
+						<user_parameter name="USAGE" value="GPIO"/>
+					</user_hier_parameter> -->
+
+					<!-- OSPI -->
+					<user_hier_parameter name="PMC_OSPI_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PMC_MIO" value="0 .. 11"/>
+						</user_hier_parameter>
+						<user_parameter name="MODE" value="Single"/>
+					</user_hier_parameter>
+
+					<!-- SD0 (micro SD card) -->
+					<user_hier_parameter name="PMC_SD0_SLOT_TYPE">
+						<user_parameter name="SD" value="3.0 AUTODIR"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="PMC_SD0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PMC_MIO" value="37 .. 49"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					<user_hier_parameter name="PMC_SD0">
+						<user_parameter name="CD_ENABLE" value="1"/>
+						<user_hier_parameter name="CD_IO">
+							<user_parameter name="PMC_MIO" value="39"/>
+						</user_hier_parameter>
+						<user_parameter name="POW_ENABLE" value="1"/>
+						<user_hier_parameter name="POW_IO">
+							<user_parameter name="PMC_MIO" value="49"/>
+						</user_hier_parameter>
+						<user_parameter name="RESET_IO" value="0"/>
+						<user_parameter name="WP_IO" value="0"/>
+					</user_hier_parameter>
+					
+					<!-- SD1 (eMMC) -->
+					<user_parameter name="PMC_SD1_SLOT_TYPE" value="eMMC"/>
+					<user_parameter name="PMC_SD1_DATA_TRANSFER_MODE" value="8Bit"/>
+					<user_hier_parameter name="PMC_SD1_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PMC_MIO" value="26 .. 36"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					
+					<!-- CAN0 -->
+					<user_hier_parameter name="PS_CAN0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="14 .. 15"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					
+					<!-- CAN1 -->
+					<user_hier_parameter name="PS_CAN1_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="20 .. 21"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+
+					<!-- ENET0 (GIGABIT ETHERNET) -->
+					<user_hier_parameter name="PS_ENET0_MDIO">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="24 .. 25"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					<user_hier_parameter name="PS_ENET0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="0 .. 11"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					
+					<!-- UART -->
+					<user_hier_parameter name="PS_UART0_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="16 .. 17"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					<user_hier_parameter name="PS_UART0_RTS_CTS">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PS_MIO" value="18 .. 19"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+
+					<!-- USB -->
+					<user_hier_parameter name="PS_USB3_PERIPHERAL">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_hier_parameter name="IO">
+							<user_parameter name="PMC_MIO" value="13 .. 25"/>
+						</user_hier_parameter>
+					</user_hier_parameter>
+					
+					<!-- PL FABRIC CLOCKs & RESETs -->
+					<!-- 
+					     Although a good idea for a default value, 
+					     this prevents the ability to change value afterwards. 
+					-->
+					<!-- <user_parameter name="PMC_CRP_PL0_REF_CTRL_FREQMHZ" value="100"/> -->
+					
+					<!-- TTC0 -->
+					<user_parameter name="PS_TTC0_PERIPHERAL_ENABLE" value="1"/>
+					<user_hier_parameter name="PS_TTC0_WAVEOUT">
+						<user_parameter name="ENABLE" value="1"/>
+						<user_parameter name="IO" value="EMIO"/>
+					</user_hier_parameter>
+					
+					<!-- SYSMON -->
+					<user_hier_parameter name="SMON_MEAS0">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS1">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS2">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS3">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS4">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS5">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS6">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS7">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS8">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS9">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS10">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS11">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS12">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS13">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS14">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS15">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS16">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS17">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS18">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS19">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS20">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS21">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS22">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS23">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS24">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_MEAS25">
+						<user_parameter name="ENABLE" value="1"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_OT">
+						<user_parameter name="THRESHOLD_LOWER" value="70"/>
+						<user_parameter name="THRESHOLD_UPPER" value="100"/>
+					</user_hier_parameter>
+					<user_hier_parameter name="SMON_USER_TEMP">
+						<user_parameter name="THRESHOLD_LOWER" value="70"/>
+						<user_parameter name="THRESHOLD_UPPER" value="85"/>
+					</user_hier_parameter>
+					<!-- 
+					SMON_MEAS0 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCCAUX_103} {SUPPLY_NUM 24}} \
+					SMON_MEAS1 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCCAUX_104} {SUPPLY_NUM 25}} \
+					SMON_MEAS10 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_302} {SUPPLY_NUM 11}} \
+					SMON_MEAS11 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_500} {SUPPLY_NUM 12}} \
+					SMON_MEAS12 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_501} {SUPPLY_NUM 13}} \
+					SMON_MEAS13 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_502} {SUPPLY_NUM 14}} \
+					SMON_MEAS14 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 4.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {4 V unipolar}} {NAME VCCO_503} {SUPPLY_NUM 15}} \
+					SMON_MEAS15 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_700} {SUPPLY_NUM 16}} \
+					SMON_MEAS16 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_701} {SUPPLY_NUM 17}} \
+					SMON_MEAS17 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_702} {SUPPLY_NUM 18}} \
+					SMON_MEAS18 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCO_703} {SUPPLY_NUM 19}} \
+					SMON_MEAS19 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_BATT} {SUPPLY_NUM 0}} \
+					SMON_MEAS2 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCC_103} {SUPPLY_NUM 22}} \
+					SMON_MEAS20 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PMC} {SUPPLY_NUM 1}} \
+					SMON_MEAS21 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PSFP} {SUPPLY_NUM 2}} \
+					SMON_MEAS22 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_PSLP} {SUPPLY_NUM 3}} \
+					SMON_MEAS23 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_RAM} {SUPPLY_NUM 4}} \
+					SMON_MEAS24 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCC_SOC} {SUPPLY_NUM 5}} \
+					SMON_MEAS25 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {1 V unipolar}} {NAME VP_VN} {SUPPLY_NUM 10}} \
+					SMON_MEAS3 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVCC_104} {SUPPLY_NUM 23}} \
+					SMON_MEAS4 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVTT_103} {SUPPLY_NUM 20}} \
+					SMON_MEAS5 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME GTYP_AVTT_104} {SUPPLY_NUM 21}} \
+					SMON_MEAS6 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX} {SUPPLY_NUM 7}} \
+					SMON_MEAS7 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX_PMC} {SUPPLY_NUM 8}} \
+					SMON_MEAS8 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCAUX_SMON} {SUPPLY_NUM 9}} \
+					SMON_MEAS9 {{ALARM_ENABLE 0} {ALARM_LOWER 0.00} {ALARM_UPPER 2.00} {AVERAGE_EN 0} {ENABLE 1} {MODE {2 V unipolar}} {NAME VCCINT} {SUPPLY_NUM 6}} \
+					SMON_OT {{THRESHOLD_LOWER 70} {THRESHOLD_UPPER 100}} \
+					SMON_USER_TEMP {{THRESHOLD_LOWER 70} {THRESHOLD_UPPER 85} {USER_ALARM_TYPE hysteresis} \
+					--> 					
+					
+				</user_hier_parameter>
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	
+	<ip_preset preset_proc_name="LPDDR4_Controller0_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_noc" version="*">
+			<user_parameters>
+				<user_parameter name="CONFIG.CONTROLLERTYPE" value="LPDDR4_SDRAM" />
+				<user_parameter name="CONFIG.MC_NO_CHANNELS" value="Dual" />
+				<user_parameter name="CONFIG.MC_SYSTEM_CLOCK" value="Differential" />
+				<user_parameter name="CONFIG.MC_MEMORY_SPEEDGRADE" value="LPDDR4-3733" />
+				<user_parameter name="CONFIG.MC_DATAWIDTH" value="32" />
+				<user_parameter name="CONFIG.MC_LP4_PIN_EFFICIENT " value="true" />
+				<user_parameter name="CONFIG.MC_FREQ_SEL" value="MEMORY_CLK_FROM_SYS_CLK" />
+				<user_parameter name="CONFIG.MC_IP_TIMEPERIOD0_FOR_OP" value="5000" />
+				<user_parameter name="CONFIG.MC_OP_TIMEPERIOD0" value="541" />
+				<user_parameter name="CONFIG.MC_LP4_OVERWRITE_IO_PROP" value="true" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	
+	<ip_preset preset_proc_name="sysclk0_preset"> 	<!-- N23, N24 (200 MHz)-->
+		<ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+			<user_parameters>
+				<user_parameter name="CONFIG.PRIM_IN_FREQ" value="200" />
+				<user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin" />
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+				<user_parameter name="CONFIG.C_SIZE" value="1" />
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	
+	
+</ip_presets>

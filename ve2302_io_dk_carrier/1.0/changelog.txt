@@ -1,0 +1,3 @@
+######### Versal AI Edge (VE2302) Carrier card changelog ############
+1.0
+Initial release 
