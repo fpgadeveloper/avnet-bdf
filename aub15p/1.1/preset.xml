@@ -675,6 +675,22 @@
     </ip>
   </ip_preset>
 
+  <!-- User Clock -->
+  <ip_preset preset_proc_name="user_clock_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+      <user_parameters>
+        <user_parameter name="CONFIG.PRIM_IN_FREQ" value="300"/> 
+        <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
   <!-- HDMI MGT Ref Clock -->
   <ip_preset preset_proc_name="hdmi_ref_clk_preset">
     <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
@@ -720,7 +736,8 @@
     <ip vendor="xilinx.com" library="ip" name="ddr4">
       <user_parameters>
         <user_parameter name="CONFIG.C0.DDR4_MEMORYPART" value="MT40A512M16HA-083E" />
-        <user_parameter name="CONFIG.C0.DDR4_INPUTCLOCKPERIOD" value="3332" />
+        <user_parameter name="CONFIG.C0.DDR4_INPUTCLOCKPERIOD" value="3336" />
+        <user_parameter name="CONFIG.C0.DDR4_TIMEPERIOD" value="938" />
         <user_parameter name="CONFIG.C0.DDR4_AXIADDRESSWIDTH" value="31" />
         <user_parameter name="CONFIG.SYSTEM_CLOCK" value="Differential" />
         <user_parameter name="CONFIG.C0.DDR4_DATAWIDTH" value="32" />
